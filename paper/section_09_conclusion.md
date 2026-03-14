@@ -169,3 +169,12 @@ rising.
 
 That window is open. It will not remain open indefinitely. The backward test proves
 that incumbents have every incentive to slow it.
+
+The carbon standard showed what happens when the governance mechanism is too
+politically contested to hold: prices collapse, allocations are renegotiated, and
+the monetary potential of the energy base is captured by incumbents before it can be
+converted into reserve status. The thorium era is not guaranteed to be different. The
+difference will be made — or not made — by the states at the top of the TMPI ranking,
+in the governance choices they make before p_t has finished rising. That is the
+architecture problem the title names. This paper is an attempt to make it legible
+before the window closes.

@@ -7,9 +7,11 @@ assembles them into the full two-state expression and derives the forward trajec
 as p_t varies from 0 to 1.
 
 **Component estimates:**
-- GS_{EU ETS, Phase I} = 0.815 / 0.292 = 2.79, normalised to GS_norm ≈ 0.85
-  (common to all entities in State 0; cross-entity estimation is future work)
-- GS_RUS = 0.05 post-2022 (sanctions exclusion from Western monetary infrastructure)
+- GS_regime = 0.815 / 0.292 = 2.79, normalised to GS_norm ≈ 0.85 (regime-level
+  scaling anchor; entity-specific GS_{i,t} values in Table 3 of §3.4 enter the MPI
+  to differentiate entities within each state)
+- GS_RUS = 0.011 post-2022 (data-derived from 2022–23; reflects sanctions exclusion
+  from Western monetary and carbon governance infrastructure)
 - NEP_i: current values from World Bank/OWID panel, normalised to [0,1]
 - TMPI_i: from Section 7, USA=100 normalised to 1.0
 
@@ -145,26 +147,56 @@ filter is refuted. If neither gains, the mechanism fails. The cross-case contras
 across all BIS Triennial surveys from 2028 through 2037 is the paper's most sustained
 empirical test.
 
-## 8.5 What the Three Legs Together Establish
+## 8.5 The Synthesis Argument
 
-The backward leg establishes that energy governance is a policy variable, not a
-geological constant. Without this, the forward leg's predictions would be descriptions
-of fate, not strategic stakes.
+The three legs do not merely add up. Each one changes what the others mean.
 
-The present leg establishes that the mechanism has operated historically: two
-structured cases (USA, EMU) with opposite energy trajectories and opposite reserve
-share trajectories, a natural experiment (Japan/Fukushima), and a boundary condition
-(Switzerland) that identifies the scope conditions. The mechanism is real.
+The backward leg, standing alone, establishes that the EU carbon governance regime
+exhibits political construction — ZA break at a political event, GS=2.79 far above
+the RGGI equivalent. A useful finding, but limited: it could be read as a contingent
+feature of one poorly designed market.
 
-The forward leg establishes where the mechanism points next: India rising, Australia
-niche-reinforcing, Russia endowed but constrained, UK declining, Brazil blocked. These
-are predictions derived from the mechanism estimated in the present leg, applied to
-the structural endowments measured in the forward leg, weighted by the transition
-probability that the backward leg shows to be politically — not technologically —
-determined.
+The present leg, standing alone, establishes a correlation between NEP and reserve
+share across two structured cases and a natural experiment. Suggestive, but
+explicable: energy-rich states may be wealthy states, and wealthy states issue reserve
+currencies for other reasons.
 
-Together they constitute a theoretical framework with empirical illustration and
-falsifiable forward predictions. Strange (1988) identified the pillars. This paper
-formalises their interaction across time and derives where they point next. The falsification
-dates are in the registry. The window for the next great transition is open. The backward
-test proves it will not stay open by default.
+Together, they establish something neither can establish alone: **the mechanism that
+produced historical reserve currency outcomes is the same mechanism the backward leg
+shows to be politically constructed and contestable.** The present leg is not a
+correlation between geology and monetary power. It is a correlation between governance
+outcomes — politically negotiated energy positions — and monetary power. GS > 1 in
+the backward leg transforms the interpretation of the present leg. NEP is not an
+exogenous endowment. It is the accumulated product of allocation decisions, pipeline
+diplomacy, and domestic energy policy. States *choose* their NEP trajectories through
+governance, and the monetary outcomes follow with a generational lag.
+
+The forward leg, standing alone, is a TMPI ranking — a static snapshot of structural
+endowment. With the backward and present legs established, it becomes something more:
+**a map of which states will face the governance design problem of the thorium era.**
+The TMPI ranking is not a ranking of geological fate. It is a ranking of structural
+position from which states must construct politically durable allocation regimes — or
+fail to, as the carbon era's architects failed, and watch the monetary potential of
+their endowment be captured or contested away.
+
+Russia brings this synthesis into focus. Its MPI trajectory — strong endowments,
+permanently suppressed by GS=0.011 — is not an anomaly. It is the mechanism at
+maximum visibility. The backward leg shows exclusion from governance infrastructure
+is politically constructed (SWIFT, EU ETS expulsion). The present leg shows the
+corridors that formed track pre-existing energy geography (ruble-yuan, ruble-rupee
+traced bilateral supply routes of decades). The forward leg shows that TMPI potential
+is real but monetarily inert without access to the governance infrastructure that
+converts it into reserve status. Russia holds all three components of the mechanism
+simultaneously, in extremis. It is the clearest illustration of the paper's central
+claim: governance is the variable, not geology.
+
+This is the synthesis the three temporal legs produce together. The transition from
+the carbon era to the thorium era is not a technological event that happens to states.
+It is a political contest that states enter from unequal structural positions —
+positions the backward leg shows are politically constructed, the present leg shows
+have monetary consequences, and the forward leg maps for the next round. The backward
+test does not prove the thorium era will be politically contested. But it would be
+extraordinary if it were not. Every major energy transition in the historical record
+involved a renegotiation of the governance regimes that made the prior era's energy
+positions into monetary leverage. There is no mechanism in the framework — and none
+in the historical record — by which the thorium era would be different.

@@ -129,48 +129,47 @@ transition odds.
 
 ## 3.4 The Governance Sensitivity Term
 
-GS_{i,t} appears in both states of the MPI expression. This is not redundant — it is the
+GS appears in both states of the MPI expression. This is not redundant — it is the
 paper's central theoretical claim made explicit: **governance contestability is the
 mechanism that makes energy sovereignty a policy variable in any era.**
 
-In State 0, GS captures whether the current energy allocation regime is politically
-constructed or geologically determined. A regime with GS > 1 is more volatile than the
-underlying physical commodity — the signature of a politically negotiated allocation. The
-EU ETS provides the cleanest measurement: GS = CV(EUA Phase I) / CV(oil) ≈ 2.79. The
-Phase I allocation surplus was nearly three times more volatile than the oil price in the
-same period. This is not a commodity with fixed physical supply. It is a politically
-constructed regime. The backward leg establishes GS>1 as a structural property
-of the EU carbon regime; it does not require, and does not claim, that all energy
-governance exhibits this property — the RGGI comparison (GS≈0.16) demonstrates
-that the same asset class can be governed with far lower political sensitivity.
+GS operates at two distinct levels in this paper, and it is essential to keep them
+separate.
 
-In State 1, GS captures whether the thorium allocation regime will be politically
-constructed or treated as geologically fixed. The countries investing now in domestic fuel
-cycle control — India's closed-cycle programme, Canada's CANDU heavy-water expertise —
-are pre-positioning for high GS in the thorium era. Countries that allow their thorium
-endowment to be allocated by international markets cede the GS term and with it the
-amplification it provides on TMPI.
-
-**Formal definition:**
+**GS_regime — regime-level calibration (backward leg).** Measures how politically
+constructed a specific allocation mechanism is, relative to the underlying commodity:
 
 ```
-GS_{i,t} = CV(EG_{i,era}) / CV(commodity_benchmark_{era})
+GS_regime = CV(allocation_governance_indicator_{era}) / CV(commodity_benchmark_{era})
 ```
 
-where EG is the energy governance indicator (allocation surplus for carbon markets;
-domestic energy price regime for oil markets). GS = 1 means the governance regime is no
-more volatile than the physical commodity. GS > 1 means excess volatility attributable to
-political construction.
+The EU ETS Phase I provides the cleanest measurement: GS_regime = CV(EUA Phase I) /
+CV(oil) = 0.815 / 0.292 ≈ 2.79. The Phase I allocation surplus was nearly three times
+more volatile than the oil price in the same period — the signature of a politically
+negotiated regime, not a commodity with fixed physical supply. The backward leg
+establishes GS_regime > 1 as a structural property of the EU carbon regime; it does not
+require, and does not claim, that all energy governance exhibits this property — the RGGI
+comparison (GS_regime ≈ 0.16) demonstrates that the same asset class can be governed
+with far lower political sensitivity. GS_regime is normalised to GS_norm ≈ 0.85 for use
+as a scaling anchor in the MPI assembly (§5.4).
 
-**Complement: the Zivot-Andrews statistic.** CV captures the degree of political
-construction over a phase; the ZA statistic captures whether that construction breaks
-endogenously at a political event rather than a supply shock. Both are reported in §5.
-They are complementary measures of the same underlying property.
+**GS_{i,t} — entity-level governance sensitivity (MPI assembly input).** Measures how
+volatile each entity's energy import position has been relative to the commodity
+benchmark — a proxy for how exposed the entity's energy balance is to politically
+constructed allocation regimes, rather than stable administered governance:
 
-**Cross-entity GS in this paper.** GS is estimated both at the regime level (EU ETS Phase I: GS=2.79, establishing that GS>1 holds for carbon governance) and at the entity level (computed as CV(energy_imports_pct_i, 2000–2023) / CV(oil_price, 2000–2023)). Entity-specific GS captures how much more volatile each country's energy import position is relative to the underlying commodity price — high volatility indicates energy position is politically constructed; low volatility indicates administered or stable governance. Russia post-2022 GS is computed from post-sanction years only (2022–23), reflecting the collapse in Western governance participation. Table 3 reports computed values:
+```
+GS_{i,t} = CV(energy_imports_pct_i, 2000–2023) / CV(oil_price, 2000–2023)
+```
 
-| Entity | GS (raw) | GS (norm) | Interpretation |
-|--------|----------|-----------|----------------|
+High GS_{i,t} indicates an energy position that moves substantially more than the
+underlying commodity price — the hallmark of politically contested allocation. Low
+GS_{i,t} indicates administered stability. Russia post-2022 is computed from post-sanction
+years only (2022–23), reflecting exclusion from Western governance infrastructure.
+Table 3 reports computed values:
+
+| Entity | GS_{i,t} (raw) | GS_{i,t} (norm) | Interpretation |
+|--------|----------------|-----------------|----------------|
 | RUS | 0.011 | 0.004 | Post-2022 sanctions: near-zero Western governance participation |
 | EMU | 0.076 | 0.024 | Slowly declining imports, administered elements |
 | CHE | 0.127 | 0.040 | Financial entrepôt, stable administration |
@@ -183,7 +182,30 @@ They are complementary measures of the same underlying property.
 | USA | 1.984 | 0.616 | Shale revolution, deregulated ✓ |
 | BRA | 3.219 | 1.000 | Hydroelectric + oil import volatility |
 
-The ordering confirms the theoretical priors: Japan and Switzerland (administered) are among the lowest non-sanctioned entities; USA and GBR (deregulated, structurally volatile) are among the highest. This entity-level variation is what allows the MPI to differentiate entities at the same NEP level.
+The ordering confirms the theoretical priors: Japan and Switzerland (administered) are
+among the lowest non-sanctioned entities; USA and GBR (deregulated, structurally
+volatile) are among the highest. This entity-level variation differentiates entities at
+the same NEP level within the MPI assembly.
+
+**The relationship between GS_regime and GS_{i,t}.** Both measure governance volatility
+normalised to a commodity benchmark; they differ in scope. GS_regime characterises a
+specific allocation mechanism (the EU carbon market, the oil-dollar settlement system).
+GS_{i,t} characterises a country's exposure to however governance operates in its era.
+GS_regime > 1 established by the backward leg is the theoretical warrant for using
+GS_{i,t} in the MPI: it proves that governance construction is real and measurable, not
+a classification artefact.
+
+**Complement: the Zivot-Andrews statistic.** CV captures the degree of political
+construction over a phase; the ZA statistic captures whether that construction breaks
+endogenously at a political event rather than a supply shock. Both are reported in §5.
+They are complementary measures of the same underlying property.
+
+In State 1, GS captures whether the thorium allocation regime will be politically
+constructed or treated as geologically fixed. The countries investing now in domestic fuel
+cycle control — India's closed-cycle programme, Canada's CANDU heavy-water expertise —
+are pre-positioning for high GS in the thorium era. Countries that allow their thorium
+endowment to be allocated by international markets cede the GS term and with it the
+amplification it provides on TMPI.
 
 ---
 

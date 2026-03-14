@@ -94,11 +94,13 @@ GS_{EU ETS, Phase I} = CV(EUA Phase I) / CV(Oil 2005–2024)
                      ≈ 2.79
 ```
 
-Normalised logistically to [0,1] for use in the MPI assembly: GS_norm ≈ 0.85. This
-is the common GS value used in the State 0 term of the MPI assembly in Section 8.
-Entity-specific GS estimation — using each country's domestic energy governance
-volatility relative to commodity benchmarks — is identified as the primary extension
-for future work.
+Normalised logistically to [0,1]: GS_norm ≈ 0.85. This regime-level value anchors
+the MPI scaling and is used as a common factor in the Section 8 assembly. It is
+distinct from entity-specific GS_{i,t} — each country's energy import volatility
+relative to oil — which is estimated separately in §3.4 (Table 3) and enters the MPI
+to differentiate entities within the State 0 and State 1 terms. GS_regime establishes
+that political construction of governance is real and quantifiable; GS_{i,t} distributes
+that construction across entities.
 
 ## 5.5 What the Backward Leg Proves (and What It Does Not)
 

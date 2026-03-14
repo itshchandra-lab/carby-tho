@@ -30,22 +30,14 @@ valid under either order or a mixture without requiring pre-testing for exact or
 Johansen cointegration is reported as supplementary — it requires I(1) pre-testing and
 is inappropriate for mixed cases.
 
-## 6.3 Pooled Specifications (Transparency Only)
+## 6.3 Pooled Specifications (Appendix)
 
-Pooled OLS with entity and time fixed effects yields β≈84 (SE=37.9, p=0.027) at
-lag 10 and β≈108 (SE=37.7, p=0.004) at lag 15 in undifferenced levels. Differenced
-specifications are not significant (β=58.9, p=0.242 at lag 10; β=−6.1, p=0.874 at
-lag 15). The logit transform — which respects the compositional nature of reserve
-shares — is not significant at any specification.
-
-Table 1 reports all eight pooled specifications for transparency. The pattern is
-diagnostic, not problematic: significance only in undifferenced levels is consistent
-with the presence of a cointegrating relationship that differencing destroys. It is
-not evidence of a spurious regression, provided cointegration is confirmed by the
-ARDL bounds test below. The leave-one-out jackknife confirms the pooled result is
-driven by the USA case: dropping the US flips β from +84 to −3. Pooled OLS
-inappropriately averages opposite-sign slopes across structurally heterogeneous
-entities. The entity-specific results are the paper's primary empirical contribution.
+Pooled OLS results are reported in Appendix Table A1 for transparency. As established
+in §6.1, I²>90% confirms heterogeneous slopes across entities, making pooled OLS the
+wrong estimator; LOO jackknife shows the pooled result is entirely driven by the USA
+(dropping the US flips β from +84 to −3). These results are not the paper's finding.
+They are reported because suppressing them would be misleading. The entity-specific
+ARDL/ECM/DOLS estimations below are the primary empirical contribution.
 
 ## 6.4 ARDL Bounds Test and Entity-Specific ECM
 
@@ -75,10 +67,8 @@ NEP lagged 10 years and EUR reserve share is r=0.864 (n=16). This is the paper's
 second structured case and it runs in the opposite direction to the USA: same mechanism,
 falling NEP, falling reserve share. EMU is not a boundary condition. It is confirmation.
 
-The LOO jackknife result — dropping USA flips pooled β from +84 to −3 — is evidence
-of opposite-sign slopes that pooled OLS conflates, not evidence against the mechanism.
-Two entities, opposite energy trajectories, opposite reserve share trajectories. A pooled
-estimator that assigns them the same coefficient is the wrong model.
+Two entities, opposite energy trajectories, opposite reserve share trajectories, both
+confirmed by ARDL bounds. That is the mechanism.
 
 ## 6.5 Japan: The Control Case
 

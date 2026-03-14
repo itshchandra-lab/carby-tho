@@ -97,8 +97,6 @@ prediction. The two-state MPI does.
 
 **What this paper contributes and what it does not claim.**
 
-**What this paper contributes and what it does not claim.**
-
 Hegemonic Stability Theory (HST) — Kindleberger (1973), Gilpin (1981) — provides the
 closest prior framework: reserve currency status follows from the structural power of
 the hegemonic state. Our argument is a specification of HST's production dimension,
@@ -118,15 +116,35 @@ framework predicts this outcome; MPI specifies the mechanism that produces it. W
 extend Strange's synchronic account into a dynamic one by formalising how the
 finance-energy interaction *reproduces across* energy transitions.
 
-The "architecture of monetary failure" in our title is technical, not normative. Monetary
-architectures are built atop energy bases; when those bases transition, the architecture
-faces structural obsolescence. This is a Polanyian claim about the disembedding of monetary
-arrangements from their material foundations — not a claim that incumbents have failed by
-any moral standard. Helleiner (2014) showed why the 2008 crisis did not dislodge dollar
-primacy: the absence of a credible alternative and the inertia of network effects
-preserved the existing architecture. Our claim is different: the next dislodging force
-is not a financial crisis but an energy transition, and that transition is already
-detectable in the data.
+The title names two successive attempts to construct an energy-backed monetary
+architecture, and the subtitle names their shared failure mode.
+
+The *carbon standard* is the implicit monetary architecture of the current era: an
+allocation system in which carbon permits, not gold or dollars, are meant to coordinate
+sovereign energy policy and price the externalities of fossil fuel use. It failed as a
+monetary architecture for the precise reason the backward leg identifies: GS > 1. The
+EU ETS Phase I allocation surplus was nearly three times more volatile than the
+underlying commodity. Carbon permit prices cannot anchor monetary expectations when
+permit allocations are renegotiated by political decision every time they impose
+material costs. A monetary standard that can be repriced when inconvenient is not a
+standard. It is a managed price with extra steps. This is why carbon market revenues
+have not generated reserve currency positions. The carbon governance regime is too
+politically contestable to function as a credible allocative anchor.
+
+The *thorium standard* is the forward attempt. States with high TMPI are pre-positioning
+to construct governance over thorium fuel cycles that gives their currencies energy
+backing in the next era. Whether this attempt also fails depends on whether those
+states build allocation mechanisms that resist political capture — that is, whether GS
+in the thorium era approaches 1 rather than amplifying toward 3. The TMPI ranking is
+therefore not merely a prediction about which states hold structural position. It is a
+prediction about which states will face the governance design challenge of making an
+energy-backed monetary arrangement credible, and who will be excluded from that attempt
+when they fail.
+
+Helleiner (2014) showed why the 2008 crisis did not dislodge dollar primacy: the absence
+of a credible alternative and the inertia of network effects preserved the existing
+architecture. Our claim is different: the next dislodging force is not a financial
+crisis but an energy transition, and the transition is already detectable in the data.
 
 We make three targeted claims, not a general theory of monetary hegemony: energy
 governance regimes are politically constructed (GS > 1 estimable); NEP predicts reserve
@@ -145,8 +163,8 @@ has for every major transition of the past two centuries.
 Section 2 reviews the literature on reserve currency determinants, structural power,
 and carbon market political economy, identifying the gap this paper fills. Section 3
 presents the MPI framework formally and derives the causal chain connecting its three
-components. Sections 4, 5, and 6 present the backward, present, and forward empirical
-legs respectively. Section 7 assembles the MPI trajectories as p_t varies, with Russia
-as the hinge case that threads all three legs. Section 8 presents the unified
-falsification registry — time-bound, checkable predictions that would refute the
-framework's central claims. Section 9 concludes.
+components. Section 4 describes the data construction and variable definitions.
+Sections 5, 6, and 7 present the backward, present, and forward empirical legs
+respectively. Section 8 assembles the MPI trajectories as p_t varies, with Russia
+as the hinge case that threads all three legs. Section 9 concludes with the unified
+falsification registry and a statement of the framework's limits.

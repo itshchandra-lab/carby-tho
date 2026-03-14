@@ -160,15 +160,35 @@ framework predicts this outcome; MPI specifies the mechanism that produces it. W
 extend Strange's synchronic account into a dynamic one by formalising how the
 finance-energy interaction *reproduces across* energy transitions.
 
-The "architecture of monetary failure" in our title is technical, not normative. Monetary
-architectures are built atop energy bases; when those bases transition, the architecture
-faces structural obsolescence. This is a Polanyian claim about the disembedding of monetary
-arrangements from their material foundations — not a claim that incumbents have failed by
-any moral standard. Helleiner (2014) showed why the 2008 crisis did not dislodge dollar
-primacy: the absence of a credible alternative and the inertia of network effects
-preserved the existing architecture. Our claim is different: the next dislodging force
-is not a financial crisis but an energy transition, and that transition is already
-detectable in the data.
+The title names two successive attempts to construct an energy-backed monetary
+architecture, and the subtitle names their shared failure mode.
+
+The *carbon standard* is the implicit monetary architecture of the current era: an
+allocation system in which carbon permits, not gold or dollars, are meant to coordinate
+sovereign energy policy and price the externalities of fossil fuel use. It failed as a
+monetary architecture for the precise reason the backward leg identifies: GS > 1. The
+EU ETS Phase I allocation surplus was nearly three times more volatile than the
+underlying commodity. Carbon permit prices cannot anchor monetary expectations when
+permit allocations are renegotiated by political decision every time they impose
+material costs. A monetary standard that can be repriced when inconvenient is not a
+standard. It is a managed price with extra steps. This is why carbon market revenues
+have not generated reserve currency positions. The carbon governance regime is too
+politically contestable to function as a credible allocative anchor.
+
+The *thorium standard* is the forward attempt. States with high TMPI are pre-positioning
+to construct governance over thorium fuel cycles that gives their currencies energy
+backing in the next era. Whether this attempt also fails depends on whether those
+states build allocation mechanisms that resist political capture — that is, whether GS
+in the thorium era approaches 1 rather than amplifying toward 3. The TMPI ranking is
+therefore not merely a prediction about which states hold structural position. It is a
+prediction about which states will face the governance design challenge of making an
+energy-backed monetary arrangement credible, and who will be excluded from that attempt
+when they fail.
+
+Helleiner (2014) showed why the 2008 crisis did not dislodge dollar primacy: the absence
+of a credible alternative and the inertia of network effects preserved the existing
+architecture. Our claim is different: the next dislodging force is not a financial
+crisis but an energy transition, and the transition is already detectable in the data.
 
 We make three targeted claims, not a general theory of monetary hegemony: energy
 governance regimes are politically constructed (GS > 1 estimable); NEP predicts reserve
@@ -250,7 +270,7 @@ Second, energy positions shift across transition eras, and the transition itself
 politically contested. A framework that treats energy as exogenous cannot predict
 transition dynamics.
 
-## 2.1b Hegemonic Stability Theory and the Production Mechanism
+## 2.2 Hegemonic Stability Theory and the Production Mechanism
 
 Hegemonic Stability Theory (Kindleberger 1973; Gilpin 1981) provides the dominant
 realist framework for reserve currency analysis: the international monetary system
@@ -278,7 +298,7 @@ constituting. MPI observes the energy base before it produces the monetary outco
 which is why the forward leg can make predictions about India in 2031 and Australia
 in 2035 that HST, by design, cannot make.
 
-## 2.2 Structural Power and the Finance-Energy Nexus
+## 2.3 Structural Power and the Finance-Energy Nexus
 
 Strange (1988) identified four structures of structural power: security (the capacity
 to provide or threaten violence), production (control over how goods are made and
@@ -312,7 +332,7 @@ formalised across energy transitions. This paper does so, extending Strange's
 synchronic account into a dynamic one by specifying how the mechanism reproduces
 across eras.
 
-## 2.3 Carbon Market Political Economy
+## 2.4 Carbon Market Political Economy
 
 The EU ETS is the world's largest carbon market and has attracted substantial
 political economy scholarship. Ellerman and Buchner (2008) documented systematic
@@ -351,7 +371,7 @@ governance contestability to monetary outcomes, nor derived the implication that
 politically constructed allocation regime is inherently unstable as a monetary anchor.
 This paper provides both connections.
 
-## 2.4 Energy Transitions and Geopolitics
+## 2.5 Energy Transitions and Geopolitics
 
 A growing literature on energy transitions and international order (Dannreuther 2017;
 Scholten 2018; Scholten et al. 2020; Overland 2019) examines how the shift away from
@@ -389,7 +409,7 @@ specification of the *activation conditions* that distinguish which energy posit
 translate into reserve currency candidacy. The TMPI provides the structural ranking;
 the Katzenstein framework provides the activation filter.
 
-## 2.5 Synthesis: The Gap This Paper Fills
+## 2.6 Synthesis: The Gap This Paper Fills
 
 The four literatures reviewed above approach the finance-energy nexus from different
 angles but none crosses the full distance:
@@ -958,11 +978,13 @@ GS_{EU ETS, Phase I} = CV(EUA Phase I) / CV(Oil 2005–2024)
                      ≈ 2.79
 ```
 
-Normalised logistically to [0,1] for use in the MPI assembly: GS_norm ≈ 0.85. This
-is the common GS value used in the State 0 term of the MPI assembly in Section 8.
-Entity-specific GS estimation — using each country's domestic energy governance
-volatility relative to commodity benchmarks — is identified as the primary extension
-for future work.
+Normalised logistically to [0,1]: GS_norm ≈ 0.85. This regime-level value anchors
+the MPI scaling and is used as a common factor in the Section 8 assembly. It is
+distinct from entity-specific GS_{i,t} — each country's energy import volatility
+relative to oil — which is estimated separately in §3.4 (Table 3) and enters the MPI
+to differentiate entities within the State 0 and State 1 terms. GS_regime establishes
+that political construction of governance is real and quantifiable; GS_{i,t} distributes
+that construction across entities.
 
 ## 5.5 What the Backward Leg Proves (and What It Does Not)
 
@@ -1029,22 +1051,14 @@ valid under either order or a mixture without requiring pre-testing for exact or
 Johansen cointegration is reported as supplementary — it requires I(1) pre-testing and
 is inappropriate for mixed cases.
 
-## 6.3 Pooled Specifications (Transparency Only)
+## 6.3 Pooled Specifications (Appendix)
 
-Pooled OLS with entity and time fixed effects yields β≈84 (SE=37.9, p=0.027) at
-lag 10 and β≈108 (SE=37.7, p=0.004) at lag 15 in undifferenced levels. Differenced
-specifications are not significant (β=58.9, p=0.242 at lag 10; β=−6.1, p=0.874 at
-lag 15). The logit transform — which respects the compositional nature of reserve
-shares — is not significant at any specification.
-
-Table 1 reports all eight pooled specifications for transparency. The pattern is
-diagnostic, not problematic: significance only in undifferenced levels is consistent
-with the presence of a cointegrating relationship that differencing destroys. It is
-not evidence of a spurious regression, provided cointegration is confirmed by the
-ARDL bounds test below. The leave-one-out jackknife confirms the pooled result is
-driven by the USA case: dropping the US flips β from +84 to −3. Pooled OLS
-inappropriately averages opposite-sign slopes across structurally heterogeneous
-entities. The entity-specific results are the paper's primary empirical contribution.
+Pooled OLS results are reported in Appendix Table A1 for transparency. As established
+in §6.1, I²>90% confirms heterogeneous slopes across entities, making pooled OLS the
+wrong estimator; LOO jackknife shows the pooled result is entirely driven by the USA
+(dropping the US flips β from +84 to −3). These results are not the paper's finding.
+They are reported because suppressing them would be misleading. The entity-specific
+ARDL/ECM/DOLS estimations below are the primary empirical contribution.
 
 ## 6.4 ARDL Bounds Test and Entity-Specific ECM
 
@@ -1358,8 +1372,10 @@ as p_t varies from 0 to 1.
 
 **Component estimates:**
 - GS_{EU ETS, Phase I} = 0.815 / 0.292 = 2.79, normalised to GS_norm ≈ 0.85
-  (common to all entities in State 0; cross-entity estimation is future work)
-- GS_RUS = 0.05 post-2022 (sanctions exclusion from Western monetary infrastructure)
+  (regime-level scaling anchor; entity-specific GS_{i,t} values in Table 3 of §3.4
+  enter the MPI to differentiate entities within each state)
+- GS_RUS = 0.011 post-2022 (data-derived from 2022–23; reflects sanctions exclusion
+  from Western monetary and carbon governance infrastructure)
 - NEP_i: current values from World Bank/OWID panel, normalised to [0,1]
 - TMPI_i: from Section 7, USA=100 normalised to 1.0
 
@@ -1495,29 +1511,59 @@ filter is refuted. If neither gains, the mechanism fails. The cross-case contras
 across all BIS Triennial surveys from 2028 through 2037 is the paper's most sustained
 empirical test.
 
-## 8.5 What the Three Legs Together Establish
+## 8.5 The Synthesis Argument
 
-The backward leg establishes that energy governance is a policy variable, not a
-geological constant. Without this, the forward leg's predictions would be descriptions
-of fate, not strategic stakes.
+The three legs do not merely add up. Each one changes what the others mean.
 
-The present leg establishes that the mechanism has operated historically: two
-structured cases (USA, EMU) with opposite energy trajectories and opposite reserve
-share trajectories, a natural experiment (Japan/Fukushima), and a boundary condition
-(Switzerland) that identifies the scope conditions. The mechanism is real.
+The backward leg, standing alone, establishes that the EU carbon governance regime
+exhibits political construction — ZA break at a political event, GS=2.79 far above
+the RGGI equivalent. A useful finding, but limited: it could be read as a contingent
+feature of one poorly designed market.
 
-The forward leg establishes where the mechanism points next: India rising, Australia
-niche-reinforcing, Russia endowed but constrained, UK declining, Brazil blocked. These
-are predictions derived from the mechanism estimated in the present leg, applied to
-the structural endowments measured in the forward leg, weighted by the transition
-probability that the backward leg shows to be politically — not technologically —
-determined.
+The present leg, standing alone, establishes a correlation between NEP and reserve
+share across two structured cases and a natural experiment. Suggestive, but
+explicable: energy-rich states may be wealthy states, and wealthy states issue reserve
+currencies for other reasons.
 
-Together they constitute a theoretical framework with empirical illustration and
-falsifiable forward predictions. Strange (1988) identified the pillars. This paper
-formalises their interaction across time and derives where they point next. The falsification
-dates are in the registry. The window for the next great transition is open. The backward
-test proves it will not stay open by default.
+Together, they establish something neither can establish alone: **the mechanism that
+produced historical reserve currency outcomes is the same mechanism the backward leg
+shows to be politically constructed and contestable.** The present leg is not a
+correlation between geology and monetary power. It is a correlation between governance
+outcomes — politically negotiated energy positions — and monetary power. GS > 1 in
+the backward leg transforms the interpretation of the present leg. NEP is not an
+exogenous endowment. It is the accumulated product of allocation decisions, pipeline
+diplomacy, and domestic energy policy. States *choose* their NEP trajectories through
+governance, and the monetary outcomes follow with a generational lag.
+
+The forward leg, standing alone, is a TMPI ranking — a static snapshot of structural
+endowment. With the backward and present legs established, it becomes something more:
+**a map of which states will face the governance design problem of the thorium era.**
+The TMPI ranking is not a ranking of geological fate. It is a ranking of structural
+position from which states must construct politically durable allocation regimes — or
+fail to, as the carbon era's architects failed, and watch the monetary potential of
+their endowment be captured or contested away.
+
+Russia brings this synthesis into focus. Its MPI trajectory — strong endowments,
+permanently suppressed by GS=0.011 — is not an anomaly. It is the mechanism at
+maximum visibility. The backward leg shows exclusion from governance infrastructure
+is politically constructed (SWIFT, EU ETS expulsion). The present leg shows the
+corridors that formed track pre-existing energy geography (ruble-yuan, ruble-rupee
+traced bilateral supply routes of decades). The forward leg shows that TMPI potential
+is real but monetarily inert without access to the governance infrastructure that
+converts it into reserve status. Russia holds all three components of the mechanism
+simultaneously, in extremis. It is the clearest illustration of the paper's central
+claim: governance is the variable, not geology.
+
+This is the synthesis the three temporal legs produce together. The transition from
+the carbon era to the thorium era is not a technological event that happens to states.
+It is a political contest that states enter from unequal structural positions —
+positions the backward leg shows are politically constructed, the present leg shows
+have monetary consequences, and the forward leg maps for the next round. The backward
+test does not prove the thorium era will be politically contested. But it would be
+extraordinary if it were not. Every major energy transition in the historical record
+involved a renegotiation of the governance regimes that made the prior era's energy
+positions into monetary leverage. There is no mechanism in the framework — and none
+in the historical record — by which the thorium era would be different.
 
 ---
 
@@ -1692,6 +1738,15 @@ rising.
 
 That window is open. It will not remain open indefinitely. The backward test proves
 that incumbents have every incentive to slow it.
+
+The carbon standard showed what happens when the governance mechanism is too
+politically contested to hold: prices collapse, allocations are renegotiated, and
+the monetary potential of the energy base is captured by incumbents before it can be
+converted into reserve status. The thorium era is not guaranteed to be different. The
+difference will be made — or not made — by the states at the top of the TMPI ranking,
+in the governance choices they make before p_t has finished rising. That is the
+architecture problem the title names. This paper is an attempt to make it legible
+before the window closes.
 
 ---
 

@@ -54,7 +54,7 @@ Second, energy positions shift across transition eras, and the transition itself
 politically contested. A framework that treats energy as exogenous cannot predict
 transition dynamics.
 
-## 2.1b Hegemonic Stability Theory and the Production Mechanism
+## 2.2 Hegemonic Stability Theory and the Production Mechanism
 
 Hegemonic Stability Theory (Kindleberger 1973; Gilpin 1981) provides the dominant
 realist framework for reserve currency analysis: the international monetary system
@@ -82,7 +82,7 @@ constituting. MPI observes the energy base before it produces the monetary outco
 which is why the forward leg can make predictions about India in 2031 and Australia
 in 2035 that HST, by design, cannot make.
 
-## 2.2 Structural Power and the Finance-Energy Nexus
+## 2.3 Structural Power and the Finance-Energy Nexus
 
 Strange (1988) identified four structures of structural power: security (the capacity
 to provide or threaten violence), production (control over how goods are made and
@@ -116,7 +116,7 @@ formalised across energy transitions. This paper does so, extending Strange's
 synchronic account into a dynamic one by specifying how the mechanism reproduces
 across eras.
 
-## 2.3 Carbon Market Political Economy
+## 2.4 Carbon Market Political Economy
 
 The EU ETS is the world's largest carbon market and has attracted substantial
 political economy scholarship. Ellerman and Buchner (2008) documented systematic
@@ -155,7 +155,7 @@ governance contestability to monetary outcomes, nor derived the implication that
 politically constructed allocation regime is inherently unstable as a monetary anchor.
 This paper provides both connections.
 
-## 2.4 Energy Transitions and Geopolitics
+## 2.5 Energy Transitions and Geopolitics
 
 A growing literature on energy transitions and international order (Dannreuther 2017;
 Scholten 2018; Scholten et al. 2020; Overland 2019) examines how the shift away from
@@ -193,7 +193,7 @@ specification of the *activation conditions* that distinguish which energy posit
 translate into reserve currency candidacy. The TMPI provides the structural ranking;
 the Katzenstein framework provides the activation filter.
 
-## 2.5 Synthesis: The Gap This Paper Fills
+## 2.6 Synthesis: The Gap This Paper Fills
 
 The four literatures reviewed above approach the finance-energy nexus from different
 angles but none crosses the full distance:
