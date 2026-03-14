@@ -24,7 +24,7 @@ era — shows cointegration between lagged NEP and reserve share; USD share has
 stabilised since 2021 as the shale-era NEP gain flows through the λ≈10 year lag.
 The eurozone — net energy importer, NEP declining from 0.010 (1999) to 0.005 (2024)
 — shows r=0.864 between lagged NEP and EUR reserve share decline. Japan provides a
-natural experiment: Fukushima collapsed NEP by 61% and yen reserve share has been
+natural experiment: Fukushima collapsed NEP by 67% and yen reserve share has been
 stagnant since. Switzerland falsifies nothing: institutional quality can substitute
 for energy position in financial entrepôts, a boundary condition the framework
 anticipates.

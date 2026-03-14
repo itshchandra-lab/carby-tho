@@ -60,7 +60,7 @@ level predictor that the standard literature (Eichengreen 2011; Cohen 2015) woul
 to forecast reserve currency status — yet the yen has held 5–6% of global reserves
 for three decades, far below its GDP weight. The mechanism explains this directly:
 Japan is a chronic net energy importer with near-zero NEP, and post-Fukushima the
-position worsened sharply — NEP dropped 61% in two years following the 2011 nuclear
+position worsened sharply — NEP dropped 67% in two years following the 2011 nuclear
 shutdown; yen reserve share has been stagnant since. Japan is not anomalous. It is
 the control case that isolates the energy variable's independent effect against the
 GDP null hypothesis.

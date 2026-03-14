@@ -110,12 +110,14 @@ schedule.*
 The INR prediction does not require thorium deployment. It requires that markets
 price India's growing nuclear capacity — and with it, growing energy sovereignty —
 into currency demand. BIS 2022 shows INR at 1.6% of global FX turnover. The
-prediction is that 2028 shows measurable gain.
+prediction is that INR exceeds 2.5% by BIS 2028.
+*Falsify if: INR share below 2.0% in BIS 2028 despite nuclear capacity additions
+proceeding on schedule.*
 
 **At BIS Triennial 2031:**
 
 INR FX turnover share approaches 3–5%.
-*Falsify if: INR share <2% in BIS 2031 despite programme completion.*
+*Falsify if: INR share below 2.5% in BIS 2031 despite programme completion.*
 
 **At IMF COFER 2035–2040:**
 

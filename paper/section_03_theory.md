@@ -99,7 +99,7 @@ The natural first instinct is to write MPI as a product of all three components:
 
 NEP and TMPI measure energy sovereignty in *different eras*. NEP is a current flow: it
 changes yearly with production and consumption decisions and can go negative (Japan
-post-Fukushima: NEP dropped 61% in two years). TMPI is a structural endowment: geological
+post-Fukushima: NEP dropped 67% in two years). TMPI is a structural endowment: geological
 reserves do not move, nuclear capacity changes on decadal timescales, institutional quality
 is persistent. Multiplying a flow variable by a stock variable in the same contemporaneous
 expression conflates their temporal basis.
@@ -136,10 +136,13 @@ mechanism that makes energy sovereignty a policy variable in any era.**
 In State 0, GS captures whether the current energy allocation regime is politically
 constructed or geologically determined. A regime with GS > 1 is more volatile than the
 underlying physical commodity — the signature of a politically negotiated allocation. The
-EU ETS provides the cleanest measurement: GS = CV(EUA Phase I) / CV(oil) ≈ 2.83. The
+EU ETS provides the cleanest measurement: GS = CV(EUA Phase I) / CV(oil) ≈ 2.79. The
 Phase I allocation surplus was nearly three times more volatile than the oil price in the
 same period. This is not a commodity with fixed physical supply. It is a politically
-constructed regime.
+constructed regime. The backward leg establishes GS>1 as a structural property
+of the EU carbon regime; it does not require, and does not claim, that all energy
+governance exhibits this property — the RGGI comparison (GS≈0.16) demonstrates
+that the same asset class can be governed with far lower political sensitivity.
 
 In State 1, GS captures whether the thorium allocation regime will be politically
 constructed or treated as geologically fixed. The countries investing now in domestic fuel

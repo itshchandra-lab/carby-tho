@@ -20,7 +20,7 @@ and EU ETS Phase I price volatility (CV=0.815) is 17 times higher than the RGGI 
 equivalent first compliance period (CV=0.047) — both synthetic carbon permits. The
 *present leg* tests the mechanism: ARDL bounds confirms cointegration between NEP and
 reserve share for the USA; the eurozone's declining NEP correlates with EUR reserve share
-decline at r=0.864 (n=16); Japan's post-Fukushima NEP collapse of 61% in two years
+decline at r=0.864 (n=16); Japan's post-Fukushima NEP collapse of 67% in two years
 provides an exogenous natural experiment supporting the mechanism. The *forward leg*
 constructs the TMPI — a multiplicative index of thorium reserves, nuclear capacity, and
 institutional quality — whose top-three ranking (USA=100, Canada=20.8, India=15.8) is
@@ -104,7 +104,7 @@ level predictor that the standard literature (Eichengreen 2011; Cohen 2015) woul
 to forecast reserve currency status — yet the yen has held 5–6% of global reserves
 for three decades, far below its GDP weight. The mechanism explains this directly:
 Japan is a chronic net energy importer with near-zero NEP, and post-Fukushima the
-position worsened sharply — NEP dropped 61% in two years following the 2011 nuclear
+position worsened sharply — NEP dropped 67% in two years following the 2011 nuclear
 shutdown; yen reserve share has been stagnant since. Japan is not anomalous. It is
 the control case that isolates the energy variable's independent effect against the
 GDP null hypothesis.
@@ -512,7 +512,7 @@ The natural first instinct is to write MPI as a product of all three components:
 
 NEP and TMPI measure energy sovereignty in *different eras*. NEP is a current flow: it
 changes yearly with production and consumption decisions and can go negative (Japan
-post-Fukushima: NEP dropped 61% in two years). TMPI is a structural endowment: geological
+post-Fukushima: NEP dropped 67% in two years). TMPI is a structural endowment: geological
 reserves do not move, nuclear capacity changes on decadal timescales, institutional quality
 is persistent. Multiplying a flow variable by a stock variable in the same contemporaneous
 expression conflates their temporal basis.
@@ -552,7 +552,10 @@ underlying physical commodity — the signature of a politically negotiated allo
 EU ETS provides the cleanest measurement: GS = CV(EUA Phase I) / CV(oil) ≈ 2.79. The
 Phase I allocation surplus was nearly three times more volatile than the oil price in the
 same period. This is not a commodity with fixed physical supply. It is a politically
-constructed regime.
+constructed regime. The backward leg establishes GS>1 as a structural property
+of the EU carbon regime; it does not require, and does not claim, that all energy
+governance exhibits this property — the RGGI comparison (GS≈0.16) demonstrates
+that the same asset class can be governed with far lower political sensitivity.
 
 In State 1, GS captures whether the thorium allocation regime will be politically
 constructed or treated as geologically fixed. The countries investing now in domestic fuel
@@ -1424,12 +1427,14 @@ schedule.*
 The INR prediction does not require thorium deployment. It requires that markets
 price India's growing nuclear capacity — and with it, growing energy sovereignty —
 into currency demand. BIS 2022 shows INR at 1.6% of global FX turnover. The
-prediction is that 2028 shows measurable gain.
+prediction is that INR exceeds 2.5% by BIS 2028.
+*Falsify if: INR share below 2.0% in BIS 2028 despite nuclear capacity additions
+proceeding on schedule.*
 
 **At BIS Triennial 2031:**
 
 INR FX turnover share approaches 3–5%.
-*Falsify if: INR share <2% in BIS 2031 despite programme completion.*
+*Falsify if: INR share below 2.5% in BIS 2031 despite programme completion.*
 
 **At IMF COFER 2035–2040:**
 
@@ -1509,7 +1514,7 @@ era — shows cointegration between lagged NEP and reserve share; USD share has
 stabilised since 2021 as the shale-era NEP gain flows through the λ≈10 year lag.
 The eurozone — net energy importer, NEP declining from 0.010 (1999) to 0.005 (2024)
 — shows r=0.864 between lagged NEP and EUR reserve share decline. Japan provides a
-natural experiment: Fukushima collapsed NEP by 61% and yen reserve share has been
+natural experiment: Fukushima collapsed NEP by 67% and yen reserve share has been
 stagnant since. Switzerland falsifies nothing: institutional quality can substitute
 for energy position in financial entrepôts, a boundary condition the framework
 anticipates.
