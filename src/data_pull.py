@@ -14,7 +14,7 @@ from datetime import datetime
 DATA_RAW = os.path.join(os.path.dirname(__file__), '..', 'data', 'raw')
 
 
-def pull_world_bank(indicators: dict, start_year: int = 1960, end_year: int = 2023) -> pd.DataFrame:
+def pull_world_bank(indicators: dict, start_year: int = 1960, end_year: int = 2024) -> pd.DataFrame:
     """
     Pull World Bank WDI data for given indicators.
     
