@@ -167,10 +167,19 @@ construction over a phase; the ZA statistic captures whether that construction b
 endogenously at a political event rather than a supply shock. Both are reported in §5.
 They are complementary measures of the same underlying property.
 
-**Cross-country GS.** In the present-leg regressions, GS does not vary across the six
-reserve currency entities — they face a common international oil market. Entity-specific
-GS construction using domestic energy price regulation data is the primary extension for
-future work.
+**Cross-country GS in this paper.** GS is estimated from a single case: the EU ETS
+Phase I, yielding GS ≈ 2.83. In the MPI assembly, all entities in State 0 receive
+this common value — it functions as a shared exposure to the global carbon governance
+regime, not a cross-country variable. The correct statement is: *"We estimate GS > 1
+for the EU carbon governance regime and treat it as the benchmark for a politically
+constructed energy allocation system. Cross-entity variation in GS — using domestic
+energy price regulation data, ZA statistics on national energy policy series, or
+regulatory stringency indices — is the primary extension for future work."*
+
+This is not a gap that undermines the paper's empirical content. The backward leg's
+contribution is establishing *that* GS > 1 holds for carbon governance. The present
+and forward legs then condition on that finding. A single well-estimated GS value is
+sufficient to anchor the framework; cross-entity estimation strengthens it.
 
 ---
 
