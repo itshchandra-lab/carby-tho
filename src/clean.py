@@ -416,6 +416,7 @@ def clean_world_bank(raw_path: str = None) -> pd.DataFrame:
         'gdp_usd', 'gdp_growth', 'trade_openness',
         'energy_imports_pct', 'energy_use_per_capita',
         'nuclear_pct_electricity', 'inflation_cpi',
+        'fuel_exports_pct_merchandise', 'fuel_imports_pct_merchandise',
     ]
     keep = [c for c in desired_cols if c in df.columns]
     df_out = df[keep].copy()

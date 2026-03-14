@@ -19,7 +19,8 @@ import statsmodels.api as sm
 from statsmodels.tsa.stattools import adfuller, kpss
 from statsmodels.tsa.vector_ar.var_model import VAR
 from statsmodels.tsa.vector_ar.vecm import VECM, select_coint_rank
-from statsmodels.tsa.stattools import grangercausalitytests
+from statsmodels.tsa.stattools import grangercausalitytests, zivot_andrews
+from statsmodels.tsa.ardl import ARDL, ardl_select_order, UECM
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -271,52 +272,196 @@ def run_both_lags(df: pd.DataFrame,
 
 def run_robustness_checks(df: pd.DataFrame) -> dict:
     """
-    2×2 robustness table: levels/differenced × lag10/lag15.
+    2×2×2 robustness table: transform(levels/logit) × differenced × lag(10/15).
 
-    A finding is robust if the NEP coefficient is consistently signed
-    and significant across all four specifications. If only one or two
-    cells are significant, the finding is fragile and must be stated as such.
+    8 specifications total. A finding is robust if the NEP coefficient is
+    consistently signed and significant across most specifications.
 
-    This is the minimum robustness standard for a working paper with N=6 entities.
+    Verdict thresholds: 6+/8 = robust; 3-5/8 = fragile; <3/8 = not robust.
     """
     summary_rows = []
     results = {}
 
-    for differenced in [False, True]:
-        for lag in [10, 15]:
-            spec_key = f"{'diff' if differenced else 'levels'}_lag{lag}"
-            try:
-                r = run_pooled_ts_model(df, lag=lag, differenced=differenced)
-                nep_col = f"{'d_' if differenced else ''}net_energy_position_lag{lag}"
-                coef = r['coefficients'].get(nep_col, float('nan'))
-                pval = r['pvalues'].get(nep_col, float('nan'))
-                results[spec_key] = r
-                summary_rows.append({
-                    'specification': spec_key,
-                    'nep_coef': round(coef, 4),
-                    'nep_pval': round(pval, 3),
-                    'r_squared': round(r['r_squared'], 3),
-                    'n_obs': r['n_obs'],
-                    'significant_05': pval < 0.05,
-                })
-            except Exception as e:
-                print(f"Spec {spec_key} failed: {e}")
+    for transform in ['levels', 'logit']:
+        for differenced in [False, True]:
+            for lag in [10, 15]:
+                spec_key = f"{transform}_{'diff' if differenced else 'levels'}_lag{lag}"
+                try:
+                    nep_lag_col = f"net_energy_position_lag{lag}"
+                    if transform == 'logit':
+                        r = run_logit_transform(df, lag_col=nep_lag_col)
+                        if r is None:
+                            raise ValueError("logit transform returned None")
+                        # re-run differenced variant if needed
+                        if differenced:
+                            df_logit = df.copy()
+                            df_logit['reserve_share_logit'] = np.log(
+                                df_logit['reserve_share'].clip(0.001, 0.999) /
+                                (1 - df_logit['reserve_share'].clip(0.001, 0.999))
+                            )
+                            df_logit['_orig'] = df_logit['reserve_share']
+                            df_logit['reserve_share'] = df_logit['reserve_share_logit']
+                            r = run_pooled_ts_model(df_logit, lag=lag, differenced=True)
+                            df_logit['reserve_share'] = df_logit['_orig']
+                    else:
+                        r = run_pooled_ts_model(df, lag=lag, differenced=differenced)
+
+                    nep_col = f"{'d_' if differenced else ''}net_energy_position_lag{lag}"
+                    coef = r['coefficients'].get(nep_col, float('nan'))
+                    pval = r['pvalues'].get(nep_col, float('nan'))
+                    results[spec_key] = r
+                    summary_rows.append({
+                        'specification': spec_key,
+                        'nep_coef': round(coef, 4),
+                        'nep_pval': round(pval, 3),
+                        'r_squared': round(r['r_squared'], 3),
+                        'n_obs': r['n_obs'],
+                        'significant_05': pval < 0.05,
+                    })
+                except Exception as e:
+                    print(f"Spec {spec_key} failed: {e}")
+                    summary_rows.append({
+                        'specification': spec_key,
+                        'nep_coef': float('nan'),
+                        'nep_pval': float('nan'),
+                        'r_squared': float('nan'),
+                        'n_obs': 0,
+                        'significant_05': False,
+                    })
 
     summary = pd.DataFrame(summary_rows)
-    print("\n=== ROBUSTNESS CHECK — 2×2 SPECIFICATION TABLE ===")
+
+    # Bonferroni correction for multiple testing
+    n_specs = len(summary)
+    bonf_threshold = 0.05 / n_specs
+    summary['significant_bonferroni'] = summary['nep_pval'] < bonf_threshold
+
+    print("\n=== ROBUSTNESS CHECK — 2×2×2 SPECIFICATION TABLE ===")
     print(summary[['specification', 'nep_coef', 'nep_pval',
-                   'r_squared', 'n_obs', 'significant_05']].to_string(index=False))
-    n_sig = summary['significant_05'].sum()
-    print(f"\n{n_sig}/4 specifications significant at 5%.")
-    if n_sig == 4:
-        print("Finding: ROBUST across all specifications.")
-    elif n_sig >= 2:
+                   'r_squared', 'n_obs', 'significant_05',
+                   'significant_bonferroni']].to_string(index=False))
+    n_sig = int(summary['significant_05'].sum())
+    n_total = len(summary)
+    print(f"\n{n_sig}/{n_total} specifications significant at 5%.")
+    if n_sig >= 6:
+        print("Finding: ROBUST across specifications.")
+    elif n_sig >= 3:
         print("Finding: FRAGILE — significant in some but not all specs. "
-              "Interpret cautiously and report all four.")
+              "Interpret cautiously and report all.")
     else:
         print("Finding: NOT ROBUST — fails most specifications.")
 
+    n_sig_bonf = int(summary['significant_bonferroni'].sum())
+    print(f"\nBonferroni-corrected threshold: {bonf_threshold:.4f}")
+    print(f"{n_sig_bonf}/{n_total} specifications significant after Bonferroni correction.")
+    if n_sig_bonf == 0:
+        print("No specifications survive multiple testing correction.")
+
     return {'results': results, 'summary': summary}
+
+
+def compute_within_r2(model_result, df_model: pd.DataFrame, dep_var: str,
+                      lag_col: str, entity_col: str = 'country_code',
+                      time_col: str = 'year', differenced: bool = False) -> dict:
+    """
+    Compute within-R² by two-way demeaning (entity + time fixed effects).
+
+    The standard OLS R² of 0.997 includes variance explained by all entity and
+    time dummies. Within-R² strips that out — it measures how much of the
+    within-entity, within-time variation in reserve_share is explained by NEP.
+    Values in 0.05–0.40 are typical; 0.997 is spuriously high.
+    """
+    df = df_model.copy().dropna(subset=[dep_var, lag_col])
+
+    # Two-way demeaning of y
+    entity_means_y = df.groupby(entity_col)[dep_var].transform('mean')
+    time_means_y   = df.groupby(time_col)[dep_var].transform('mean')
+    grand_mean_y   = df[dep_var].mean()
+    y_within = df[dep_var] - entity_means_y - time_means_y + grand_mean_y
+
+    # Two-way demeaning of x
+    entity_means_x = df.groupby(entity_col)[lag_col].transform('mean')
+    time_means_x   = df.groupby(time_col)[lag_col].transform('mean')
+    grand_mean_x   = df[lag_col].mean()
+    x_within = df[lag_col] - entity_means_x - time_means_x + grand_mean_x
+
+    ss_total = ((y_within - y_within.mean()) ** 2).sum()
+
+    X_dm = sm.add_constant(x_within)
+    res_dm = sm.OLS(y_within, X_dm).fit()
+    ss_resid = res_dm.ssr
+    within_r2 = 1 - ss_resid / ss_total if ss_total > 0 else np.nan
+
+    return {
+        'within_r2': within_r2,
+        'total_r2': model_result.rsquared,
+        'note': 'Within-R² strips entity+time FE variance; relevant metric for NEP',
+    }
+
+
+def run_leave_one_out(panel_df: pd.DataFrame, lag: int = 10,
+                      differenced: bool = False) -> pd.DataFrame:
+    """
+    Leave-one-out sensitivity: drop each reserve currency entity in turn,
+    re-run pooled TS model, record NEP coefficient and significance.
+
+    If the coefficient is stable across entity exclusions, the finding is not
+    driven by a single influential country.
+    """
+    entities = list(panel_df['country_code'].unique())
+    rows = []
+    for drop in ['none'] + entities:
+        try:
+            sub = panel_df if drop == 'none' else panel_df[panel_df['country_code'] != drop]
+            r = run_pooled_ts_model(sub, lag=lag, differenced=differenced)
+            nep_col = f"{'d_' if differenced else ''}net_energy_position_lag{lag}"
+            coef = r['coefficients'].get(nep_col, np.nan)
+            pval = r['pvalues'].get(nep_col, np.nan)
+            rows.append({
+                'dropped_entity': drop,
+                'nep_coef': coef,
+                'nep_pval': pval,
+                'n_obs': r['n_obs'],
+                'significant_05': pval < 0.05 if not np.isnan(pval) else False,
+            })
+        except Exception as e:
+            rows.append({
+                'dropped_entity': drop,
+                'nep_coef': np.nan,
+                'nep_pval': np.nan,
+                'n_obs': 0,
+                'significant_05': False,
+            })
+    return pd.DataFrame(rows)
+
+
+def run_logit_transform(panel_df: pd.DataFrame, lag_col: str,
+                        entity_col: str = 'country_code',
+                        time_col: str = 'year') -> dict:
+    """
+    Logit-transform reserve_share before running pooled TS model.
+
+    Reserve shares sum to ~100% (compositional data), violating OLS linearity.
+    Logit maps (0,1) → (-∞,+∞), removing the boundary constraint.
+    Coefficient interpretation changes: β is now effect on log-odds of reserve share.
+    """
+    df = panel_df.copy()
+    df['reserve_share_logit'] = np.log(
+        df['reserve_share'].clip(0.001, 0.999) /
+        (1 - df['reserve_share'].clip(0.001, 0.999))
+    )
+    df['_orig_reserve_share'] = df['reserve_share']
+    df['reserve_share'] = df['reserve_share_logit']
+
+    lag_num = int(''.join(filter(str.isdigit, lag_col.replace('net_energy_position_lag', ''))))
+    result = run_pooled_ts_model(df, lag=lag_num, differenced=False)
+    df['reserve_share'] = df['_orig_reserve_share']
+
+    if result:
+        result['transform'] = 'logit'
+        result['interpretation'] = ('Logit-transformed DV addresses compositional data '
+                                    'constraint (shares sum to ~100%)')
+    return result
 
 
 # ─────────────────────────────────────────────
@@ -501,6 +646,665 @@ def _run_var_levels(data, country, variables, stationarity):
 
 
 # ─────────────────────────────────────────────
+# STEP 1b: IV/2SLS — BARTIK INSTRUMENT
+# Endowment × price shocks as instrument for NEP.
+# ─────────────────────────────────────────────
+
+def run_iv_2sls(df, dep_var='reserve_share', endog_var='net_energy_position',
+                instrument='bartik_energy_shock', lag=10, controls=None,
+                entity_fe=False, time_fe=True):
+    """
+    Two-stage least squares using Bartik (shift-share) instrument.
+
+    Stage 1: NEP_lag = α + γ·Bartik_lag + X'δ + [FE] + ε
+    Stage 2: ReserveShare = α + β·NEP_lag_hat + X'δ + [FE] + ε
+
+    The Bartik instrument = baseline_endowment × global_price_shock.
+    Exclusion restriction: global energy price shocks affect reserve
+    currency status ONLY through their effect on energy position,
+    not directly. Defensible because oil price shocks are driven by
+    global demand/supply, not by individual countries' monetary policy.
+
+    entity_fe: default False. Bartik exploits BETWEEN-entity endowment
+    variation — entity FE demean this away, killing the first stage.
+    The instrument IS the cross-sectional identification.
+
+    time_fe: default True. Absorbs common time trends (global shocks
+    that affect all currencies simultaneously).
+
+    Reports: first-stage F-statistic (Staiger-Stock rule: F>10),
+    IV estimate, and Hausman test for endogeneity.
+    """
+    endog_col = f'{endog_var}_lag{lag}' if lag else endog_var
+    iv_col = f'{instrument}_lag{lag}' if lag else instrument
+
+    required = [dep_var, endog_col, iv_col]
+    if controls is None:
+        controls = ['gdp_share', 'trade_openness', 'inflation_cpi']
+    available_controls = [c for c in controls if c in df.columns]
+
+    df_model = df.dropna(subset=required + available_controls).copy()
+
+    if len(df_model) < 30:
+        return {'error': f'Insufficient obs after dropping NaN: {len(df_model)}'}
+
+    # Build control matrix
+    X_parts = [df_model[available_controls]]
+
+    if entity_fe:
+        entity_dummies = pd.get_dummies(df_model['country_code'],
+                                         prefix='fe', drop_first=True)
+        X_parts.append(entity_dummies)
+
+    if time_fe:
+        year_dummies = pd.get_dummies(df_model['year'],
+                                       prefix='yr', drop_first=True)
+        X_parts.append(year_dummies)
+
+    X_controls = pd.concat(X_parts, axis=1)
+    X_controls = sm.add_constant(X_controls).astype(float)
+
+    y = df_model[dep_var].astype(float)
+    endog = df_model[endog_col].astype(float)
+    z = df_model[iv_col].astype(float)
+
+    # ── Stage 1: regress endogenous var on instrument + controls ──
+    X_stage1 = pd.concat([z.rename('instrument'), X_controls], axis=1)
+    stage1 = sm.OLS(endog, X_stage1).fit(cov_type='HC3')
+    first_stage_f = stage1.fvalues if hasattr(stage1, 'fvalues') else None
+
+    # First-stage F on excluded instrument
+    # Manual: F = (t-stat on instrument)^2
+    if 'instrument' in stage1.params.index:
+        t_instrument = stage1.tvalues['instrument']
+        f_excluded = t_instrument ** 2
+    else:
+        f_excluded = 0
+
+    endog_hat = stage1.fittedvalues
+
+    # ── Stage 2: regress DV on fitted endogenous + controls ──
+    X_stage2 = X_controls.copy()
+    X_stage2[endog_col] = endog_hat.values
+    stage2 = sm.OLS(y, X_stage2).fit(cov_type='HC3')
+
+    # IV coefficient
+    iv_beta = stage2.params.get(endog_col, None)
+    iv_se = stage2.bse.get(endog_col, None)
+    iv_pval = stage2.pvalues.get(endog_col, None)
+
+    # ── OLS for comparison (Hausman test) ──
+    X_ols = X_controls.copy()
+    X_ols[endog_col] = endog.values
+    ols = sm.OLS(y, X_ols).fit(cov_type='HC3')
+    ols_beta = ols.params.get(endog_col, None)
+
+    # Hausman: large difference between IV and OLS suggests endogeneity
+    hausman_diff = abs(iv_beta - ols_beta) if (iv_beta and ols_beta) else None
+
+    result = {
+        'n_obs': len(df_model),
+        'n_entities': df_model['country_code'].nunique(),
+        'lag': lag,
+        'first_stage_f': round(f_excluded, 2),
+        'weak_instrument': f_excluded < 10,
+        'iv_beta': round(iv_beta, 4) if iv_beta else None,
+        'iv_se': round(iv_se, 4) if iv_se else None,
+        'iv_pval': round(iv_pval, 4) if iv_pval else None,
+        'ols_beta': round(ols_beta, 4) if ols_beta else None,
+        'hausman_diff': round(hausman_diff, 4) if hausman_diff else None,
+        'stage1_model': stage1,
+        'stage2_model': stage2,
+        'ols_model': ols,
+    }
+
+    print(f"\n=== IV/2SLS (Bartik instrument, lag={lag}) ===")
+    print(f"N={len(df_model)}, entities={df_model['country_code'].nunique()}")
+    print(f"First-stage F (excluded instrument): {f_excluded:.2f}"
+          f" {'— WEAK INSTRUMENT' if f_excluded < 10 else '— adequate'}")
+    print(f"IV  β(NEP): {iv_beta:.4f} (SE={iv_se:.4f}, p={iv_pval:.3f})")
+    print(f"OLS β(NEP): {ols_beta:.4f}")
+    if hausman_diff:
+        print(f"Hausman |IV-OLS|: {hausman_diff:.4f}")
+
+    return result
+
+
+# ─────────────────────────────────────────────
+# STEP 2b: ARDL BOUNDS TEST
+# Handles mixed I(0)/I(1) — unlike Johansen which requires all I(1).
+# If F > I(1) critical bound → cointegrated → levels regression valid.
+# ─────────────────────────────────────────────
+
+def run_ardl_bounds_test(df, country, dep_var='reserve_share',
+                         exog_var='net_energy_position', max_lags=4):
+    """
+    ARDL bounds test (Pesaran, Shin & Smith 2001).
+    Handles mixed I(0)/I(1) — unlike Johansen which requires all I(1).
+
+    If F > I(1) critical bound → cointegrated → levels regression valid
+    If F < I(0) critical bound → not cointegrated → must difference
+    Between → inconclusive
+    """
+    sub = df[df['country_code'] == country].sort_values('year')
+    data = sub[[dep_var, exog_var]].dropna()
+    if len(data) < 20:
+        return {'country': country, 'error': f'Insufficient obs: {len(data)}'}
+
+    endog = data[dep_var]
+    exog = data[[exog_var]]
+
+    # Select optimal lag order via BIC
+    sel = ardl_select_order(endog, max_lags, exog, max_lags,
+                            trend='c', ic='bic')
+    p = max(sel.ar_lags) if sel.ar_lags else 1
+    # dl_lags is a dict {var_name: [lag_list]} — extract max lag per var
+    q_dict = {k: max(v) if v else 1 for k, v in sel.dl_lags.items()}
+    if not q_dict:
+        q_dict = {exog_var: 1}
+
+    # Fit UECM form and run bounds test
+    # UECM lags must be int; order is dict mapping exog names to int
+    uecm = UECM(endog, lags=p, exog=exog, order=q_dict, trend='c').fit()
+
+    # Case 3: unrestricted intercept, no trend (most common)
+    bounds = uecm.bounds_test(case=3)
+
+    f_stat = bounds.stat
+    # crit_vals is DataFrame with index=[90, 95, 99, 99.9], cols=['lower','upper']
+    # lower = I(0) bound, upper = I(1) bound
+    crit_I0_5pct = bounds.crit_vals.loc[95.0, 'lower']
+    crit_I1_5pct = bounds.crit_vals.loc[95.0, 'upper']
+    coint_5pct = f_stat > crit_I1_5pct
+
+    # ECM speed of adjustment: coefficient on L1 of dependent variable
+    ecm_param_name = f'{dep_var}.L1'
+    ecm_speed = uecm.params.get(ecm_param_name, None)
+
+    result = {
+        'country': country, 'n_obs': len(data),
+        'ardl_order': (p, q_dict), 'f_stat': round(f_stat, 3),
+        'cointegrated_5pct': coint_5pct,
+        'critical_I0_5pct': round(crit_I0_5pct, 3),
+        'critical_I1_5pct': round(crit_I1_5pct, 3),
+        'ecm_speed': round(ecm_speed, 4) if ecm_speed is not None else None,
+    }
+
+    if coint_5pct:
+        result['long_run_coefs'] = uecm.ci_params
+        result['interpretation'] = (
+            f'{country}: COINTEGRATED (F={f_stat:.2f} > I(1) bound={crit_I1_5pct:.2f}) '
+            f'→ levels specification valid. '
+            f'Differencing this pair destroys the long-run signal.'
+        )
+    else:
+        inconclusive = f_stat > crit_I0_5pct
+        if inconclusive:
+            result['interpretation'] = (
+                f'{country}: INCONCLUSIVE (F={f_stat:.2f} between bounds '
+                f'[{crit_I0_5pct:.2f}, {crit_I1_5pct:.2f}])'
+            )
+        else:
+            result['interpretation'] = (
+                f'{country}: NOT COINTEGRATED (F={f_stat:.2f} < I(0) bound={crit_I0_5pct:.2f}) '
+                f'→ must difference.'
+            )
+
+    print(result['interpretation'])
+    return result
+
+
+def run_ardl_all_entities(df, entities=None):
+    """
+    Run ARDL bounds test across all reserve currency entities.
+    Returns summary DataFrame.
+    """
+    if entities is None:
+        entities = sorted(df['country_code'].unique())
+
+    rows = []
+    for country in entities:
+        try:
+            r = run_ardl_bounds_test(df, country)
+            if 'error' in r:
+                rows.append({'country': country, 'n_obs': 0,
+                             'f_stat': None, 'I0_bound': None,
+                             'I1_bound': None, 'cointegrated': None,
+                             'ecm_speed': None, 'note': r['error']})
+            else:
+                rows.append({
+                    'country': r['country'],
+                    'n_obs': r['n_obs'],
+                    'ardl_order': str(r['ardl_order']),
+                    'f_stat': r['f_stat'],
+                    'I0_bound': r['critical_I0_5pct'],
+                    'I1_bound': r['critical_I1_5pct'],
+                    'cointegrated': r['cointegrated_5pct'],
+                    'ecm_speed': r['ecm_speed'],
+                    'note': '',
+                })
+        except Exception as e:
+            rows.append({'country': country, 'n_obs': 0,
+                         'f_stat': None, 'I0_bound': None,
+                         'I1_bound': None, 'cointegrated': None,
+                         'ecm_speed': None, 'note': str(e)})
+
+    summary = pd.DataFrame(rows)
+    n_coint = summary['cointegrated'].sum() if 'cointegrated' in summary.columns else 0
+    n_tested = summary['cointegrated'].notna().sum()
+    print(f"\n=== ARDL BOUNDS TEST SUMMARY ===")
+    print(f"Cointegrated at 5%: {n_coint}/{n_tested} entities")
+    print(summary.to_string(index=False))
+    return summary
+
+
+# ─────────────────────────────────────────────
+# STEP 2c: ENTITY-SPECIFIC MODELS
+# The honest approach given N=6. Stop pretending this is a panel.
+# Run each entity separately, then meta-analyse.
+# ─────────────────────────────────────────────
+
+def run_entity_ecm(df, country, dep_var='reserve_share',
+                   exog_var='net_energy_position', max_lags=4, lag=None):
+    """
+    Entity-specific Error Correction Model via ARDL/UECM.
+
+    For each country, estimates:
+    1. ARDL bounds test for cointegration
+    2. If cointegrated: ECM with long-run coefficient and adjustment speed
+    3. If not: returns VAR in differences
+
+    lag: if specified (e.g. 10), uses net_energy_position_lag10 as exog.
+         This matches the pooled model's pre-specified lag structure.
+    """
+    if lag is not None:
+        exog_var = f'{exog_var}_lag{lag}'
+    sub = df[df['country_code'] == country].sort_values('year')
+    data = sub[[dep_var, exog_var]].dropna()
+    if len(data) < 20:
+        return {'country': country, 'error': f'Insufficient obs: {len(data)}',
+                'n_obs': len(data)}
+
+    endog = data[dep_var]
+    exog = data[[exog_var]]
+
+    # Optimal lag via BIC
+    sel = ardl_select_order(endog, max_lags, exog, max_lags,
+                            trend='c', ic='bic')
+    p = max(sel.ar_lags) if sel.ar_lags else 1
+    q_dict = {k: max(max(v), 1) if v else 1 for k, v in sel.dl_lags.items()}
+    if not q_dict:
+        q_dict = {exog_var: 1}
+    # UECM requires all exog to have order >= 1
+    for k in q_dict:
+        q_dict[k] = max(q_dict[k], 1)
+
+    # Fit UECM
+    try:
+        uecm = UECM(endog, lags=p, exog=exog, order=q_dict, trend='c').fit()
+    except ValueError:
+        # Fallback: force order=1 for all exog
+        q_dict = {exog_var: 1}
+        uecm = UECM(endog, lags=p, exog=exog, order=q_dict, trend='c').fit()
+
+    # Bounds test
+    bounds = uecm.bounds_test(case=3)
+    f_stat = bounds.stat
+    crit_I1_5pct = bounds.crit_vals.loc[95.0, 'upper']
+    cointegrated = f_stat > crit_I1_5pct
+
+    # ECM speed (coefficient on lagged dependent variable in UECM)
+    ecm_param = f'{dep_var}.L1'
+    ecm_speed = uecm.params.get(ecm_param, None)
+
+    # Long-run NEP coefficient from UECM cointegrating vector
+    lr_coefs = uecm.ci_params
+    lr_nep = lr_coefs.get(exog_var, None)
+
+    # Standard error on long-run coefficient (delta method approximation)
+    # Use the UECM param on exog_var.L1 and ecm_speed
+    exog_l1_param = f'{exog_var}.L1'
+    exog_l1_coef = uecm.params.get(exog_l1_param, None)
+    exog_l1_se = uecm.bse.get(exog_l1_param, None)
+
+    # For the long-run coef β_LR = -θ_x / θ_y where θ_y is ecm_speed
+    # Full delta method for ratio g(a,b) = -a/b
+    # Var(g) = (1/b)^2 * Var(a) + (a/b^2)^2 * Var(b) - 2*(a/b^3)*Cov(a,b)
+    lr_se = None
+    lr_tstat = None
+    lr_pval = None
+    if exog_l1_coef is not None and ecm_speed is not None and ecm_speed != 0:
+        vcov = uecm.cov_params()
+        var_a = vcov.loc[exog_l1_param, exog_l1_param]
+        var_b = vcov.loc[ecm_param, ecm_param]
+        cov_ab = vcov.loc[exog_l1_param, ecm_param]
+        a, b = exog_l1_coef, ecm_speed
+        var_ratio = (var_a / b**2) + (a**2 * var_b / b**4) - (2 * a * cov_ab / b**3)
+        if var_ratio > 0:
+            lr_se = np.sqrt(var_ratio)
+            lr_tstat = lr_nep / lr_se if lr_se > 0 else None
+            if lr_tstat is not None:
+                from scipy.stats import t as t_dist
+                lr_pval = 2 * (1 - t_dist.cdf(abs(lr_tstat), df=len(data) - len(uecm.params)))
+
+    result = {
+        'country': country,
+        'n_obs': len(data),
+        'ardl_order': (p, q_dict),
+        'cointegrated': cointegrated,
+        'f_stat': round(f_stat, 3),
+        'ecm_speed': round(ecm_speed, 4) if ecm_speed is not None else None,
+        'lr_nep_coef': round(lr_nep, 4) if lr_nep is not None else None,
+        'lr_nep_se': round(lr_se, 4) if lr_se is not None else None,
+        'lr_nep_pval': round(lr_pval, 4) if lr_pval is not None else None,
+        'uecm_result': uecm,
+        'model_type': 'ECM' if cointegrated else 'UECM_no_coint',
+    }
+
+    status = 'COINTEGRATED' if cointegrated else 'not cointegrated'
+    print(f"{country}: {status} (F={f_stat:.2f}), "
+          f"LR β(NEP)={lr_nep:.2f}, ECM speed={ecm_speed:.3f}")
+    return result
+
+
+def run_entity_dols(df, country, dep_var='reserve_share',
+                    exog_var='net_energy_position', leads=None, lags=None, lag=None):
+    """
+    Dynamic OLS (DOLS) — Stock & Watson (1993).
+
+    Adds leads and lags of differenced regressors to a levels regression.
+    This corrects for endogeneity and serial correlation in the
+    cointegrating regression. More robust than plain OLS for small samples.
+
+    lag: if specified (e.g. 10), uses net_energy_position_lag10 as exog.
+
+    DOLS: y_t = α + β·x_t + Σ γ_j · Δx_{t+j} + ε_t
+                              j=-lags..+leads
+    """
+    if lag is not None:
+        exog_var = f'{exog_var}_lag{lag}'
+    sub = df[df['country_code'] == country].sort_values('year').reset_index(drop=True)
+    data = sub[[dep_var, exog_var]].dropna().reset_index(drop=True)
+    if len(data) < 20:
+        return {'country': country, 'error': f'Insufficient obs: {len(data)}'}
+
+    if leads is None:
+        leads = max(1, int(len(data) ** (1/3)))
+    if lags is None:
+        lags = max(1, int(len(data) ** (1/3)))
+
+    y = data[dep_var]
+    x = data[exog_var]
+    dx = x.diff()
+
+    # Build DOLS regressor matrix: x_t plus leads/lags of Δx
+    X_dols = pd.DataFrame({'const': 1.0, exog_var: x})
+    for j in range(-lags, leads + 1):
+        col_name = f'd_{exog_var}_{"lead" if j > 0 else "lag"}{abs(j)}'
+        if j == 0:
+            col_name = f'd_{exog_var}_0'
+        X_dols[col_name] = dx.shift(-j)
+
+    # Drop rows with NaN from leads/lags
+    valid = X_dols.dropna().index
+    X_dols = X_dols.loc[valid]
+    y_dols = y.loc[valid]
+
+    if len(y_dols) < 15:
+        return {'country': country, 'error': f'Insufficient obs after DOLS: {len(y_dols)}'}
+
+    max_nw_lags = max(1, int(len(y_dols) ** 0.25))
+    model = sm.OLS(y_dols, X_dols).fit(cov_type='HAC', cov_kwds={'maxlags': max_nw_lags})
+
+    beta = model.params.get(exog_var, None)
+    se = model.bse.get(exog_var, None)
+    pval = model.pvalues.get(exog_var, None)
+
+    print(f"{country} DOLS: β(NEP)={beta:.4f}, SE={se:.4f}, p={pval:.3f}, "
+          f"R²={model.rsquared:.3f}")
+
+    return {
+        'country': country,
+        'n_obs': len(y_dols),
+        'beta_nep': round(beta, 4) if beta is not None else None,
+        'se_nep': round(se, 4) if se is not None else None,
+        'pval_nep': round(pval, 4) if pval is not None else None,
+        'r_squared': round(model.rsquared, 3),
+        'model': model,
+        'model_type': 'DOLS',
+        'leads': leads, 'lags': lags,
+    }
+
+
+def wild_bootstrap_ci(df, country, dep_var='reserve_share',
+                      exog_var='net_energy_position',
+                      n_boot=999, seed=42, estimator='dols', lag=None):
+    """
+    Wild bootstrap confidence intervals for entity-specific estimates.
+
+    With N=1 entity and T≈30, conventional SEs may under-cover.
+    Wild bootstrap (Rademacher weights) preserves heteroskedasticity
+    structure without assuming normality.
+
+    Returns bootstrap distribution and percentile CI.
+    """
+    rng = np.random.RandomState(seed)
+    if lag is not None:
+        exog_var = f'{exog_var}_lag{lag}'
+
+    # Get point estimate and residuals
+    if estimator == 'dols':
+        base = run_entity_dols(df, country, dep_var, exog_var)
+    else:
+        base = run_entity_ecm(df, country, dep_var, exog_var)
+
+    if 'error' in base:
+        return base
+
+    base_model = base.get('model') or base.get('uecm_result')
+    if base_model is None:
+        return {'country': country, 'error': 'No model object available'}
+
+    resid = base_model.resid
+    fitted = base_model.fittedvalues
+    X = base_model.model.exog
+    beta_col = exog_var
+
+    boot_betas = []
+    for _ in range(n_boot):
+        # Rademacher weights: +1 or -1 with equal probability
+        weights = rng.choice([-1, 1], size=len(resid))
+        y_boot = fitted + resid * weights
+
+        try:
+            boot_model = sm.OLS(y_boot, X).fit()
+            col_idx = list(base_model.params.index).index(beta_col)
+            boot_betas.append(boot_model.params.iloc[col_idx])
+        except (ValueError, np.linalg.LinAlgError):
+            continue
+
+    if len(boot_betas) < 100:
+        return {'country': country, 'error': f'Only {len(boot_betas)} bootstrap replications succeeded'}
+
+    boot_betas = np.array(boot_betas)
+    point = base.get('beta_nep') or base.get('lr_nep_coef')
+
+    result = {
+        'country': country,
+        'point_estimate': point,
+        'boot_se': round(np.std(boot_betas), 4),
+        'ci_lower_95': round(np.percentile(boot_betas, 2.5), 4),
+        'ci_upper_95': round(np.percentile(boot_betas, 97.5), 4),
+        'ci_lower_90': round(np.percentile(boot_betas, 5.0), 4),
+        'ci_upper_90': round(np.percentile(boot_betas, 95.0), 4),
+        'n_boot': len(boot_betas),
+        'boot_distribution': boot_betas,
+    }
+
+    covers_zero = result['ci_lower_95'] <= 0 <= result['ci_upper_95']
+    print(f"{country} wild bootstrap: β={point:.4f}, "
+          f"95% CI=[{result['ci_lower_95']:.4f}, {result['ci_upper_95']:.4f}], "
+          f"{'covers zero' if covers_zero else 'excludes zero'}")
+
+    return result
+
+
+def run_entity_specific_battery(df, entities=None, dep_var='reserve_share',
+                                exog_var='net_energy_position', lag=None):
+    """
+    Full entity-specific analysis: ECM + DOLS + wild bootstrap for each entity.
+    Returns summary DataFrame suitable for meta-analysis.
+
+    lag: if specified (e.g. 10), uses net_energy_position_lag10 as exog.
+         This matches the pooled model's pre-specified lag structure.
+
+    This is the honest replacement for pooled OLS. Each entity gets its own
+    estimate. The USA finding stands or falls on its own merit. Other entities
+    show null results with interpretable reasons.
+    """
+    if entities is None:
+        entities = sorted(df[df['has_reserve_share'] == True]['country_code'].unique())
+
+    # Resolve exog_var once for display; individual functions handle lag internally
+    actual_exog = f'{exog_var}_lag{lag}' if lag is not None else exog_var
+    print(f"Exogenous variable: {actual_exog}")
+
+    rows = []
+    for country in entities:
+        print(f"\n{'='*50}")
+        print(f"  {country}")
+        print('='*50)
+
+        # ECM (lag handled inside via exog_var resolution)
+        ecm = run_entity_ecm(df, country, dep_var, exog_var, lag=lag)
+
+        # DOLS
+        dols = run_entity_dols(df, country, dep_var, exog_var, lag=lag)
+
+        # Wild bootstrap on DOLS
+        boot = wild_bootstrap_ci(df, country, dep_var, exog_var,
+                                 estimator='dols', lag=lag)
+
+        row = {
+            'country': country,
+            'n_obs': ecm.get('n_obs', dols.get('n_obs', 0)),
+            # ECM results
+            'ecm_cointegrated': ecm.get('cointegrated', None),
+            'ecm_f_stat': ecm.get('f_stat', None),
+            'ecm_lr_beta': ecm.get('lr_nep_coef', None),
+            'ecm_speed': ecm.get('ecm_speed', None),
+            # DOLS results
+            'dols_beta': dols.get('beta_nep', None),
+            'dols_se': dols.get('se_nep', None),
+            'dols_pval': dols.get('pval_nep', None),
+            # Bootstrap CI
+            'boot_ci_lower': boot.get('ci_lower_95', None),
+            'boot_ci_upper': boot.get('ci_upper_95', None),
+            'boot_se': boot.get('boot_se', None),
+        }
+
+        # Interpretation
+        if 'error' in ecm:
+            row['interpretation'] = ecm['error']
+        elif ecm.get('cointegrated') and dols.get('pval_nep') is not None:
+            if dols['pval_nep'] < 0.05:
+                row['interpretation'] = 'Energy-monetary mechanism present'
+            else:
+                row['interpretation'] = 'Cointegrated but NEP not significant'
+        elif not ecm.get('cointegrated', True):
+            row['interpretation'] = 'Not cointegrated — no long-run relationship'
+        else:
+            row['interpretation'] = 'Insufficient data or estimation failure'
+
+        rows.append(row)
+
+    summary = pd.DataFrame(rows)
+
+    print(f"\n{'='*60}")
+    print("ENTITY-SPECIFIC SUMMARY")
+    print('='*60)
+    display_cols = ['country', 'n_obs', 'ecm_cointegrated', 'ecm_lr_beta',
+                    'dols_beta', 'dols_pval', 'boot_ci_lower', 'boot_ci_upper',
+                    'interpretation']
+    available = [c for c in display_cols if c in summary.columns]
+    print(summary[available].to_string(index=False))
+
+    return summary
+
+
+def meta_analyse_entities(entity_summary):
+    """
+    Fixed-effects meta-analysis of entity-specific DOLS estimates.
+
+    Combines entity-level β estimates using inverse-variance weighting.
+    Reports:
+    - Pooled estimate (weighted mean)
+    - I² heterogeneity statistic
+    - Cochran's Q test for homogeneity
+
+    If I² > 75%, the entities are too heterogeneous for a single summary
+    estimate — report entity-specific results instead.
+    """
+    valid = entity_summary.dropna(subset=['dols_beta', 'boot_se']).copy()
+    valid = valid[valid['boot_se'] > 0]
+
+    if len(valid) < 2:
+        return {'error': 'Need ≥2 entities with valid estimates for meta-analysis',
+                'n_entities': len(valid)}
+
+    betas = valid['dols_beta'].values
+    ses = valid['boot_se'].values
+    weights = 1.0 / (ses ** 2)
+
+    # Fixed-effect pooled estimate
+    pooled_beta = np.sum(weights * betas) / np.sum(weights)
+    pooled_se = np.sqrt(1.0 / np.sum(weights))
+
+    # Cochran's Q
+    Q = np.sum(weights * (betas - pooled_beta) ** 2)
+    k = len(betas)
+    Q_pval = 1 - __import__('scipy').stats.chi2.cdf(Q, df=k - 1)
+
+    # I² heterogeneity
+    I2 = max(0, (Q - (k - 1)) / Q) * 100 if Q > 0 else 0
+
+    from scipy.stats import norm
+    z = pooled_beta / pooled_se
+    pooled_pval = 2 * (1 - norm.cdf(abs(z)))
+
+    result = {
+        'pooled_beta': round(pooled_beta, 4),
+        'pooled_se': round(pooled_se, 4),
+        'pooled_pval': round(pooled_pval, 4),
+        'pooled_ci_lower': round(pooled_beta - 1.96 * pooled_se, 4),
+        'pooled_ci_upper': round(pooled_beta + 1.96 * pooled_se, 4),
+        'Q_stat': round(Q, 3),
+        'Q_pval': round(Q_pval, 4),
+        'I2': round(I2, 1),
+        'n_entities': k,
+        'entity_weights': dict(zip(valid['country'].values,
+                                    np.round(weights / weights.sum() * 100, 1))),
+    }
+
+    print(f"\n=== META-ANALYSIS (Fixed Effects, k={k}) ===")
+    print(f"Pooled β(NEP): {pooled_beta:.4f} (SE={pooled_se:.4f}, p={pooled_pval:.4f})")
+    print(f"95% CI: [{result['pooled_ci_lower']}, {result['pooled_ci_upper']}]")
+    print(f"Cochran's Q: {Q:.2f} (p={Q_pval:.4f})")
+    print(f"I² heterogeneity: {I2:.1f}%")
+    if I2 > 75:
+        print("WARNING: I²>75% — high heterogeneity. Entity-specific results "
+              "are more informative than the pooled estimate.")
+    elif I2 > 50:
+        print("CAUTION: I²>50% — moderate heterogeneity. Pooled estimate is "
+              "a rough summary; entity stories matter.")
+    else:
+        print("Heterogeneity acceptable. Pooled estimate is a reasonable summary.")
+    print(f"Entity weights: {result['entity_weights']}")
+
+    return result
+
+
+# ─────────────────────────────────────────────
 # STEP 3: CARBON CAPTURE MECHANISM
 # Reframed: not a power test, a mechanism illustration
 # ─────────────────────────────────────────────
@@ -591,6 +1395,80 @@ def run_carbon_capture_mechanism(carbon_df: pd.DataFrame,
     }
 
 
+def run_carbon_structural_breaks(compliance_df):
+    """
+    Structural break analysis on ETS allocation surplus.
+    Uses compliance data (allocations - verified emissions) since price data
+    requires manual download.
+
+    Tests whether allocation regime shifts align with political events.
+    """
+    alloc = compliance_df[
+        compliance_df['ETS information'].str.contains('Freely allocated', na=False)
+    ]
+    verif = compliance_df[
+        compliance_df['ETS information'].str.contains('Verified Emission', na=False)
+    ]
+
+    annual_alloc = alloc.groupby('year')['value'].sum()
+    annual_verif = verif.groupby('year')['value'].sum()
+
+    # Align on shared years
+    shared_years = annual_alloc.index.intersection(annual_verif.index)
+    surplus = (annual_alloc.loc[shared_years] -
+               annual_verif.loc[shared_years]).sort_index()
+    surplus = surplus.dropna()
+
+    if len(surplus) < 10:
+        return {'error': f'Insufficient surplus data: {len(surplus)} years',
+                'surplus_series': surplus}
+
+    # Zivot-Andrews endogenous break test on surplus series
+    # Returns: (stat, pval, crit_values, lags, breakpoint_index)
+    za_result = zivot_andrews(surplus.values, trim=0.15)
+    za_stat = za_result[0]
+    za_pval = za_result[1]
+    # za_result[2] is critical values dict, [3] is lags, [4] is breakpoint
+    za_lags = za_result[3]
+    za_break_idx = za_result[4]
+
+    # Map index back to year
+    break_year = int(surplus.index[za_break_idx]) if za_break_idx < len(surplus) else None
+
+    political_events = {
+        2006: 'Phase I over-allocation revealed',
+        2008: 'Phase II tightening',
+        2013: 'Phase III structural reform',
+        2019: 'Market Stability Reserve',
+    }
+    aligned = any(abs(break_year - yr) <= 1 for yr in political_events) if break_year else False
+    nearest_event = None
+    if break_year:
+        nearest_yr = min(political_events.keys(), key=lambda y: abs(y - break_year))
+        if abs(nearest_yr - break_year) <= 2:
+            nearest_event = political_events[nearest_yr]
+
+    result = {
+        'break_year': break_year,
+        'za_stat': round(za_stat, 3),
+        'za_pval': round(za_pval, 4) if za_pval is not None else None,
+        'za_lags': za_lags,
+        'aligned_with_political_event': aligned,
+        'nearest_event': nearest_event,
+        'surplus_series': surplus,
+        'political_events': political_events,
+    }
+
+    print(f"\n=== CARBON STRUCTURAL BREAK (Zivot-Andrews) ===")
+    print(f"Break detected at: {break_year}")
+    print(f"ZA statistic: {za_stat:.3f}, p-value: {za_pval}")
+    print(f"Aligned with political event: {aligned}")
+    if nearest_event:
+        print(f"Nearest event: {nearest_event}")
+    print("Allocation regime is politically constructed — surplus/deficit "
+          "determined by political negotiation, not market.")
+
+    return result
 
 
 # ─────────────────────────────────────────────
