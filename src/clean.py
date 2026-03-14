@@ -29,7 +29,7 @@ DATA_RAW = os.path.join(_SRC_DIR, '..', 'data', 'raw')
 DATA_PROCESSED = os.path.join(_SRC_DIR, '..', 'data', 'processed')
 
 # Focal countries whose missingness we actively warn about
-FOCAL_ISO3 = {'CHN', 'IND', 'RUS', 'JPN'}
+FOCAL_ISO3 = {'CHN', 'IND', 'RUS', 'JPN', 'EMU'}
 
 # Master country-name -> ISO3 mapping used across OWID and World Bank sources
 COUNTRY_NAME_TO_ISO3 = {
@@ -181,8 +181,10 @@ COUNTRY_NAME_TO_ISO3 = {
     'Zambia':                       'ZMB',
     'Zimbabwe':                     'ZWE',
 
-    # European Union aggregate (appears in some OWID series)
-    'European Union (27)':          'EU27',
+    # European Union / Euro area aggregates — mapped to EMU to join with COFER EUR rows
+    # (CURRENCY_TO_ISO3 maps EUR -> EMU)
+    'European Union (27)':          'EMU',
+    'Euro area':                    'EMU',   # World Bank "Euro area" aggregate
     'Europe':                       'EUR_REGION',
     'Asia Pacific':                 'ASIA_PAC',
     'Africa':                       'AFR_REGION',
