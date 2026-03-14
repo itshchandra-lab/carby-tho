@@ -119,13 +119,8 @@ INR FX turnover share approaches 3–5%.
 
 **At IMF COFER 2035–2040:**
 
-AUD reserve share maintained or increased post-AUKUS nuclear capacity.
-*Falsify if: AUD share declines after AUKUS nuclear capacity comes online.*
-
-Note: the Katzenstein filter predicts AUD niche *reinforcement*, not independent
-growth. The falsification here is weaker than India's: if AUD share falls after
-AUKUS nuclear capacity, the niche reinforcement prediction fails. If AUD share
-rises disproportionately, the Katzenstein filter — not the TMPI — is refuted.
+AUD reserve share remains within ±0.5 percentage points of its 2022 level (~6.7% of allocated reserves) through 2040, conditional on AUKUS nuclear capacity coming online.
+*Falsify if: AUD share falls more than 1 percentage point below 2022 level after AUKUS nuclear capacity is confirmed operational. Note: the failure condition is asymmetric — a sharp decline (>1pp) falsifies niche reinforcement; a sharp rise (>2pp) would falsify the Katzenstein filter (niche reinforcement, not independent activation).*
 
 **At BIS Triennial 2037:**
 

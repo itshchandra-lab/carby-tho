@@ -76,6 +76,8 @@ No commodity with a fixed physical supply — not even those subject to supply s
 — exhibits a near-total price collapse driven by a political accounting revelation.
 This is the signature of GS ≫ 1.
 
+**A note on CV estimation.** The CV=0.815 is computed from annual average EUA prices, which suppress intra-year volatility. Phase I prices opened at ~€18/tCO2 in 2005–2006 and closed at ~€0.80/tCO2 by end-2007 — a 22-fold peak-to-trough movement within a 30-month window. Annual averages compress this into three data points. The true daily CV substantially exceeds 0.815. Our GS estimate of 2.79 is therefore a conservative lower bound on the political construction of Phase I EU ETS governance.
+
 RGGI Phase 2 (post-reform, 2014–2024) shows CV=0.552 — substantially above Phase 1's
 0.047. This is directionally consistent with the GS argument: as political contestation
 over the RGGI cap increased post-2014, governance sensitivity rose. GS is not a fixed

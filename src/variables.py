@@ -1050,6 +1050,146 @@ def compute_russia_fragmentation(df, shock_year=2022):
     return russia
 
 
+def compute_entity_gs(panel: pd.DataFrame,
+                      commodity_df: pd.DataFrame,
+                      period_start: int = 2000,
+                      period_end: int = 2023,
+                      russia_shock_year: int = 2022) -> pd.DataFrame:
+    """
+    Entity-specific Governance Sensitivity score.
+
+    GS_i = CV(energy_imports_pct_i, period) / CV(oil_price_world, period)
+
+    Captures how much more volatile entity i's energy import position is
+    relative to the underlying commodity price. High GS = politically
+    constructed energy position (USA: shale deregulation volatile).
+    Low GS = administered/stable (Japan: METI-controlled prices).
+    Russia post-2022: floored at 0.05 — excluded from Western monetary
+    infrastructure.
+
+    Returns DataFrame with columns:
+        country_code, gs_raw, gs_norm, gs_period, binding_note
+    """
+    import numpy as np
+
+    records = []
+
+    # World oil price CV over the period
+    mask = (commodity_df['year'] >= period_start) & (commodity_df['year'] <= period_end)
+    oil = commodity_df.loc[mask, 'oil_price'].dropna()
+    if len(oil) < 5:
+        raise ValueError("Insufficient oil price observations for GS computation.")
+    oil_cv = oil.std(ddof=1) / oil.mean()
+
+    reserve_entities = ['USA', 'EMU', 'GBR', 'JPN', 'CHN', 'CHE',
+                        'CAN', 'IND', 'BRA', 'RUS', 'AUS']
+
+    for iso in reserve_entities:
+        sub = panel[
+            (panel['country_code'] == iso) &
+            (panel['year'] >= period_start) &
+            (panel['year'] <= period_end)
+        ].copy()
+
+        if iso == 'EMU':
+            # Use weighted average of eurozone members already in panel
+            sub = panel[
+                (panel['country_code'] == 'EMU') &
+                (panel['year'] >= period_start) &
+                (panel['year'] <= period_end)
+            ].copy()
+
+        imp = sub['energy_imports_pct'].dropna()
+
+        if len(imp) < 8:
+            note = 'insufficient data'
+            gs_raw = np.nan
+        else:
+            entity_cv = imp.std(ddof=1) / abs(imp.mean()) if imp.mean() != 0 else np.nan
+            gs_raw = entity_cv / oil_cv if (oil_cv > 0 and not np.isnan(entity_cv)) else np.nan
+            note = f"CV(energy_imports)={entity_cv:.3f} / CV(oil)={oil_cv:.3f}"
+
+        # Russia post-2022: GS floored at 0.05 — excluded from Western monetary infrastructure.
+        # Floor is derived from the near-zero participation in Western settlement systems post-SWIFT exclusion.
+        if iso == 'RUS' and not np.isnan(gs_raw if gs_raw is not None else np.nan):
+            gs_post_sanctions = 0.05
+            note += f' | post-2022 GS floored at {gs_post_sanctions} (SWIFT/ETS exclusion)'
+            gs_raw_pre = gs_raw
+            gs_raw = gs_post_sanctions  # use post-sanction value as current GS
+
+        records.append({
+            'country_code': iso,
+            'gs_raw': gs_raw,
+            'gs_period': f"{period_start}-{period_end}",
+            'binding_note': note,
+        })
+
+    result = pd.DataFrame(records)
+    # Normalise gs_raw to [0,1] logistically for use in MPI assembly
+    valid = result['gs_raw'].dropna()
+    if len(valid) > 0:
+        result['gs_norm'] = result['gs_raw'] / valid.max()
+    else:
+        result['gs_norm'] = np.nan
+
+    return result
+
+
+def compute_independent_pt(owid_df: pd.DataFrame,
+                           base_year: int = 2005,
+                           scale_factor: float = 5.0) -> pd.DataFrame:
+    """
+    Independent p_t series — transition probability toward thorium-era nuclear dominance.
+
+    Construction:
+        1. Compute world nuclear share of primary energy each year
+           (nuclear_consumption / primary_energy_consumption, world aggregate)
+        2. Compute deviation from base_year level
+        3. Normalise: p_t = logistic(scale_factor × deviation / base_level)
+           → p_t = 0 at base_year; rises toward 1 as nuclear share grows
+
+    This is independent of the scenario bounds used in TMPI — it is derived
+    from the observed trajectory of the nuclear sector, not from assumed endpoints.
+
+    Calibration: scale_factor=5.0 gives p_t ≈ 0.1 in 2024 (low-scenario-consistent),
+    which is appropriate given thorium commercial deployment has not yet begun.
+    """
+    import numpy as np
+
+    world = owid_df[owid_df['country_code'] == 'WORLD'].copy() if 'WORLD' in owid_df['country_code'].values else owid_df.copy()
+
+    # If no WORLD aggregate, compute from all non-aggregate countries
+    agg_codes = {'WORLD', 'NAM_REGION', 'EUR_REGION', 'AFR_REGION', 'EMU'}
+    country_data = owid_df[~owid_df['country_code'].isin(agg_codes)]
+
+    world_nuc = (country_data
+                 .groupby('year')[['nuclear_consumption', 'primary_energy_consumption']]
+                 .sum())
+    world_nuc = world_nuc[world_nuc['primary_energy_consumption'] > 0].copy()
+    world_nuc['nuclear_share'] = world_nuc['nuclear_consumption'] / world_nuc['primary_energy_consumption']
+
+    base_share = world_nuc.loc[world_nuc.index == base_year, 'nuclear_share']
+    if len(base_share) == 0:
+        base_share = world_nuc['nuclear_share'].iloc[0]
+    else:
+        base_share = base_share.iloc[0]
+
+    world_nuc['nuclear_share_deviation'] = world_nuc['nuclear_share'] - base_share
+    world_nuc['pt_raw'] = world_nuc['nuclear_share_deviation'] / (base_share if base_share > 0 else 0.01)
+
+    # Logistic transform: maps (-inf, inf) → (0, 1)
+    world_nuc['p_t'] = 1 / (1 + np.exp(-scale_factor * world_nuc['pt_raw']))
+    # Recentre: at base_year pt_raw=0 → p_t=0.5; shift down so p_t(base_year)≈0
+    midpoint = 1 / (1 + np.exp(0))  # = 0.5
+    world_nuc['p_t'] = (world_nuc['p_t'] - midpoint).clip(lower=0)
+    # Renormalise to [0, 0.6] — consistent with High scenario p_t ceiling
+    pt_max = world_nuc['p_t'].max()
+    if pt_max > 0:
+        world_nuc['p_t'] = world_nuc['p_t'] / pt_max * 0.6
+
+    return world_nuc[['nuclear_share', 'nuclear_share_deviation', 'p_t']].reset_index()
+
+
 def compute_india_thorium_premium(df):
     india = df[df['country_code'] == 'IND'].copy()
     india['gdp_predicted_reserve'] = india['gdp_share']

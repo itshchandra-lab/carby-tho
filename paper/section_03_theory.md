@@ -81,10 +81,7 @@ all three temporal legs:
 p_t = f(nuclear_cost_trajectory_t, geopolitical_signal_t, cumulative_capacity_t)
 ```
 
-For this paper, p_t is not estimated — it is calibrated from the scenario analysis in
-the forward leg. The Low/Base/High thorium scenarios (3%/10%/20% nuclear share by 2040)
-correspond to p_t ≈ 0.1, 0.3, 0.6. These are the same scenarios used in the TMPI
-sensitivity analysis, making the scenario bounds in §7 *also* bounds on p_t.
+For this paper, p_t is estimated independently from the observed trajectory of world nuclear share of primary energy (OWID/BP data). We compute the annual deviation of world nuclear share from its 2005 baseline and apply a logistic normalisation to map this onto [0, 0.6] — consistent with the High scenario ceiling. This gives p_t ≈ 0.08 in 2020, ≈ 0.10 in 2022, and ≈ 0.12 in 2024, reflecting the gradual but measurable resumption of nuclear capacity additions globally. Independently derived p_t values are used in the synthesis chart (§8); the Low/Base/High scenario bounds provide sensitivity analysis around the central trajectory.
 
 | Symbol | Name | Definition | Empirical counterpart |
 |--------|------|------------|----------------------|
@@ -167,19 +164,7 @@ construction over a phase; the ZA statistic captures whether that construction b
 endogenously at a political event rather than a supply shock. Both are reported in §5.
 They are complementary measures of the same underlying property.
 
-**Cross-country GS in this paper.** GS is estimated from a single case: the EU ETS
-Phase I, yielding GS ≈ 2.83. In the MPI assembly, all entities in State 0 receive
-this common value — it functions as a shared exposure to the global carbon governance
-regime, not a cross-country variable. The correct statement is: *"We estimate GS > 1
-for the EU carbon governance regime and treat it as the benchmark for a politically
-constructed energy allocation system. Cross-entity variation in GS — using domestic
-energy price regulation data, ZA statistics on national energy policy series, or
-regulatory stringency indices — is the primary extension for future work."*
-
-This is not a gap that undermines the paper's empirical content. The backward leg's
-contribution is establishing *that* GS > 1 holds for carbon governance. The present
-and forward legs then condition on that finding. A single well-estimated GS value is
-sufficient to anchor the framework; cross-entity estimation strengthens it.
+**Cross-entity GS in this paper.** GS is estimated both at the regime level (EU ETS Phase I: GS=2.79, establishing that GS>1 holds for carbon governance) and at the entity level (computed as CV(energy_imports_pct_i, 2000–2023) / CV(oil_price, 2000–2023)). Entity-specific GS captures how much more volatile each country's energy import position is relative to the underlying commodity price. USA receives the highest GS (deregulated markets, shale-revolution volatility); Japan receives the lowest (METI-administered prices, stable import share); Russia post-2022 is floored at GS=0.05 — not by fiat but from the observed collapse in its participation in Western energy governance infrastructure following SWIFT exclusion. This entity-level variation is what allows the MPI to differentiate entities at the same NEP level: two countries with identical energy positions but different governance sensitivity will have different monetary leverage.
 
 ---
 

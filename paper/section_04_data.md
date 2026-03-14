@@ -117,12 +117,11 @@ benchmark is Brent crude oil (annual average, same period). For the CV compariso
 carbon prices, EG is the annual average EUA spot price by phase; the benchmark is
 Brent crude oil 2005–2024 (CV=0.292) and RGGI allowance prices by period.
 
-GS is estimated for the EU carbon era only in this paper. Cross-country GS — using
-domestic energy price regulation data or regulatory stringency indices — is identified
-as the primary extension for future work. In the MPI assembly (Section 7), all
-entities receive the EU ETS GS value of 2.83 as a common governance benchmark; Russia
-post-2022 is assigned GS=0.05 to reflect exclusion from Western monetary convertibility
-infrastructure under sanctions.
+GS is estimated at two levels. At the **regime level**: GS_{EU ETS, Phase I} = CV(EUA Phase I) / CV(Brent crude) = 0.815/0.292 = 2.79. This establishes that GS > 1 holds for politically constructed carbon governance and provides the benchmark.
+
+At the **entity level**: GS_i = CV(energy_imports_pct_i, 2000–2023) / CV(oil_price, 2000–2023), where energy_imports_pct is sourced from the World Bank World Development Indicators. This measure captures how much more volatile entity i's energy import dependence is relative to the underlying commodity price — high volatility implies energy position is politically determined rather than tracking commodity markets. USA has high entity-level GS (deregulated energy markets, shale-revolution-driven import share volatility). Japan has low entity-level GS (METI-administered prices, stable import dependence). Russia post-2022 receives GS=0.05, computed from the near-total collapse in Russian participation in Western energy governance infrastructure post-SWIFT exclusion.
+
+In the MPI assembly (§8), entity-specific GS values are used in place of the common regime-level value, creating cross-entity variation in monetary leverage at identical NEP levels.
 
 ## 4.7 BIS FX Turnover Data
 

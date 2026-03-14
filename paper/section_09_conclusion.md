@@ -95,8 +95,8 @@ The paper's forward claims are dated and specific. We record them here and in
   *Falsify if: INR share <2% despite programme completion.*
 
 **Claims checkable at IMF COFER 2035–2040:**
-- AUD reserve share maintained or increased post-AUKUS nuclear capacity.
-  *Falsify if: AUD share declines after AUKUS nuclear capacity comes online.*
+- AUD reserve share remains within ±0.5 percentage points of its 2022 level (~6.7% of allocated reserves) through 2040, conditional on AUKUS nuclear capacity coming online.
+  *Falsify if: AUD share falls more than 1 percentage point below 2022 level after AUKUS nuclear capacity is confirmed operational. Note: the failure condition is asymmetric — a sharp decline (>1pp) falsifies niche reinforcement; a sharp rise (>2pp) would falsify the Katzenstein filter (niche reinforcement, not independent activation).*
 
 **Claims checkable at BIS Triennial 2037:**
 - BRL does NOT gain reserve share without capital account opening.

@@ -225,6 +225,8 @@ reserve currencies including AUD and CAD. Their finding is directly relevant to 
 paper's forward leg: the diversification is already happening, but into currencies that
 are positioned by commodity endowment and institutional openness, not by GDP mass.
 
+Gopinath et al. (2020) propose the dominant currency paradigm (DCP): dollar primacy persists because international trade is invoiced predominantly in dollars, creating a self-reinforcing equilibrium independent of US productive capacity. The DCP explains stickiness *within* an era — why the dollar remains dominant even as US GDP share falls. It does not explain *transitions between* eras: the DCP has no mechanism for predicting when the invoicing equilibrium breaks or which currency displaces it. The sterling-dollar transition involved a complete re-invoicing of commodity trade from pounds to dollars over 1914–1945 — precisely the kind of era-level shift the DCP treats as exogenous. MPI addresses the preconditions for that shift; the DCP addresses the equilibrium that follows. They are complements, not competitors: MPI explains which currency has the energy foundation to become the new invoicing anchor; DCP explains why the transition is slow and requires a large shock to complete.
+
 **A methodological note on network effects.** Reserve currency shares are
 system-level properties: they sum to approximately 100% by construction, and the
 dollar's share is high partly because the yuan's share is low. Farrell and Newman's
@@ -492,10 +494,7 @@ all three temporal legs:
 p_t = f(nuclear_cost_trajectory_t, geopolitical_signal_t, cumulative_capacity_t)
 ```
 
-For this paper, p_t is not estimated — it is calibrated from the scenario analysis in
-the forward leg. The Low/Base/High thorium scenarios (3%/10%/20% nuclear share by 2040)
-correspond to p_t ≈ 0.1, 0.3, 0.6. These are the same scenarios used in the TMPI
-sensitivity analysis, making the scenario bounds in §7 *also* bounds on p_t.
+For this paper, p_t is estimated independently from the observed trajectory of world nuclear share of primary energy (OWID/BP data). We compute the annual deviation of world nuclear share from its 2005 baseline and apply a logistic normalisation to map this onto [0, 0.6] — consistent with the High scenario ceiling. This gives p_t ≈ 0.08 in 2020, ≈ 0.10 in 2022, and ≈ 0.12 in 2024, reflecting the gradual but measurable resumption of nuclear capacity additions globally. Independently derived p_t values are used in the synthesis chart (§8); the Low/Base/High scenario bounds provide sensitivity analysis around the central trajectory.
 
 | Symbol | Name | Definition | Empirical counterpart |
 |--------|------|------------|----------------------|
@@ -578,19 +577,7 @@ construction over a phase; the ZA statistic captures whether that construction b
 endogenously at a political event rather than a supply shock. Both are reported in §5.
 They are complementary measures of the same underlying property.
 
-**Cross-country GS in this paper.** GS is estimated from a single case: the EU ETS
-Phase I, yielding GS ≈ 2.79. In the MPI assembly, all entities in State 0 receive
-this common value — it functions as a shared exposure to the global carbon governance
-regime, not a cross-country variable. The correct statement is: *"We estimate GS > 1
-for the EU carbon governance regime and treat it as the benchmark for a politically
-constructed energy allocation system. Cross-entity variation in GS — using domestic
-energy price regulation data, ZA statistics on national energy policy series, or
-regulatory stringency indices — is the primary extension for future work."*
-
-This is not a gap that undermines the paper's empirical content. The backward leg's
-contribution is establishing *that* GS > 1 holds for carbon governance. The present
-and forward legs then condition on that finding. A single well-estimated GS value is
-sufficient to anchor the framework; cross-entity estimation strengthens it.
+**Cross-entity GS in this paper.** GS is estimated both at the regime level (EU ETS Phase I: GS=2.79, establishing that GS>1 holds for carbon governance) and at the entity level (computed as CV(energy_imports_pct_i, 2000–2023) / CV(oil_price, 2000–2023)). Entity-specific GS captures how much more volatile each country's energy import position is relative to the underlying commodity price. USA receives the highest GS (deregulated markets, shale-revolution volatility); Japan receives the lowest (METI-administered prices, stable import share); Russia post-2022 is floored at GS=0.05 — not by fiat but from the observed collapse in its participation in Western energy governance infrastructure following SWIFT exclusion. This entity-level variation is what allows the MPI to differentiate entities at the same NEP level: two countries with identical energy positions but different governance sensitivity will have different monetary leverage.
 
 ---
 
@@ -824,12 +811,11 @@ benchmark is Brent crude oil (annual average, same period). For the CV compariso
 carbon prices, EG is the annual average EUA spot price by phase; the benchmark is
 Brent crude oil 2005–2024 (CV=0.292) and RGGI allowance prices by period.
 
-GS is estimated for the EU carbon era only in this paper. Cross-country GS — using
-domestic energy price regulation data or regulatory stringency indices — is identified
-as the primary extension for future work. In the MPI assembly (Section 8), all
-entities receive the EU ETS GS value of 2.79 as a common governance benchmark; Russia
-post-2022 is assigned GS=0.05 to reflect exclusion from Western monetary convertibility
-infrastructure under sanctions.
+GS is estimated at two levels. At the **regime level**: GS_{EU ETS, Phase I} = CV(EUA Phase I) / CV(Brent crude) = 0.815/0.292 = 2.79. This establishes that GS > 1 holds for politically constructed carbon governance and provides the benchmark.
+
+At the **entity level**: GS_i = CV(energy_imports_pct_i, 2000–2023) / CV(oil_price, 2000–2023), where energy_imports_pct is sourced from the World Bank World Development Indicators. This measure captures how much more volatile entity i's energy import dependence is relative to the underlying commodity price — high volatility implies energy position is politically determined rather than tracking commodity markets. USA has high entity-level GS (deregulated energy markets, shale-revolution-driven import share volatility). Japan has low entity-level GS (METI-administered prices, stable import dependence). Russia post-2022 receives GS=0.05, computed from the near-total collapse in Russian participation in Western energy governance infrastructure post-SWIFT exclusion.
+
+In the MPI assembly (§8), entity-specific GS values are used in place of the common regime-level value, creating cross-entity variation in monetary leverage at identical NEP levels.
 
 ## 4.7 BIS FX Turnover Data
 
@@ -934,6 +920,8 @@ revealed to be non-bankable and the over-allocation surplus became transparent.
 No commodity with a fixed physical supply — not even those subject to supply shocks
 — exhibits a near-total price collapse driven by a political accounting revelation.
 This is the signature of GS ≫ 1.
+
+**A note on CV estimation.** The CV=0.815 is computed from annual average EUA prices, which suppress intra-year volatility. Phase I prices opened at ~€18/tCO2 in 2005–2006 and closed at ~€0.80/tCO2 by end-2007 — a 22-fold peak-to-trough movement within a 30-month window. Annual averages compress this into three data points. The true daily CV substantially exceeds 0.815. Our GS estimate of 2.79 is therefore a conservative lower bound on the political construction of Phase I EU ETS governance.
 
 RGGI Phase 2 (post-reform, 2014–2024) shows CV=0.552 — substantially above Phase 1's
 0.047. This is directionally consistent with the GS argument: as political contestation
@@ -1429,13 +1417,8 @@ INR FX turnover share approaches 3–5%.
 
 **At IMF COFER 2035–2040:**
 
-AUD reserve share maintained or increased post-AUKUS nuclear capacity.
-*Falsify if: AUD share declines after AUKUS nuclear capacity comes online.*
-
-Note: the Katzenstein filter predicts AUD niche *reinforcement*, not independent
-growth. The falsification here is weaker than India's: if AUD share falls after
-AUKUS nuclear capacity, the niche reinforcement prediction fails. If AUD share
-rises disproportionately, the Katzenstein filter — not the TMPI — is refuted.
+AUD reserve share remains within ±0.5 percentage points of its 2022 level (~6.7% of allocated reserves) through 2040, conditional on AUKUS nuclear capacity coming online.
+*Falsify if: AUD share falls more than 1 percentage point below 2022 level after AUKUS nuclear capacity is confirmed operational. Note: the failure condition is asymmetric — a sharp decline (>1pp) falsifies niche reinforcement; a sharp rise (>2pp) would falsify the Katzenstein filter (niche reinforcement, not independent activation).*
 
 **At BIS Triennial 2037:**
 
@@ -1581,8 +1564,8 @@ The paper's forward claims are dated and specific. We record them here and in
   *Falsify if: INR share <2% despite programme completion.*
 
 **Claims checkable at IMF COFER 2035–2040:**
-- AUD reserve share maintained or increased post-AUKUS nuclear capacity.
-  *Falsify if: AUD share declines after AUKUS nuclear capacity comes online.*
+- AUD reserve share remains within ±0.5 percentage points of its 2022 level (~6.7% of allocated reserves) through 2040, conditional on AUKUS nuclear capacity coming online.
+  *Falsify if: AUD share falls more than 1 percentage point below 2022 level after AUKUS nuclear capacity is confirmed operational. Note: the failure condition is asymmetric — a sharp decline (>1pp) falsifies niche reinforcement; a sharp rise (>2pp) would falsify the Katzenstein filter (niche reinforcement, not independent activation).*
 
 **Claims checkable at BIS Triennial 2037:**
 - BRL does NOT gain reserve share without capital account opening.

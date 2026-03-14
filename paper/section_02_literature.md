@@ -29,6 +29,8 @@ reserve currencies including AUD and CAD. Their finding is directly relevant to 
 paper's forward leg: the diversification is already happening, but into currencies that
 are positioned by commodity endowment and institutional openness, not by GDP mass.
 
+Gopinath et al. (2020) propose the dominant currency paradigm (DCP): dollar primacy persists because international trade is invoiced predominantly in dollars, creating a self-reinforcing equilibrium independent of US productive capacity. The DCP explains stickiness *within* an era — why the dollar remains dominant even as US GDP share falls. It does not explain *transitions between* eras: the DCP has no mechanism for predicting when the invoicing equilibrium breaks or which currency displaces it. The sterling-dollar transition involved a complete re-invoicing of commodity trade from pounds to dollars over 1914–1945 — precisely the kind of era-level shift the DCP treats as exogenous. MPI addresses the preconditions for that shift; the DCP addresses the equilibrium that follows. They are complements, not competitors: MPI explains which currency has the energy foundation to become the new invoicing anchor; DCP explains why the transition is slow and requires a large shock to complete.
+
 **A methodological note on network effects.** Reserve currency shares are
 system-level properties: they sum to approximately 100% by construction, and the
 dollar's share is high partly because the yuan's share is low. Farrell and Newman's
