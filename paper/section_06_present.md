@@ -163,3 +163,36 @@ USA and negative and significant for EMU; the Japan natural experiment provides
 exogenous identification; I²>90% confirms heterogeneous slopes requiring entity-
 specific rather than pooled estimation. Pooled β≈84 is reported as a descriptive
 baseline, not as the headline result.
+
+## 6.8 Limitations
+
+**Uniform lag λ=10.** The λ≈10 year transmission lag is estimated from the USA case
+and applied uniformly to all entities. This is an assumption, not a finding. Entity-
+specific lag estimation is the primary empirical extension for the revision stage;
+it requires longer time series than are available for CNY and post-2004 EMU. The
+directional results are robust to λ=8 and λ=12 (reported in the DOLS robustness
+tables), but the uniform lag imposes equal transmission speed across structurally
+different capital markets. Readers should treat entity-level coefficient magnitudes
+as illustrative of mechanism direction, not precise structural parameters.
+
+**EMU reserve share: energy vs. institutional confound.** The r=0.864 correlation
+between lagged EMU NEP and EUR reserve share decline (1999–2024) spans the 2010–2015
+eurozone sovereign debt crisis, which caused compositional shifts in central bank
+reserves independent of energy position. No event-study design is attempted to
+isolate the energy effect from the institutional fragility effect. The correlation
+is consistent with the mechanism but does not distinguish it from an alternative
+in which the sovereign debt crisis — itself partly driven by energy import costs on
+peripheral eurozone economies — is the operative variable. Both channels would
+produce the same observed correlation. This paper does not claim to have separated
+them.
+
+**Katzenstein prediction asymmetry.** The cross-case falsification structure
+(India gains, Australia does not gain disproportionately) tests the Katzenstein
+alliance-structure filter in only one direction. If India gains and Australia also
+gains independently, the filter is refuted but the underlying mechanism survives.
+If neither gains, the mechanism is falsified. This means the theory can survive
+three of four possible outcomes — a weaker falsification structure than the within-
+case AUD and INR predictions taken individually. The cross-case test should be
+read as a comparative check on the alliance filter, not as the primary mechanism
+test. The primary tests are the dated BIS and COFER predictions with quantified
+thresholds.
