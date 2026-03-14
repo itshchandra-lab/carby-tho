@@ -1,0 +1,12 @@
+iso3,name,role,in_cofer_panel,approx_bis_fx_share_pct,function
+USA,United States,Reserve currency issuer,True,88.5,Anchor currency
+EMU,Euro Area,Reserve currency issuer,True,30.5,Second reserve currency
+GBR,United Kingdom,Reserve currency issuer,True,12.9,Legacy reserve currency
+JPN,Japan,Reserve currency issuer,True,16.7,Yen carry trade hub
+CHE,Switzerland,Reserve currency issuer,True,5.2,Safe haven currency
+CHN,China,Reserve currency issuer (emerging),True,7.0,Rising reserve role
+IND,India,TMPI focal case,False,1.6,Binding constraint: capital account
+AUS,Australia,TMPI focal case,False,6.4,Binding constraint: nuclear capacity (AUKUS ~2035)
+BRA,Brazil,TMPI focal case,False,0.9,Double constraint: capacity + institutions
+CAN,Canada,TMPI focal case (already reserve),False,6.2,Already reserve currency; energy link may strengthen CAD
+RUS,Russia,TMPI focal case (sanctions),False,0.0,RUB absent from BIS; bilateral corridors \!= reserve status

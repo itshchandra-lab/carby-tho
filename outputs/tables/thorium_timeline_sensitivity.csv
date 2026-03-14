@@ -1,0 +1,4 @@
+scenario,thorium_share_2040_pct,bis_check_year,description,rank_1,rank_2,rank_3,tmpi_scale_factor,ranking_order_stable
+Low,3%,2050,3% of world primary energy by 2040 (slow deployment),USA,CAN,IND,0.3,True
+Base,10%,2040,10% of world primary energy by 2040 (base case),USA,CAN,IND,1.0,True
+High,20%,2035,20% of world primary energy by 2040 (fast deployment),USA,CAN,IND,2.0,True
