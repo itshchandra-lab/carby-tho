@@ -1,0 +1,5 @@
+Country,ISO3,Thorium Share,Nuclear Capacity,Capital Openness,FX Turnover 2022,TMPI Case,Reserves ✓/✗,Capacity ✓/✗,Institutions ✓/✗
+India,IND,16.1%,Active (3-stage),Closed (-1.25),1.6%,HIGH — all three present,✓,✓,~
+Australia,AUS,12.6%,NONE (pre-AUKUS),Open (2.28),6.4%,Capacity gap (AUKUS changes this),✓,✗,✓
+Brazil,BRA,13.4%,Minimal (Angra),Closed (-1.25),0.9%,Double constraint (capacity + institutions),✓,✗,✗
+Canada,CAN,2.8%,CANDU programme,Open (2.28),6.2%,"Modest reserves, strong rest",~,✓,✓

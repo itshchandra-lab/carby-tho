@@ -1,0 +1,5 @@
+Specification,NEP lag (yr),Differenced,β (NEP),SE,p-value,R²,N obs,Significant
+levels_lag10,10,False,85.433,37.544,0.023,0.997,123,True
+levels_lag15,15,False,105.6546,37.4707,0.005,0.998,123,True
+diff_lag10,10,True,59.7913,46.203,0.196,0.366,118,False
+diff_lag15,15,True,-5.971,37.8168,0.875,0.347,118,False

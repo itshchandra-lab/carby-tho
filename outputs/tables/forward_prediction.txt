@@ -1,0 +1,28 @@
+
+FALSIFIABLE FORWARD PREDICTION
+================================
+
+Based on TMPI scores computed from USGS 2024 thorium reserves,
+OWID nuclear capacity data, and World Bank governance indicators:
+
+HIGH TMPI (positioned for thorium-era monetary leverage):
+  → India: Reserves ✓, Capacity ✓, Institutions improving
+
+CAPACITY-CONSTRAINED (reserves present, nuclear absent):
+  → Australia: Reserves ✓, Capacity ✗ (AUKUS may change this by 2035)
+
+INSTITUTIONALLY CONSTRAINED (reserves + capacity, but capital closed):
+  → Brazil: Reserves ✓, Capacity ✗, Capital controls persist
+
+MODEST RESERVES, STRONG INSTITUTIONS:
+  → Canada: Reserves ~, CANDU ✓, Institutions ✓ → already reserve currency (CAD)
+
+PREDICTION:
+  If thorium reactors reach 10%+ of world primary energy by 2040:
+  - India's INR should show rising FX turnover share (currently 1.6%)
+  - AUD should maintain/increase reserve status via AUKUS-linked capacity
+  - BRL will NOT gain reserve status without capital account liberalization
+  - CAD already there; question is whether energy link strengthens further
+
+  Falsifiable test: BIS Triennial Survey 2028 and 2031.
+  Check INR FX turnover share against TMPI prediction.

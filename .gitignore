@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.env
+venv/
+env/
+
+# Data — large raw files excluded, processed panel included
+data/raw/owid_energy.csv
+data/raw/chinn_ito_kaopen.csv
+data/raw/world_bank.csv
+data/raw/governance_indicators.csv
+data/raw/eu_ets_compliance.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
