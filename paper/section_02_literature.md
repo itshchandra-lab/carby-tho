@@ -6,10 +6,13 @@ The empirical literature on reserve currency status has converged on a standard 
 determinants: the size of the issuing economy's GDP and trade share, the depth and
 liquidity of its financial markets, the stability of its monetary institutions, and
 network effects that make the dominant currency self-reinforcing (Chinn and Frankel
-2007; Eichengreen 2011; Maggiori, Neiman, and Schreger 2020). The theoretical
-underpinning draws on the inertia of network goods: switching costs are high, incumbents
-benefit from incumbency, and structural change requires a sufficiently large shock to
-displace an equilibrium.
+2007; Eichengreen 2011; Cohen 2015; Maggiori, Neiman, and Schreger 2020). The
+theoretical underpinning draws on the inertia of network goods: switching costs are
+high, incumbents benefit from incumbency, and structural change requires a sufficiently
+large shock to displace an equilibrium. Helleiner (2014) showed why the 2008 financial
+crisis — the most severe in a century — failed to displace dollar primacy: no credible
+alternative existed and the institutional infrastructure of dollar settlement was too
+embedded to dislodge in crisis conditions.
 
 This literature has produced several important findings. First, reserve currency shares
 change slowly but not irreversibly — sterling's decline from ~60% in 1899 to ~5% by
@@ -19,7 +22,24 @@ positive but non-deterministic — Japan has maintained a substantially smaller 
 share than its GDP would predict for three decades, while Switzerland commands a share
 far above its GDP weight. Third, institutions matter: Chinn-Ito openness, rule of law,
 and credibility of the monetary authority all enter reserve share regressions with
-positive and significant coefficients.
+positive and significant coefficients. Fourth, Arslanalp, Eichengreen, and Simpson-Bell
+(2022) document a "stealth erosion" of dollar dominance since 2000 driven not by euro
+or yen gains — the traditional hegemons-in-waiting — but by a set of non-traditional
+reserve currencies including AUD and CAD. Their finding is directly relevant to this
+paper's forward leg: the diversification is already happening, but into currencies that
+are positioned by commodity endowment and institutional openness, not by GDP mass.
+
+**A methodological note on network effects.** Reserve currency shares are
+system-level properties: they sum to approximately 100% by construction, and the
+dollar's share is high partly because the yuan's share is low. Farrell and Newman's
+(2019) weaponised interdependence framework and Kirshner's (1995) monetary coercion
+analysis both show that monetary power is a relational, hub-and-spoke property, not a
+country-level endowment. Entity-specific error correction models — the paper's primary
+specification — reduce but do not eliminate the compositional dependence. The
+system-level topology of monetary networks is beyond the scope of this paper and
+constitutes the primary methodological extension for future work. The entity-specific
+results reported here should be interpreted as capturing the bilateral energy-monetary
+relationship for each entity, not as independent draws from a cross-sectional sample.
 
 **The gap:** energy position does not appear in any standard specification. This is
 not an oversight that can be corrected by adding a control variable to an existing
@@ -31,6 +51,34 @@ not market-cleared, and their construction creates the conditions for monetary l
 Second, energy positions shift across transition eras, and the transition itself is
 politically contested. A framework that treats energy as exogenous cannot predict
 transition dynamics.
+
+## 2.1b Hegemonic Stability Theory and the Production Mechanism
+
+Hegemonic Stability Theory (Kindleberger 1973; Gilpin 1981) provides the dominant
+realist framework for reserve currency analysis: the international monetary system
+requires a hegemon willing and able to provide the public goods of monetary stability,
+and reserve currency status follows from that hegemonic position. HST correctly
+describes the correlation — dominant powers issue the dominant currency — but leaves
+the production mechanism underspecified. What makes a state structurally powerful in
+the first place?
+
+The standard HST answer is aggregate capability: GDP, military power, technological
+lead. Our argument is that at the *production dimension* of structural power, energy
+sovereignty is the operative variable. The sterling-dollar transition tracks the
+coal-oil transition more precisely than it tracks the GDP transition or the military
+balance (the UK remained the world's pre-eminent naval power until the 1920s; its
+GDP lead over the US had already reversed before 1900). If HST is the map, the energy
+mechanism is the terrain beneath it.
+
+This is a specification of HST, not a rejection of it. HST predicts that reserve
+currency status follows from hegemonic structural power; MPI specifies that hegemonic
+structural power at the production dimension follows from energy sovereignty, filtered
+through governance contestability and lagged by a generation. The distinction matters
+for prediction: HST can identify incumbents but cannot identify challengers before
+they emerge, because it observes structural power as constituted rather than as
+constituting. MPI observes the energy base before it produces the monetary outcome —
+which is why the forward leg can make predictions about India in 2031 and Australia
+in 2035 that HST, by design, cannot make.
 
 ## 2.2 Structural Power and the Finance-Energy Nexus
 
@@ -81,23 +129,29 @@ politics, while distortive, did not fully neutralise the price signal.
 This literature has established that carbon market prices are not determined by physical
 supply-demand fundamentals alone. Allocation rules, banking provisions, Market
 Stability Reserve interventions, and national lobbying all shape the price series.
+Mattli and Woods (2009) provide the most systematic framework for this phenomenon:
+in international regulatory institutions, capture by incumbents is the normal
+equilibrium, not an aberration. The EU ETS Phase I — where member states lobbied
+successfully for excess allocations that were then sold at public expense — is a
+textbook Mattli-Woods regulatory capture at the supranational level. Paterson and
+Stripple (2010) show that carbon markets are not merely sites of price formation but
+arenas of political contestation in which the boundaries of the market are themselves
+subject to negotiation. Their insight is our backward leg's theoretical foundation.
+
 What the literature has not done is formalise the *degree* of political construction
 relative to a baseline — Stigler's (1971) capture framework provides the vocabulary
-(regulators are captured by incumbent industries) but not a measurement. Governance
-Sensitivity (GS), defined as the ratio of energy governance volatility to commodity
-benchmark volatility, provides this measurement: GS > 1 is the empirical signature of
-a politically constructed regime; GS = 1 is the null hypothesis of commodity-like
-price formation.
-
-The RGGI comparison in Section 4 provides the most direct test of this claim: two
-carbon markets, identical asset class, very different governance construction, very
-different CV ratios. The difference is not the permit design. It is the political
+but not a measurement. Governance Sensitivity (GS), defined as the ratio of energy
+governance volatility to commodity benchmark volatility, provides this measurement:
+GS > 1 is the empirical signature of a politically constructed regime. The RGGI
+comparison in Section 4 provides the most direct test: EU ETS Phase I CV = 0.815;
+RGGI Phase 1 CV = 0.047 — both synthetic permits, both first compliance periods,
+difference of 17×. The difference is not the permit design. It is the political
 economy of the allocation regime.
 
 **The gap:** the carbon market political economy literature has not connected
-governance contestability to monetary outcomes. This paper provides that connection
-via the GS term: politically constructed governance creates leverage surfaces that
-endogenous to the transition dynamic.
+governance contestability to monetary outcomes, nor derived the implication that a
+politically constructed allocation regime is inherently unstable as a monetary anchor.
+This paper provides both connections.
 
 ## 2.4 Energy Transitions and Geopolitics
 
@@ -118,9 +172,24 @@ a transition without gaining monetary power if its institutional quality is low,
 financial markets are shallow, or its governance of the new energy regime is captured
 by incumbents.
 
+Katzenstein's (1985) work on small states in world markets provides an important
+corrective to naive transition optimism. Small states — including Australia and Canada,
+both TMPI-endowed — do not independently leverage resource positions into structural
+monetary power. Their monetary behaviour is conditioned by their position within
+alliance structures, specifically the US-centred security and economic order. For Five
+Eyes states, thorium endowment does not imply monetary independence; it implies a
+niche reinforcement within the existing dollar order. This paper incorporates this
+insight as a falsifiable prediction: AUD and CAD will not gain reserve share
+disproportionate to their current positions through independent energy leverage,
+because their geopolitical alignment channels thorium potential into the dollar system.
+India's case is structurally different — sovereign fuel cycle, non-alignment tradition,
+capital account under domestic policy control — and the framework predicts activation
+rather than niche reinforcement.
+
 **The gap:** the transition geopolitics literature has no monetary mechanism and no
-forward specification of which energy positions translate into reserve currency
-candidacy under the next transition. The TMPI in Section 6 provides this.
+specification of the *activation conditions* that distinguish which energy positions
+translate into reserve currency candidacy. The TMPI provides the structural ranking;
+the Katzenstein framework provides the activation filter.
 
 ## 2.5 Synthesis: The Gap This Paper Fills
 

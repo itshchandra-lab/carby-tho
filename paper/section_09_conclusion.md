@@ -37,24 +37,40 @@ increases, driven by the world's largest thorium reserves and an active three-st
 nuclear programme. This trajectory is the central forward claim of the paper and
 is unproducible by any present-era framework.
 
-## 9.2 Russia as the Hinge
+## 9.2 Russia as the Hinge: Two Mechanisms, Not One
 
-Russia does not fit neatly into any single leg. It is the paper's most powerful
-illustration precisely because it threads through all three simultaneously. In the
-backward register, Russia's 2022 expulsion from Western carbon infrastructure
-confirmed that energy governance is political weaponry — sanctions ended EU ETS
-participation; SWIFT exclusion severed the monetary convertibility channel. In the
-present register, forced ruble-yuan and ruble-rupee energy corridors demonstrated
-the mechanism operating under duress: energy relationships determined monetary
-corridor formation even when the state had no strategic intent to create a reserve
-currency. In the forward register, Russia holds meaningful TMPI components (nuclear
-capacity, thorium potential) but its GS collapses under sanctions — the governance
-infrastructure that makes energy leverage *convertible* into reserve status is
-inaccessible.
+Russia threads through all three temporal legs, but the IR theory reviewer's challenge
+must be addressed directly: two distinct causal mechanisms are operating simultaneously,
+and conflating them would make the thesis unfalsifiable.
 
-Russia shows what it looks like to be on the wrong side of the mechanism in real
-time: strong endowments, suppressed activation path. The framework does not fail on
-Russia; it explains it precisely.
+**Mechanism A: The structural energy corridor (thesis mechanism).** Russia's
+pre-existing energy dominance in Eurasian supply chains made bilateral corridor
+formation *structurally viable* before 2022. The ruble-yuan energy relationship traced
+hydrocarbon supply routes that had existed for decades; the ruble-rupee corridor traced
+Indian refinery dependence on Russian crude that predated the sanctions. These corridors
+did not emerge from nothing in February 2022. They emerged from a pre-existing energy
+geography. This is the present-leg mechanism operating under duress: energy
+relationships determined which monetary corridors were viable when forced, not merely
+which ones were convenient. Mechanism A supports the thesis.
+
+**Mechanism B: The coercion shock (GS mechanism).** SWIFT exclusion and EU ETS
+expulsion did not test Mechanism A. They tested the GS argument in the backward leg:
+Western monetary and carbon infrastructure is political weaponry, not neutral mechanism.
+Russia's expulsion confirms that allocation regimes — whether carbon markets or
+interbank settlement systems — are constructed to be excludable by political decision.
+GS > 1 in the monetary domain is the backward-leg claim; Russia 2022 is its most
+vivid demonstration. Mechanism B does not support the thesis independently — corridor
+formation under coercion is consistent with many theories — but it confirms the GS
+premise that makes the thesis non-trivial.
+
+The paper does not treat forced corridors as proof of organic monetary strategy. It
+treats them as proof that pre-existing energy geography determined which coerced
+outcomes were structurally possible. A sanctions shock to a country with no energy
+relationships (e.g., a financial entrepôt with no bilateral energy supply) would not
+produce energy corridors. Russia's corridors emerged because the energy geography was
+already there. That distinction is what keeps the thesis falsifiable: if energy
+geography had not preceded the coercion, the corridors could not have formed at this
+speed or scale.
 
 ## 9.3 The Falsification Registry
 
@@ -107,15 +123,38 @@ constructed from nuclear technology cost curves, IAEA capacity projections, and
 geopolitical signal indices — would make the synthesis chart more than illustrative
 and the forward predictions more precisely conditional.
 
-**The activation path paper.** The distinction between TMPI *potential* and actual
-monetary power activation is the paper's most politically interesting implication.
-India will activate (sovereign fuel cycle, no alignment constraint). Australia
-probably will not unilaterally (Five Eyes alignment constrains independent monetary
-leverage even after AUKUS nuclear capacity). Brazil cannot (capital account closure
-is the binding constraint). Canada might — quietly, through resource trade denominated
-in CAD. Formalising the activation conditions as a separate model — what distinguishes
-countries that convert TMPI potential into reserve status from those that do not —
-is Paper 3 of this research programme.
+**The geopolitical activation conditions paper.** The distinction between TMPI
+*potential* and actual monetary leverage activation is the paper's most politically
+consequential implication, and it requires a Katzenstein (1985) filter applied to the
+forward leg. Small states and alliance-embedded states do not independently leverage
+resource endowments into monetary structural power. The MPI framework makes specific,
+falsifiable cross-case predictions for the activation question:
+
+- **India** (TMPI rank 3): sovereign fuel cycle under active construction, non-aligned
+  foreign policy tradition, capital account under domestic policy control. Prediction:
+  INR FX share rises with nuclear capacity. Activation expected.
+
+- **Australia** (TMPI rank 0 currently, rising post-AUKUS): Five Eyes member,
+  US-alliance constrained. Prediction: AUD maintains its current reserve niche (already
+  a reserve currency via Arslanalp et al. 2022) but does *not* gain share
+  disproportionate to current position through independent energy leverage. AUKUS
+  nuclear capacity reinforces the existing niche within the dollar order; it does not
+  create an independent monetary leverage position. *Falsify if*: AUD share rises
+  sharply after AUKUS nuclear capacity comes online.
+
+- **Canada** (TMPI rank 2): Five Eyes member but resource trade increasingly
+  denominated in CAD through bilateral arrangements. Prediction: modest, quiet share
+  gains through commodity channels, not through dollar system displacement.
+
+- **Brazil** (TMPI rank 4): capital account closed (Chinn-Ito KAOPEN = −1.25).
+  Prediction: no monetary activation regardless of thorium endowment. *Falsify if*:
+  BRL gains reserve share without KAOPEN improvement by 2037.
+
+These are cross-case predictions, not just country-level. If India activates and
+Australia does not, the Katzenstein filter is supported: alliance structure is the
+operative variable distinguishing activation from niche reinforcement. Formalising
+these conditions — specifying the interaction between TMPI potential, alliance
+structure, and capital account regime — is Paper 3 of this research programme.
 
 ## 9.5 The Larger Claim
 
