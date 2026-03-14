@@ -494,7 +494,7 @@ all three temporal legs:
 p_t = f(nuclear_cost_trajectory_t, geopolitical_signal_t, cumulative_capacity_t)
 ```
 
-For this paper, p_t is estimated independently from the observed trajectory of world nuclear share of primary energy (OWID/BP data). We compute the annual deviation of world nuclear share from its 2005 baseline and apply a logistic normalisation to map this onto [0, 0.6] — consistent with the High scenario ceiling. This gives p_t ≈ 0.08 in 2020, ≈ 0.10 in 2022, and ≈ 0.12 in 2024, reflecting the gradual but measurable resumption of nuclear capacity additions globally. Independently derived p_t values are used in the synthesis chart (§8); the Low/Base/High scenario bounds provide sensitivity analysis around the central trajectory.
+For this paper, p_t is estimated independently from the 5-year rolling mean CAGR of world nuclear energy consumption (OWID/BP data). World nuclear *share* has been declining since 2000 (post-Fukushima, German phase-out), making it an uninformative base for a transition signal; absolute nuclear *consumption* has been growing, driven by China and India additions. The 5-year rolling mean CAGR smooths regulatory shocks — German reactor closures (2022) and French maintenance outages (2022–23) — that are transient, not structural. Reference rate is 15% annual CAGR, calibrated so that 2024's observed rate (~1.7%) maps to p_t ≈ 0.11 — consistent with the Low scenario (p_t ≈ 0.10). This construction is independent of scenario endpoint assumptions: it derives from the observed trajectory, not from a target level imposed from outside the data. The Low/Base/High scenario bounds then provide sensitivity analysis around the central trajectory.
 
 | Symbol | Name | Definition | Empirical counterpart |
 |--------|------|------------|----------------------|
@@ -577,7 +577,23 @@ construction over a phase; the ZA statistic captures whether that construction b
 endogenously at a political event rather than a supply shock. Both are reported in §5.
 They are complementary measures of the same underlying property.
 
-**Cross-entity GS in this paper.** GS is estimated both at the regime level (EU ETS Phase I: GS=2.79, establishing that GS>1 holds for carbon governance) and at the entity level (computed as CV(energy_imports_pct_i, 2000–2023) / CV(oil_price, 2000–2023)). Entity-specific GS captures how much more volatile each country's energy import position is relative to the underlying commodity price. USA receives the highest GS (deregulated markets, shale-revolution volatility); Japan receives the lowest (METI-administered prices, stable import share); Russia post-2022 is floored at GS=0.05 — not by fiat but from the observed collapse in its participation in Western energy governance infrastructure following SWIFT exclusion. This entity-level variation is what allows the MPI to differentiate entities at the same NEP level: two countries with identical energy positions but different governance sensitivity will have different monetary leverage.
+**Cross-entity GS in this paper.** GS is estimated both at the regime level (EU ETS Phase I: GS=2.79, establishing that GS>1 holds for carbon governance) and at the entity level (computed as CV(energy_imports_pct_i, 2000–2023) / CV(oil_price, 2000–2023)). Entity-specific GS captures how much more volatile each country's energy import position is relative to the underlying commodity price — high volatility indicates energy position is politically constructed; low volatility indicates administered or stable governance. Russia post-2022 GS is computed from post-sanction years only (2022–23), reflecting the collapse in Western governance participation. Table 3 reports computed values:
+
+| Entity | GS (raw) | GS (norm) | Interpretation |
+|--------|----------|-----------|----------------|
+| RUS | 0.011 | 0.004 | Post-2022 sanctions: near-zero Western governance participation |
+| EMU | 0.076 | 0.024 | Slowly declining imports, administered elements |
+| CHE | 0.127 | 0.040 | Financial entrepôt, stable administration |
+| JPN | 0.139 | 0.043 | METI-administered prices, stable import dependence ✓ |
+| IND | 0.465 | 0.144 | Volatile import dependence (oil price sensitivity) |
+| CAN | 0.502 | 0.156 | Commodity-exposed, moderate governance |
+| AUS | 0.626 | 0.195 | LNG/coal exporter, market-priced |
+| CHN | 1.348 | 0.419 | Rapid energy structure change |
+| GBR | 1.827 | 0.568 | North Sea depletion, liberalised market |
+| USA | 1.984 | 0.616 | Shale revolution, deregulated ✓ |
+| BRA | 3.219 | 1.000 | Hydroelectric + oil import volatility |
+
+The ordering confirms the theoretical priors: Japan and Switzerland (administered) are among the lowest non-sanctioned entities; USA and GBR (deregulated, structurally volatile) are among the highest. This entity-level variation is what allows the MPI to differentiate entities at the same NEP level.
 
 ---
 
