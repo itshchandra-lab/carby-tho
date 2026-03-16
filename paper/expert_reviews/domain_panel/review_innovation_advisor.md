@@ -221,3 +221,24 @@ The framework is sufficiently original, sufficiently grounded in multiple litera
 *Expert Innovation Advisory Panel*
 *Assessment date: March 2026*
 *Conflict of interest: None. This review was prepared in the author's interest to maximise the framework's intellectual and policy impact.*
+
+---
+
+## Response Disposition Table
+
+*Added March 2026 in response to innovation advisory review. Each advisory point resolved with Accept / Pushback and location of change in draft_v4.md.*
+
+| §§ | Advisory Point | Decision | Resolution |
+|---|---|---|---|
+| §1 — Novel contributions | GS operator, three-register architecture, Katzenstein filter, TMPI — all identified as genuinely original | Acknowledged | No change required; contributions confirmed |
+| §2 — "Standard" mechanism | Title implies more than body delivers; need to specify what the Carbon-Thorium Standard *is* as a mechanism | **Accept (narrow)** | Clarification paragraph added to "A note on the title" section (~§3): standard = monetary credibility regime, not commodity peg; institutional design (TEU + reserve certification) identified as natural policy extension but explicitly out of scope for this paper |
+| §3.1 — Network centrality MPI term | Add bilateral corridor centrality term to transform MPI into a network model | **Pushback** | Would require restructuring the entire quantitative framework and rerunning regressions; flagged as future research direction in §9 framing. The paper's two-state structure is a deliberate parsimony choice |
+| §3.2 — p_t endogenisation | Specify p_t as a logistic function of Technology, Institutions, Price, and Geopolitical variables | **Pushback** | Requires a different modelling framework; already noted as a limitation of the exogenous p_t treatment. Future work direction acknowledged |
+| §3.3 — Collective BRICS+ MPI | Calculate collective BRICS+ MPI under integration scenarios | **Pushback** | §7.8 already contains BRICS collective architecture section (NDB, BRICS Bridge, India-China rivalry); addl calculation out of scope. Adding a full collective MPI calculation would require data not available |
+| §4 — Layering hypothesis | Develop measurable preconditions, threshold effects, and falsifiable conditions for self-sustaining layering | Acknowledged | Several of the specific falsifiable conditions identified (§8.3 already contains layer formation tests). Not expanded further in this revision |
+| §5 — Thorium transition milestones | Assign probability-weighted timelines to TMSR criticality, PFBR, reprocessing milestones | Noted | Detailed timeline calibration beyond paper's scope; PFBR core loading date already noted at §7.3. Flagged as future work |
+| §6 — TRCP / MTFCA / TEC architecture | Build policy architecture: Thorium Reserve Certification Protocol, Multilateral Thorium Fuel Cycle Authority, Thorium Energy Certificates | **Pushback** | Policy architecture design is future development, not this paper's contribution. The paper identifies structural positions; it does not build the institutions. Adding TRCP/MTFCA/TEC would change the paper's analytical scope from positive to prescriptive |
+| §7 — Research frontiers | Network topology, political economy of thorium adoption, GS applied to global carbon markets | Acknowledged | All three identified as productive future research directions; not expanded in this revision |
+| §8.1 — Causality inversion | Energy → reserve causality may be inverted (reserve currency → energy investment); endogeneity problem; IV approach needed | **Accept** | New Tenth limitation added to §6.8: explicit acknowledgement that ARDL establishes cointegration but not causal direction; Granger structure in US case consistent with energy→reserve causality; IV using geological endowments flagged as necessary future work |
+| §8.2 — Institutional substitution | Framework doesn't adequately address why energy credibility translates to institutional reserve status when SWIFT/Treasury/CME are dollar-constituted | **Pushback — already addressed** | Paper already handles the Switzerland/New Zealand boundary cases (~§7.4, ~line 183); network externalities and incumbency addressed in Channel 1 discussion (~§7.4 institutional sequencing); §6.8 seventh limitation addresses WGI bias. The three-channel sequential model (activation → recycling → credibility) is the paper's answer to institutional substitution |
+| §8.3 — Thorium technology / VRE risk | If solar-wind-battery-grid marginalises nuclear, thorium is stranded; paper needs conditional argument not dismissal | **Accept** | New scope condition added to §7.1: forward register is conditional on nuclear maintaining ~10–12% of global electricity (IEA Net Zero scenario); if nuclear-marginal pathway prevails, TMPI becomes phantom metric and forward register is withdrawn. VRE scenario explicitly registered as framework-level scope condition |
