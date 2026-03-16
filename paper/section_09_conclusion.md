@@ -1,180 +1,111 @@
-# §9 — Conclusion: The Mechanism, Its Predictions, and Its Limits
+# §9 — Conclusion: The Window and What Closes It
 
-## 9.1 What the Paper Has Done
+The reserve currency system is not determined by GDP alone. It tracks energy sovereignty, with a generational lag, filtered through the political construction of governance regimes. Sterling followed coal. The dollar followed oil. Both transitions happened gradually, were visible in the data before they were acknowledged in commentary, and were shaped by deliberate governance choices more than by raw geological endowment.
 
-This paper has proposed and tested the Monetary Power Index (MPI) — a theoretical
-framework that formalises the relationship between energy sovereignty and monetary power
-across energy eras. Three empirical legs test three components of the framework, and
-the synthesis assembles them into a coherent account of monetary power's past,
-present, and future distribution.
+The carbon governance regime showed what happens when the allocative mechanism is too politically contested to hold: prices collapse, allocations are renegotiated, and the monetary potential of the energy base is captured by incumbents before it can be converted into reserve status. The EU ETS failed as a monetary anchor not because it was designed badly but because any allocation mechanism that imposes material costs on powerful incumbents will be renegotiated by those incumbents. This is not a correctable flaw. It is a structural property of politically constructed governance regimes.
 
-The **backward leg** established that energy governance is politically constructed.
-The EU ETS allocation surplus broke structurally in 2014 at a political event, not a
-supply shock (ZA stat=−6.248, p=0.0006). Phase I EUA volatility was 17 times higher
-than the RGGI in its equivalent first compliance period — both synthetic permits,
-the difference attributable entirely to the EU's allocation politics. Energy position
-is a policy variable. The transition between eras is not technologically determined
-but politically contested. This is the premise without which the forward leg has no
-significance: if energy positions were exogenous, TMPI rankings would be descriptions
-of geological fate, not strategic opportunities.
+The thorium era is not guaranteed to be different. The difference will be made, or not made, by the states at the top of the TMPI ranking — principally the United States, Canada, and India — in the governance choices they make before p_t has finished rising. Those choices are already being made. India's three-stage nuclear programme is a seventy-year wager on this precise bet. AUKUS is a different kind of wager, embedding Australian nuclear capacity in the US security orbit rather than activating it for independent monetary leverage.
 
-The **present leg** documented the mechanism in the two cases where it can be cleanly
-identified. The United States — net energy producer, NEP rising through the shale
-era — shows cointegration between lagged NEP and reserve share; USD share has
-stabilised since 2021 as the shale-era NEP gain flows through the λ≈10 year lag.
-The eurozone — net energy importer, NEP declining from 0.010 (1999) to 0.005 (2024)
-— shows r=0.864 between lagged NEP and EUR reserve share decline. Japan provides a
-natural experiment: Fukushima collapsed NEP by 67% and yen reserve share has been
-stagnant since. Switzerland falsifies nothing: institutional quality can substitute
-for energy position in financial entrepôts, a boundary condition the framework
-anticipates.
+Russia is already running the experiment in real time. Energy geography enabled ruble-yuan and ruble-rupee corridor formation before anyone designed it; exclusion from Western governance infrastructure made the corridors visible. If the corridors persist after sanctions are relaxed — if the monetary architecture survives the coercive context that forced it into existence — that is the clearest possible confirmation that energy geography, not coercion, was the load-bearing cause. If they dissolve, Mechanism B wins and the thesis loses one of its most vivid contemporary cases. Either outcome tells us something fundamental about what monetary power is made of.
 
-The **forward leg** mapped where the mechanism points next. The TMPI top-three
-ranking — USA (100), Canada (20.8), India (15.8) — is scenario-invariant across
-three transition assumptions. The full MPI framework reveals the trajectory: India's
-MPI is currently suppressed by negative NEP but rises discontinuously as p_t
-increases, driven by the world's largest thorium reserves and an active three-stage
-nuclear programme. This trajectory is the central forward claim of the paper and
-is unproducible by any present-era framework.
+That window is open. It will not remain open indefinitely. The backward register proves that incumbents have every incentive to slow it — and that they have the tools to do so.
 
-## 9.2 Russia as the Hinge: Two Mechanisms, Not One
+This paper is an attempt to make the architecture legible before the window closes. The falsification registry marks the dates on which the argument will be confirmed or refuted by data that does not yet exist. We will know by 2031 whether the India prediction was correct. We will know by 2037 whether the Brazil prediction held. The paper stakes its empirical reputation on those outcomes. That is the only honest way to make a forward prediction in geoeconomics.
 
-Russia threads through all three temporal legs, but the IR theory reviewer's challenge
-must be addressed directly: two distinct causal mechanisms are operating simultaneously,
-and conflating them would make the thesis unfalsifiable.
+---
 
-**Mechanism A: The structural energy corridor (thesis mechanism).** Russia's
-pre-existing energy dominance in Eurasian supply chains made bilateral corridor
-formation *structurally viable* before 2022. The ruble-yuan energy relationship traced
-hydrocarbon supply routes that had existed for decades; the ruble-rupee corridor traced
-Indian refinery dependence on Russian crude that predated the sanctions. These corridors
-did not emerge from nothing in February 2022. They emerged from a pre-existing energy
-geography. This is the present-leg mechanism operating under duress: energy
-relationships determined which monetary corridors were viable when forced, not merely
-which ones were convenient. Mechanism A supports the thesis.
+# References
 
-**Mechanism B: The coercion shock (GS mechanism).** SWIFT exclusion and EU ETS
-expulsion did not test Mechanism A. They tested the GS argument in the backward leg:
-Western monetary and carbon infrastructure is political weaponry, not neutral mechanism.
-Russia's expulsion confirms that allocation regimes — whether carbon markets or
-interbank settlement systems — are constructed to be excludable by political decision.
-GS > 1 in the monetary domain is the backward-leg claim; Russia 2022 is its most
-vivid demonstration. Mechanism B does not support the thesis independently — corridor
-formation under coercion is consistent with many theories — but it confirms the GS
-premise that makes the thesis non-trivial.
+Acharya, Amitav. 2017. "After Liberal Hegemony: The Advent of a Multiplex World Order." *Ethics & International Affairs* 31 (3): 271–285.
 
-The paper does not treat forced corridors as proof of organic monetary strategy. It
-treats them as proof that pre-existing energy geography determined which coerced
-outcomes were structurally possible. A sanctions shock to a country with no energy
-relationships (e.g., a financial entrepôt with no bilateral energy supply) would not
-produce energy corridors. Russia's corridors emerged because the energy geography was
-already there. That distinction is what keeps the thesis falsifiable: if energy
-geography had not preceded the coercion, the corridors could not have formed at this
-speed or scale.
+Arslanalp, Serkan, Barry Eichengreen, and Chima Simpson-Bell. 2022. "The Stealth Erosion of Dollar Dominance: Active Diversifiers and the Rise of Nontraditional Reserve Currencies." IMF Working Paper WP/22/58.
 
-## 9.3 The Falsification Registry
+Baldwin, David A. 1985. *Economic Statecraft*. Princeton: Princeton University Press.
 
-The paper's forward claims are dated and specific. We record them here and in
-`outputs/tables/falsification_registry.csv`.
+Bayer, Patrick, and Michaël Aklin. 2020. "The European Union Emissions Trading Scheme Reduced CO2 Emissions Despite Low Prices." *Proceedings of the National Academy of Sciences* 117 (16): 8804–8812. doi:10.1073/pnas.1918128117.
 
-**Claims checkable at submission:**
-- ZA break year is within ±2 years of a documented political event. *[Check: 2014,
-  Phase III structural reform — confirmed.]*
-- EUA Phase I CV > RGGI Phase 1 CV. *[Check: 0.815 vs 0.047 — confirmed.]*
-- USA ARDL bounds F-statistic exceeds I(1) critical value. *[Check at submission.]*
-- USA DOLS bootstrap CI for NEP coefficient excludes zero. *[Check at submission.]*
-- TMPI top-3 order scenario-invariant. *[Check: USA > CAN > IND across Low/Base/High
-  — confirmed.]*
+Chinn, Menzie D., and Jeffrey A. Frankel. 2007. "Will the Euro Eventually Surpass the Dollar as Leading International Reserve Currency?" In *G7 Current Account Imbalances*, edited by Richard Clarida. Chicago: University of Chicago Press.
 
-**Claims checkable at BIS Triennial 2028:**
-- INR FX turnover share rises with India's nuclear capacity additions by 2030.
-  *Falsify if: INR share flat or declining despite nuclear additions.*
+Cohen, Benjamin J. 2015. *Currency Power: Understanding Monetary Rivalry*. Princeton: Princeton University Press.
 
-**Claims checkable at BIS Triennial 2031:**
-- INR FX turnover share approaches 3–5%.
-  *Falsify if: INR share <2% despite programme completion.*
+Cox, Robert W. 1981. "Social Forces, States and World Orders: Beyond International Relations Theory." *Millennium: Journal of International Studies* 10 (2): 126–155.
 
-**Claims checkable at IMF COFER 2035–2040:**
-- AUD reserve share remains within ±0.5 percentage points of its 2022 level (~6.7% of allocated reserves) through 2040, conditional on AUKUS nuclear capacity coming online.
-  *Falsify if: AUD share falls more than 1 percentage point below 2022 level after AUKUS nuclear capacity is confirmed operational. Note: the failure condition is asymmetric — a sharp decline (>1pp) falsifies niche reinforcement; a sharp rise (>2pp) would falsify the Katzenstein filter (niche reinforcement, not independent activation).*
+Cox, Robert W. 1983. "Gramsci, Hegemony and International Relations: An Essay in Method." *Millennium: Journal of International Studies* 12 (2): 162–175.
 
-**Claims checkable at BIS Triennial 2037:**
-- BRL does NOT gain reserve share without capital account opening.
-  *Falsify if: BRL FX turnover rises without Chinn-Ito KAOPEN improvement.*
+Dannreuther, Roland. 2017. *Energy Security*. Cambridge: Polity Press.
 
-The last item is rare in IPE: a negative prediction about a specific country by a
-specific date. If it is wrong — if Brazil gains reserve currency status without
-institutional reform — the mechanism as specified fails for the institutional quality
-term. We would welcome being wrong.
+Eichengreen, Barry. 2011. *Exorbitant Privilege: The Rise and Fall of the Dollar and the Future of the International Monetary System*. New York: Oxford University Press.
 
-## 9.4 Extensions
+Eichengreen, Barry, and Marc Flandreau. 2009. "The Rise and Fall of the Dollar (or When Did the Dollar Replace Sterling as the Leading Reserve Currency?)." *European Review of Economic History* 13 (3): 377–411. doi:10.1017/S1361491609990153.
 
-Three extensions follow directly from the framework.
+Ellerman, A. Denny, and Barbara K. Buchner. 2008. "Over-Allocation or Abatement? A Preliminary Analysis of the EU ETS Based on the 2005–06 Emissions Data." *Environmental and Resource Economics* 41 (2): 267–287.
 
-**Entity-specific Governance Sensitivity.** This paper estimates GS for the EU carbon
-governance regime. Constructing GS for each entity — using domestic energy price
-regulation data, ZA statistics on national energy policy series, or regulatory
-stringency indices — would enable cross-entity variation in GS and a more precise
-separation of the governance term from the energy position term in the MPI regression.
+Farhi, Emmanuel, and Matteo Maggiori. 2018. "A Model of the International Monetary System." *Quarterly Journal of Economics* 133 (1): 295–355.
 
-**Estimating p_t independently.** We calibrate transition probability from scenario
-bounds (Low/Base/High nuclear share assumptions). An independent p_t series —
-constructed from nuclear technology cost curves, IAEA capacity projections, and
-geopolitical signal indices — would make the synthesis chart more than illustrative
-and the forward predictions more precisely conditional.
+Farrell, Henry, and Abraham L. Newman. 2019. "Weaponized Interdependence: How Global Economic Networks Shape State Coercion." *International Security* 44 (1): 42–79. doi:10.1162/isec_a_00351.
 
-**The geopolitical activation conditions paper.** The distinction between TMPI
-*potential* and actual monetary leverage activation is the paper's most politically
-consequential implication, and it requires a Katzenstein (1985) filter applied to the
-forward leg. Small states and alliance-embedded states do not independently leverage
-resource endowments into monetary structural power. The MPI framework makes specific,
-falsifiable cross-case predictions for the activation question:
+Farrell, Henry, and Abraham L. Newman. 2023. *Underground Empire: How America Weaponized the World Economy*. New York: Henry Holt and Company.
 
-- **India** (TMPI rank 3): sovereign fuel cycle under active construction, non-aligned
-  foreign policy tradition, capital account under domestic policy control. Prediction:
-  INR FX share rises with nuclear capacity. Activation expected.
+Gilpin, Robert. 1981. *War and Change in World Politics*. Cambridge: Cambridge University Press.
 
-- **Australia** (TMPI rank 0 currently, rising post-AUKUS): Five Eyes member,
-  US-alliance constrained. Prediction: AUD maintains its current reserve niche (already
-  a reserve currency via Arslanalp et al. 2022) but does *not* gain share
-  disproportionate to current position through independent energy leverage. AUKUS
-  nuclear capacity reinforces the existing niche within the dollar order; it does not
-  create an independent monetary leverage position. *Falsify if*: AUD share rises
-  sharply after AUKUS nuclear capacity comes online.
+Gilpin, Robert. 1987. *The Political Economy of International Relations*. Princeton: Princeton University Press.
 
-- **Canada** (TMPI rank 2): Five Eyes member but resource trade increasingly
-  denominated in CAD through bilateral arrangements. Prediction: modest, quiet share
-  gains through commodity channels, not through dollar system displacement.
+Gopinath, Gita, Emine Boz, Camila Casas, Federico J. Díez, Pierre-Olivier Gourinchas, and Mikkel Plagborg-Møller. 2020. "Dominant Currency Paradigm." *American Economic Review* 110 (3): 677–719.
 
-- **Brazil** (TMPI rank 4): capital account closed (Chinn-Ito KAOPEN = −1.25).
-  Prediction: no monetary activation regardless of thorium endowment. *Falsify if*:
-  BRL gains reserve share without KAOPEN improvement by 2037.
+Gourinchas, Pierre-Olivier, Hélène Rey, and Maxime Sauzet. 2019. "The International Monetary and Financial System." *Annual Review of Economics* 11: 859–893.
 
-These are cross-case predictions, not just country-level. If India activates and
-Australia does not, the Katzenstein filter is supported: alliance structure is the
-operative variable distinguishing activation from niche reinforcement. Formalising
-these conditions — specifying the interaction between TMPI potential, alliance
-structure, and capital account regime — is Paper 3 of this research programme.
+Helleiner, Eric. 2008. "Political Determinants of International Currencies: What Future for the US Dollar?" *Review of International Political Economy* 15 (3): 354–378.
 
-## 9.5 The Larger Claim
+Helleiner, Eric. 2014. *The Status Quo Crisis: Global Financial Governance after the 2008 Meltdown*. Oxford: Oxford University Press.
 
-The reserve currency system is not determined by GDP alone. It tracks energy
-sovereignty, with a generational lag, filtered through the political construction of
-governance regimes. Sterling followed coal. The dollar followed oil. What follows
-thorium — if thorium follows — will not be determined by which country discovers the
-most reserves. It will be determined by which country constructs the governance regime
-that makes those reserves into leverage, builds the institutional quality that makes
-its currency credible, and does so while the transition probability p_t is still
-rising.
+Hirschman, Albert O. 1945. *National Power and the Structure of Foreign Trade*. Berkeley: University of California Press.
 
-That window is open. It will not remain open indefinitely. The backward test proves
-that incumbents have every incentive to slow it.
+Ikenberry, G. John. 2001. *After Victory: Institutions, Strategic Restraint, and the Rebuilding of Order after Major Wars*. Princeton: Princeton University Press.
 
-The carbon standard showed what happens when the governance mechanism is too
-politically contested to hold: prices collapse, allocations are renegotiated, and
-the monetary potential of the energy base is captured by incumbents before it can be
-converted into reserve status. The thorium era is not guaranteed to be different. The
-difference will be made — or not made — by the states at the top of the TMPI ranking,
-in the governance choices they make before p_t has finished rising. That is the
-architecture problem the title names. This paper is an attempt to make it legible
-before the window closes.
+Ikenberry, G. John. 2011. *Liberal Leviathan: The Origins, Crisis, and Transformation of the American World Order*. Princeton: Princeton University Press.
+
+Ilzetzki, Ethan, Carmen M. Reinhart, and Kenneth S. Rogoff. 2019. "Exchange Arrangements Entering the Twenty-First Century: Which Anchor Will Hold?" *Quarterly Journal of Economics* 134 (2): 599–646.
+
+Katzenstein, Peter J. 1985. *Small States in World Markets: Industrial Policy in Europe*. Ithaca: Cornell University Press.
+
+Keohane, Robert O. 1984. *After Hegemony: Cooperation and Discord in the World Political Economy*. Princeton: Princeton University Press.
+
+Kindleberger, Charles P. 1973. *The World in Depression, 1929–1939*. Berkeley: University of California Press.
+
+Kirshner, Jonathan. 1995. *Currency and Coercion: The Political Economy of International Monetary Power*. Princeton: Princeton University Press.
+
+Kirshner, Jonathan. 2014. *American Power after the Financial Crisis*. Ithaca: Cornell University Press.
+
+Koch, Nicolas, Sabine Fuss, Godefroy Grosjean, and Ottmar Edenhofer. 2014. "Causes of the EU ETS Price Drop." *Energy Policy* 73: 676–685. doi:10.1016/j.enpol.2014.06.030.
+
+Mattli, Walter, and Ngaire Woods. 2009. *The Politics of Global Regulation*. Princeton: Princeton University Press.
+
+McDowell, Daniel. 2023. *Bucking the Buck: US Financial Sanctions and the International Backlash against the Dollar*. Oxford: Oxford University Press.
+
+McNally, Robert. 2017. *Crude Volatility: The History and the Future of Boom-Bust Oil Prices*. New York: Columbia University Press.
+
+Modelski, George. 1987. *Long Cycles in World Politics*. Seattle: University of Washington Press.
+
+Norrlof, Carla. 2010. *America's Global Advantage: US Hegemony and International Cooperation*. Cambridge: Cambridge University Press.
+
+Norrlof, Carla. 2020. "Is COVID-19 the End of US Hegemony?" *International Affairs* 96 (5): 1281–1303.
+
+Overland, Indra. 2019. "The Geopolitics of Renewable Energy: Debunking Four Emerging Myths." *Energy Research & Social Science* 49: 36–40.
+
+Pesaran, M. Hashem, Yongcheol Shin, and Richard J. Smith. 2001. "Bounds Testing Approaches to the Analysis of Level Relationships." *Journal of Applied Econometrics* 16 (3): 289–326. doi:10.1002/jae.616.
+
+Pforr, Tobias, Fabian Pape, and Johannes Petry. 2025. "Dollar Diminished: The Unmaking of US Financial Hegemony under Trump." *International Organization* 79 (S1). Advance access.
+
+Polanyi, Karl. 1944. *The Great Transformation: The Political and Economic Origins of Our Time*. New York: Farrar & Rinehart.
+
+Schenk, Catherine R. 2010. *The Decline of Sterling: Managing the Retreat of an International Currency, 1945–1992*. Cambridge: Cambridge University Press.
+
+Scholten, Daniel, Morgan Bazilian, Indra Overland, and Kirsten Westphal. 2020. "The Geopolitics of Renewables: New Board, New Game." *Energy Policy* 138: 111059.
+
+Spiro, David E. 1999. *The Hidden Hand of American Hegemony: Petrodollar Recycling and International Markets*. Ithaca: Cornell University Press.
+
+Stigler, George J. 1971. "The Theory of Economic Regulation." *Bell Journal of Economics and Management Science* 2 (1): 3–21.
+
+Strange, Susan. 1988. *States and Markets*. London: Pinter Publishers.
+
+Zivot, Eric, and Donald W.K. Andrews. 1992. "Further Evidence on the Great Crash, the Oil-Price Shock, and the Unit-Root Hypothesis." *Journal of Business & Economic Statistics* 10 (3): 251–270.

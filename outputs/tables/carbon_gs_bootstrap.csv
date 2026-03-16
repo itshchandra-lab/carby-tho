@@ -1,0 +1,2 @@
+cv_eua_monthly,cv_oil_annual,gs_point,gs_ci_lower_95,gs_ci_upper_95,gs_all_above_1,n_eua_obs,n_oil_obs,n_boot
+0.818,0.285,2.873,2.056,4.278,True,36,20,1000

@@ -1,319 +1,58 @@
-# §3 — A Formal Theory of Monetary Power Across Energy Eras
+# §3 — The Monetary Power Index: A Two-State Framework
 
-## 3.1 The Gap in Existing Frameworks
+## 3.1 The Core Problem
 
-Three bodies of literature approach the relationship between energy and monetary power but
-none formalises it across time.
+**A clarification on the MPI's role.** The MPI equation, developed in §3.2, is a *measurement instrument* for identifying structural candidates — it ranks states by their energy-monetary position across eras. It is not itself the causal theory. The causal theory — what explains *why* energy governance predicts monetary power — consists of the three transmission channels in §3.4, operating under specific institutional conditions with specific sequencing requirements. The index ranks states; the channels explain outcomes. A state can score high on the MPI while failing to convert that position into monetary leverage if the institutional sequencing conditions are not met. Conflating the measurement instrument with the causal mechanism is the characteristic error of mechanistic applications of this framework: it produces accurate rankings but wrong predictions about which states will translate their positions into outcomes.
 
-Strange (1988) identified finance and energy as two of the four structures of structural
-power and argued that states capable of controlling both acquire disproportionate capacity
-to shape international outcomes. She did not formalise the interaction or specify how it
-changes as the dominant energy input shifts. Her framework is synchronic: it describes
-structural power at a point in time, not its reproduction across eras.
+Prior work conflates two distinct quantities: the current monetary power derived from present energy sovereignty, and the forward option on monetary power contingent on the next energy transition. These are not the same variable. A country can hold significant current monetary power with negligible transition potential — the United Kingdom, whose sterling decline tracks North Sea depletion. Or negligible current monetary power with significant transition potential — India, oil-import dependent despite net total-energy exporter status by weight, with the world's largest thorium reserves.
 
-Eichengreen (2011) estimates the determinants of reserve currency share with panel
-regressions that include trade share, financial depth, and institutional quality. Energy
-position does not appear. The specifications are linear and present-only: they capture the
-existing distribution of monetary power but cannot map its evolution across energy
-transitions.
+Any framework that puts both quantities in the same expression, at the same time, without distinguishing their temporal basis will systematically misrank both. It will overpredict states whose present energy position is strong but whose transition endowment is weak. It will underpredict states whose present position is weak but whose structural position for the next era is strong.
 
-Stigler's (1971) regulatory capture theory — the most natural framework for describing
-politically constructed allocation regimes like the EU ETS — is static, single-sector,
-and carries no monetary dimension. Applying the capture label to carbon markets explains
-allocation outcomes but says nothing about what follows for monetary power.
+This is not a technical complaint about regression specification. It is a substantive claim about how monetary power is produced across time. The MPI resolves it by treating present and future monetary power as two separate states of the world, weighted by the probability that the energy transition has progressed sufficiently to shift the relevant era.
 
-The gap all three share: none formalises how monetary power is *reproduced across energy
-eras*. Strange's insight is correct but static. Eichengreen's regressions are dynamic but
-present-era only. Neither asks what happens to the finance-energy nexus when the dominant
-energy input shifts.
+## 3.2 The MPI Equation
 
-The central problem is that prior work conflates two distinct quantities: the *current*
-monetary power derived from present energy sovereignty, and the *forward option* on
-monetary power contingent on the next energy transition. These are not the same variable.
-A country can hold significant current monetary power with negligible transition potential
-(UK: sterling reserve decline tracking North Sea depletion), or negligible current
-monetary power with significant transition potential (India: net energy importer today,
-largest thorium reserves globally). Any framework that puts both in the same expression
-without distinguishing their temporal basis will misrank both.
-
----
-
-## 3.2 The Monetary Power Index
-
-We define **Monetary Power Index** (MPI) for entity *i* at time *t* as an expected value
-across two states of the world: the present energy era and the next one.
+We define Monetary Power Index (MPI) for state *i* at time *t* as:
 
 ```
 MPI_{i,t} = (1 − p_t) · [NEP_{i,t−λ} · GS_{i,t}]
-           +      p_t  · [TMPI_i       · GS_{i,t+τ}]
+           +      p_t  · [TMPI_i · GS_{i,t+τ}]
 ```
 
-**State 0 (present era, weight 1−p_t):**
+The equation has four components. Each corresponds to a concept with both a technical definition and a substantive meaning.
 
-```
-NEP_{i,t−λ} · GS_{i,t}
-```
+**Net Energy Position (NEP)** is a state's production share of world primary energy minus its net import share. A positive NEP means the state produces more energy than it consumes — it is an energy exporter, structurally. A negative NEP means it is structurally dependent on imported energy. NEP is lagged by λ years (estimated at approximately ten years from the US case) because monetary trust accumulates through decades of stable exchange, not months. A country's energy position in 2010 shapes how central banks perceive its monetary credibility in 2020.
 
-Monetary power in the current era is driven by Net Energy Position — the present-leg
-mechanism — multiplied by Governance Sensitivity, the degree to which energy allocation
-is a policy variable rather than a geological constant.
+**Governance Sensitivity (GS)** measures the degree to which a state's energy allocation regime is politically constructed rather than market-determined. GS greater than 1 indicates that the governance regime is more volatile than the underlying physical commodity — the signature of politically negotiated allocation rather than market clearing. This is the backward register's contribution: it establishes that energy sovereignty is not geological fate but strategic outcome. States choose their energy positions through allocation rules, investment decisions, and pipeline diplomacy. GS makes that choice visible as a number.
 
-**State 1 (next era, weight p_t):**
+**Thorium Monetary Potential Index (TMPI)** is the forward register's contribution. It maps which states hold the structural position — in thorium reserves, nuclear conversion capacity, and institutional quality — to convert next-era energy sovereignty into monetary leverage. TMPI is a stock variable, not a flow: it captures endowment and capacity rather than current operations.
 
-```
-TMPI_i · GS_{i,t+τ}
-```
+**Transition probability (p_t)** weights the present and next era. At p_t=0, the equation reduces entirely to the present-era mechanism: NEP multiplied by GS. At p_t=1, it reduces entirely to the forward-era ranking: TMPI multiplied by the governance sensitivity of the emerging regime. Between 0 and 1, it produces a trajectory. The MPI is not a static ranking. It is a map of how each state's monetary power evolves as the energy transition progresses.
 
-Monetary power in the next era is driven by the Thorium Monetary Potential Index —
-structural endowment for the transition — multiplied by the governance sensitivity of the
-emerging regime. GS_{i,t+τ} is not yet estimable; in the forward leg we treat it as
-constant and note that the entities best positioned to construct high GS in the thorium
-era are those currently building domestic fuel cycle control (India's three-stage
-programme; Canada's CANDU export position).
+Throughout this paper, p_t is treated as a scenario parameter rather than a calibrated point estimate. No current expert forecast provides sufficient confidence in a precise value; what expert forecasts do provide is a range of plausible transition timelines. The Low (3% nuclear share by 2040), Base (10%), and High (20%) scenarios in §7.7 are constructed as sensitivity analysis over p_t: the Low scenario corresponds to low p_t through 2040, the High scenario to high p_t. The key result — that India's ranking is robust across all scenarios — holds regardless of where in the Low-to-High range the transition falls.
 
-**p_t — the transition probability:**
+## 3.3 Why Two States, Not a Single Multiplication
 
-p_t is the market's current assessment of the probability that thorium-era nuclear has
-become the dominant energy input by time t+τ. It is the structural variable that connects
-all three temporal legs:
+The natural instinct is to multiply all three components together: NEP times GS times TMPI. This is wrong for a precise reason. NEP is a current flow variable — it changes yearly with production and consumption decisions, and can go sharply negative (Japan's NEP fell 67% in two years after Fukushima). TMPI is a structural stock variable — geological reserves do not move, nuclear capacity changes on decadal timescales, institutional quality is persistent. Multiplying a flow by a stock in the same contemporaneous expression conflates their temporal basis.
 
-```
-p_t = f(nuclear_cost_trajectory_t, geopolitical_signal_t, cumulative_capacity_t)
-```
+The consequence: a multiplicative form understates countries whose current NEP is low but whose TMPI is high — principally India — and overstates countries whose current NEP is high but whose TMPI is low — principally the United Kingdom, whose North Sea reserves are depleted and whose thorium endowment is negligible. The two-state form resolves this by putting NEP and TMPI in separate terms, weighted by which era is operative.
 
-For this paper, p_t is estimated independently from the 5-year rolling mean CAGR of world nuclear energy consumption (OWID/BP data). World nuclear *share* has been declining since 2000 (post-Fukushima, German phase-out), making it an uninformative base for a transition signal; absolute nuclear *consumption* has been growing, driven by China and India additions. The 5-year rolling mean CAGR smooths regulatory shocks — German reactor closures (2022) and French maintenance outages (2022–23) — that are transient, not structural. Reference rate is 15% annual CAGR, calibrated so that 2024's observed rate (~1.7%) maps to p_t ≈ 0.11 — consistent with the Low scenario (p_t ≈ 0.10). This construction is independent of scenario endpoint assumptions: it derives from the observed trajectory, not from a target level imposed from outside the data. The Low/Base/High scenario bounds then provide sensitivity analysis around the central trajectory.
+The analogy from finance is precise: NEP·GS is the intrinsic value of current monetary leverage — the value in-the-money now. TMPI·GS is the time value — the option on future leverage. p_t is the probability weighting the two states. A state's total monetary power today is the sum of what it holds now and what its forward option is worth at current transition odds.
 
-| Symbol | Name | Definition | Empirical counterpart |
-|--------|------|------------|----------------------|
-| NEP_{i,t−λ} | Net Energy Position (lagged) | Production share minus net import share in world primary energy; lagged λ | World Bank energy balance; λ=10 from USA case |
-| GS_{i,t} | Governance Sensitivity | CV(energy governance indicator) / CV(commodity benchmark) | Phase CV comparison; ZA statistic as ordinal complement |
-| TMPI_i | Thorium Monetary Potential Index | thorium_reserve_share × nuclear_capacity_share × institutional_quality | Constructed in §7; static endowment, not a flow |
-| p_t | Transition probability | P(thorium era dominant by t+τ) | Calibrated from scenario bounds in §7 |
+## 3.4 Three Transmission Channels
+
+The MPI equation implies a relationship between energy position and monetary power, but the equation does not itself specify the mechanism. Three distinct channels transmit energy sovereignty into monetary leverage. They operate through different institutional pathways, activate under different conditions, and interact with the Governance Sensitivity term in different ways. Conflating them produces the characteristic error of existing accounts: treating petrodollar recycling as a general law when it is one channel among three, each operating under specific conditions.
+
+**Channel 1 — Trade invoicing** (Gopinath et al. 2020): States that control the dominant energy input in a given era can invoice that trade in their domestic currency, creating a structural demand for reserves denominated in that currency. This is not a natural outcome. It is a governance choice — the 1974 arrangement in which Saudi Arabia agreed to price oil in dollars is the paradigm case. Once established, invoicing norms are sticky: importers accumulate the invoicing currency as working balances, central banks hold it as a reserve against import payment needs, and the currency gains from first-mover network effects in trade settlement. Gopinath's dominant currency paradigm demonstrates that invoicing norms are *downstream* of reserve status, not upstream — they consolidate monetary power once established rather than initiating it. This matters for how Channel 1 is used analytically: it is a *consolidation mechanism* for states that have already achieved reserve currency status, not an *acquisition mechanism* for challengers. For a state seeking to acquire reserve status rather than consolidate it, Channels 2 and 3 are the operative mechanisms; Channel 1 describes how that status is locked in once achieved. This is why capital account conditions matter: trade invoicing in a currency is only attractive if the currency can be freely converted and invested. Channel 1 is structurally unavailable to states with closed capital accounts as an acquisition route, though it may consolidate reserve demand independently once status is established.
+
+**Channel 2 — Asset recycling** (Spiro 1999): Energy surplus states accumulate current account surpluses that must be invested somewhere. The petrodollar system institutionalised this: OPEC surplus revenues flowed into US Treasury securities by design, generating demand for dollar-denominated assets independently of any trade invoicing norm. The recycling channel produces demand for the anchor currency's debt rather than its trade settlement function. It operates with a lag — surpluses must accumulate before they shift reserve composition — and this is part of the mechanism behind the estimated λ≈10 generational delay. A state with a rising Net Energy Position generates a rising current account surplus; that surplus, recycled into financial markets, produces reserve currency demand over the subsequent decade as central bank diversification adjusts to the new supply of assets.
+
+**Channel 3 — Credibility and store-of-value** (Strange 1988): Energy sovereignty signals fiscal durability and reduces external vulnerability. A state that controls its energy inputs faces lower imported inflation risk, lower balance-of-payments stress, and greater monetary policy autonomy. These properties make its currency a more credible store of value for foreign central banks. GS is the direct measure of this channel: when a governance regime is politically renegotiated — when the energy position it produces is revealed to be contingent on political deals rather than durable allocation rules — credibility collapses. The EU ETS's GS of 2.87 is precisely a Channel 3 failure: carbon credits priced through political lobbying cannot serve as a credible anchor for long-run monetary expectations.
+
+**Mapping channels to MPI components:** The NEP·GS term in the present-era state captures primarily channels 2 and 3 — a strong energy position generates surpluses (channel 2) and credibility (channel 3), both multiplied by the governance durability of the regime producing that position. The TMPI·GS term in the forward state captures primarily channels 1 and 3 — a state with large thorium reserves and active conversion capacity has a structural opportunity to establish an invoicing norm (channel 1) and a credibility claim based on long-run energy sovereignty (channel 3). Channel 1 is the most powerful but also the most conditional: it requires capital account openness that is itself a downstream consequence of channels 2 and 3 operating first.
+
+**Sequencing matters for the India case.** India's capital account is currently closed (Chinn-Ito KAOPEN = −1.254, unchanged since 1970), which means channel 1 is structurally unavailable to India today. The transmission chain therefore runs through channel 3 first — nuclear capacity growth improves energy sovereignty, reducing imported inflation and balance-of-payments stress, generating monetary credibility — and channel 2 second, as improved current account conditions allow reserve accumulation. Channel 1 becomes available only after partial capital account liberalisation that is itself a downstream consequence of channels 2 and 3 having operated. The Katzenstein filter and the India transmission chain in §7 are applications of this sequencing logic.
+
+The three-channel structure means the relevant diagnostic question for any state is not whether energy endowment exists but which channel is binding given its institutional configuration. For India, the binding channel is sequencing: channels 2 and 3 must operate before channel 1 becomes available. For Russia, it is institutional quality: the GS term is suppressed by governance infrastructure exclusion regardless of energy position. For Switzerland, no channel operates because institutional substitution renders energy position irrelevant to monetary credibility. The three-constraint diagnostic table in §7.3 is a direct application of this logic.
 
 ---
-
-## 3.3 Why Two States, Not Multiplication
-
-The natural first instinct is to write MPI as a product of all three components:
-*[NEP × GS × TMPI]*. This is wrong for a precise reason.
-
-NEP and TMPI measure energy sovereignty in *different eras*. NEP is a current flow: it
-changes yearly with production and consumption decisions and can go negative (Japan
-post-Fukushima: NEP dropped 67% in two years). TMPI is a structural endowment: geological
-reserves do not move, nuclear capacity changes on decadal timescales, institutional quality
-is persistent. Multiplying a flow variable by a stock variable in the same contemporaneous
-expression conflates their temporal basis.
-
-The consequence: a multiplicative form *understates* countries whose current NEP is low but
-whose TMPI is high (India), and *overstates* countries whose current NEP is high but whose
-TMPI is low (UK: North Sea depleted, no thorium programme). The two-state form resolves
-this by putting NEP and TMPI in separate terms, weighted by which era is operative.
-
-The two-state form also has clean limiting cases that the multiplicative form cannot produce:
-
-- **p_t = 0:** MPI reduces to NEP · GS — the present-leg mechanism exactly as estimated
-  in §6. The entire empirical content of the present leg is a special case of MPI.
-- **p_t = 1:** MPI reduces to TMPI · GS — the forward-leg ranking exactly. The TMPI
-  analysis in §7 is the other limiting case.
-- **0 < p_t < 1:** MPI is a weighted average, with India rising and UK declining as p_t
-  increases. The trajectory of individual country scores as p_t rises is the paper's most
-  falsifiable forward prediction.
-
-An option-pricing analogy is exact: NEP · GS is the *intrinsic value* of current monetary
-leverage (in-the-money now); TMPI · GS_{t+τ} is the *time value* (the option on future
-leverage). p_t is the risk-neutral probability weighting the two. A country's total monetary
-power today is the sum of what it holds now and what its option is worth at current
-transition odds.
-
----
-
-## 3.4 The Governance Sensitivity Term
-
-GS appears in both states of the MPI expression. This is not redundant — it is the
-paper's central theoretical claim made explicit: **governance contestability is the
-mechanism that makes energy sovereignty a policy variable in any era.**
-
-GS operates at two distinct levels in this paper, and it is essential to keep them
-separate.
-
-**GS_regime — regime-level calibration (backward leg).** Measures how politically
-constructed a specific allocation mechanism is, relative to the underlying commodity:
-
-```
-GS_regime = CV(allocation_governance_indicator_{era}) / CV(commodity_benchmark_{era})
-```
-
-The EU ETS Phase I provides the cleanest measurement: GS_regime = CV(EUA Phase I) /
-CV(oil) = 0.815 / 0.292 ≈ 2.79. The Phase I allocation surplus was nearly three times
-more volatile than the oil price in the same period — the signature of a politically
-negotiated regime, not a commodity with fixed physical supply. The backward leg
-establishes GS_regime > 1 as a structural property of the EU carbon regime; it does not
-require, and does not claim, that all energy governance exhibits this property — the RGGI
-comparison (GS_regime ≈ 0.16) demonstrates that the same asset class can be governed
-with far lower political sensitivity. GS_regime is normalised to GS_norm ≈ 0.85 for use
-as a scaling anchor in the MPI assembly (§5.4).
-
-**GS_{i,t} — entity-level governance sensitivity (MPI assembly input).** Measures how
-volatile each entity's energy import position has been relative to the commodity
-benchmark — a proxy for how exposed the entity's energy balance is to politically
-constructed allocation regimes, rather than stable administered governance:
-
-```
-GS_{i,t} = CV(energy_imports_pct_i, 2000–2023) / CV(oil_price, 2000–2023)
-```
-
-High GS_{i,t} indicates an energy position that moves substantially more than the
-underlying commodity price — the hallmark of politically contested allocation. Low
-GS_{i,t} indicates administered stability. Russia post-2022 is computed from post-sanction
-years only (2022–23), reflecting exclusion from Western governance infrastructure.
-Table 3 reports computed values:
-
-| Entity | GS_{i,t} (raw) | GS_{i,t} (norm) | Interpretation |
-|--------|----------------|-----------------|----------------|
-| RUS | 0.011 | 0.004 | Post-2022 sanctions: near-zero Western governance participation |
-| EMU | 0.076 | 0.024 | Slowly declining imports, administered elements |
-| CHE | 0.127 | 0.040 | Financial entrepôt, stable administration |
-| JPN | 0.139 | 0.043 | METI-administered prices, stable import dependence ✓ |
-| IND | 0.465 | 0.144 | Volatile import dependence (oil price sensitivity) |
-| CAN | 0.502 | 0.156 | Commodity-exposed, moderate governance |
-| AUS | 0.626 | 0.195 | LNG/coal exporter, market-priced |
-| CHN | 1.348 | 0.419 | Rapid energy structure change |
-| GBR | 1.827 | 0.568 | North Sea depletion, liberalised market |
-| USA | 1.984 | 0.616 | Shale revolution, deregulated ✓ |
-| BRA | 3.219 | 1.000 | Hydroelectric + oil import volatility |
-
-The ordering confirms the theoretical priors: Japan and Switzerland (administered) are
-among the lowest non-sanctioned entities; USA and GBR (deregulated, structurally
-volatile) are among the highest. This entity-level variation differentiates entities at
-the same NEP level within the MPI assembly.
-
-**The relationship between GS_regime and GS_{i,t}.** Both measure governance volatility
-normalised to a commodity benchmark; they differ in scope. GS_regime characterises a
-specific allocation mechanism (the EU carbon market, the oil-dollar settlement system).
-GS_{i,t} characterises a country's exposure to however governance operates in its era.
-GS_regime > 1 established by the backward leg is the theoretical warrant for using
-GS_{i,t} in the MPI: it proves that governance construction is real and measurable, not
-a classification artefact.
-
-**Complement: the Zivot-Andrews statistic.** CV captures the degree of political
-construction over a phase; the ZA statistic captures whether that construction breaks
-endogenously at a political event rather than a supply shock. Both are reported in §5.
-They are complementary measures of the same underlying property.
-
-In State 1, GS captures whether the thorium allocation regime will be politically
-constructed or treated as geologically fixed. The countries investing now in domestic fuel
-cycle control — India's closed-cycle programme, Canada's CANDU heavy-water expertise —
-are pre-positioning for high GS in the thorium era. Countries that allow their thorium
-endowment to be allocated by international markets cede the GS term and with it the
-amplification it provides on TMPI.
-
----
-
-## 3.5 The Causal Chain
-
-The MPI equation is not merely a classification. It encodes a causal sequence:
-
-```
-GS_{i,t} [backward leg]
-    ↓ constructs
-NEP_{i,t−λ} [present leg]
-    ↓ with generational lag λ
-Monetary power [present-leg outcome]
-    ↓ signals
-p_t [transition probability]
-    ↓ weights
-TMPI_i [forward leg]
-```
-
-The backward test establishes the first link: governance sensitivity is politically
-constructed, not technologically determined. If GS were exogenous — if energy allocation
-regimes tracked commodity fundamentals — then the present leg would be documenting a
-fixed geological constraint. Because GS is high and politically endogenous (ZA break
-aligns with political events, not supply shocks), NEP itself is a *strategic variable*.
-States choose their energy position through allocation regimes, investment decisions, and
-pipeline diplomacy.
-
-The second link — NEP to monetary power with lag λ — is the present-leg's empirical
-contribution. λ ≈ 10 years estimated from the USA case.
-
-The third link — from current monetary power to p_t — is the one most prior work
-ignores. A state with dominant current monetary power can influence the rate at which
-transition probability rises. The USA's ability to set the terms of nuclear non-
-proliferation treaties, the EU's ability to construct carbon market rules, India's
-insistence on a sovereign fuel cycle: all are attempts to influence p_t. The transition
-is not technologically inevitable on a fixed schedule. It is politically contested. The
-backward test proves this claim for the carbon era. The forward prediction assumes it
-will be equally true for the thorium era.
-
----
-
-## 3.6 What the Framework Explains That Prior Work Cannot
-
-**The USA-EMU contrast.** USA: net energy producer, NEP rising post-shale, high GS
-(domestic energy policy is contested). EMU: net energy importer, NEP declining 2009-2024
-(r=0.864 with EUR reserve share decline), energy policy increasingly constrained by
-external dependence. Under MPI at p_t≈0, USA dominates. This is the present-leg result.
-
-**The Japan test.** Japan has the world's third-largest economy (GDP share ~6%) but
-persistent underperformance in reserve share (~5-6%). Under MPI: Japan's NEP collapsed
-61% after Fukushima (2011), suppressing the State 0 term. Japan's TMPI is non-zero
-(institutional quality high, policy target 20% nuclear by 2035) — so as p_t rises,
-Japan recovers in the MPI ranking. The framework predicts when Japan should recover,
-not just that it is currently anomalous.
-
-**The Russia isolation case.** Russia has strong underlying components: positive NEP,
-non-trivial TMPI (thorium reserves, nuclear capacity). But post-2022 sanctions are a
-governance shock that collapses GS in both states: access to Western carbon markets
-ended; bilateral energy corridors operate outside the institutional infrastructure
-that makes monetary leverage convertible into reserve status. MPI captures this
-correctly: the framework does not fail on Russia — it explains exactly why a country
-with strong raw endowments has suppressed monetary power when excluded from the
-governance infrastructure.
-
-**The Australia case.** High thorium reserves (12.6% world share), open capital
-account, strong institutions — but zero nuclear capacity collapses TMPI multiplicatively
-to zero. In the two-state MPI: Australia's State 1 term is currently zero; AUKUS
-changes this ~2035 when nuclear capacity comes online. MPI predicts a step-change in
-Australia's forward monetary power at a specific date, conditional on AUKUS delivery.
-This is the paper's most precisely falsifiable forward prediction.
-
-**The India trajectory.** India's current NEP is negative (net energy importer,
-suppressing State 0). India's TMPI is third globally (largest thorium reserves, active
-three-stage nuclear programme, improving institutions). As p_t rises, India's MPI
-rises discontinuously — not because its current position improves but because the
-weight on State 1 increases. This trajectory is the central forward claim of the paper
-and is unproducible by any present-only framework.
-
----
-
-## 3.7 Relationship to Strange's Structural Power
-
-Strange argued that structural power — the power to shape the framework within which
-others must operate — derives from four sources: security, production, finance, and
-knowledge. Finance and energy jointly constitutive.
-
-MPI formalises the finance-energy interaction across eras she never developed. NEP is
-the energy component. Reserve share (the outcome MPI predicts) is the financial
-component. GS is the political contestability of the interface between them. TMPI
-extends the framework to the next era.
-
-The key departure: Strange assumed structural power is reproduced in the present.
-MPI shows it is reproduced *across* eras — and that the reproduction mechanism is
-estimable from current data. The backward test proves the mechanism was operative in
-the carbon era. The present test proves it is operative now. The forward test derives
-where it points next.
-
-*Strange identified the pillars. We formalise their interaction across time.*
-
-The corollary that Strange could not see from 1988: because p_t is politically
-determined (the backward test establishes this), the transition itself is a site of
-contestation. Incumbents who understand the MPI framework have an incentive to
-slow p_t — to delay the moment at which the thorium era's weights dominate the
-ranking. This is not a theoretical prediction. It is already observable in nuclear
-non-proliferation architecture, uranium supply chain politics, and the terms on which
-AUKUS was negotiated.
-
----
-
-*Empirical implementation: §5 (backward, GS), §6 (present, NEP_{t−λ}), §7 (forward, TMPI),
-§8 (synthesis: MPI trajectories as p_t varies from 0 to 1).*

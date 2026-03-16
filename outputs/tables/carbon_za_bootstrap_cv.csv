@@ -1,0 +1,2 @@
+T,n_boot_ok,null_model,empirical_cv_1pct,empirical_cv_5pct,empirical_cv_10pct,asymptotic_cv_1pct,asymptotic_cv_5pct,observed_za,rejects_at_1pct_empirical,rejects_at_5pct_empirical
+20,1915,pure_random_walk,-77.097,-30.665,-16.398,-5.57,-5.08,-6.248,False,False

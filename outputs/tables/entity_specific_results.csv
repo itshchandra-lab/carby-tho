@@ -1,0 +1,4 @@
+country,n_obs,ecm_cointegrated,ecm_f_stat,ecm_lr_beta,ecm_speed,dols_beta,dols_se,dols_pval,boot_ci_lower,boot_ci_upper,boot_se,interpretation
+USA,30,True,9.939,-254.3524,-0.1904,143.6342,51.5872,0.0054,70.4527,219.3909,40.2564,Energy-monetary mechanism present
+GBR,30,False,3.259,2.0483,-0.1612,-50.3453,15.462,0.0011,-73.4172,-25.0511,12.4078,Not cointegrated — no long-run relationship
+JPN,30,False,3.41,-50.1898,-0.1577,-7.4707,11.2885,0.5081,-23.764,11.4607,9.0609,Not cointegrated — no long-run relationship

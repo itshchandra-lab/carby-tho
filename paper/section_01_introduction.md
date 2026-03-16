@@ -1,170 +1,48 @@
-# §1 — Introduction
+# The Carbon-Thorium Standard
+## Energy-Backed Currencies and the Architecture of Monetary Failure in a Multipolar World
 
-In 1944, the United States dollar became the anchor of the postwar monetary order at
-Bretton Woods. The standard explanation for this outcome emphasises American economic
-size, the depth of its financial markets, and the institutional architecture its
-negotiators imposed. These explanations are not wrong. But they are incomplete. The
-dollar did not simply follow American GDP. It followed American energy. The United
-States was the world's dominant oil producer from the 1860s through the 1970s — a
-position that underwrote the industrial capacity, trade surpluses, and geopolitical
-leverage from which monetary hegemony was constructed. The sterling-dollar transition
-of the twentieth century was simultaneously a coal-oil transition. No existing framework
-in international political economy makes that connection formally.
-
-This paper proposes one.
-
-We develop the **Monetary Power Index** (MPI), a theoretical framework that formalises
-the relationship between energy sovereignty and monetary power across energy eras:
-
-```
-MPI_{i,t} = (1 − p_t) · [NEP_{i,t−λ} · GS_{i,t}]  +  p_t · [TMPI_i · GS_{i,t+τ}]
-```
-
-The first term captures monetary power in the *present* energy era: Net Energy Position
-(NEP) — production share minus net import share in world primary energy, lagged λ years
-— multiplied by Governance Sensitivity (GS), the degree to which the energy allocation
-regime is politically constructed rather than geologically fixed. The second term captures
-monetary power in the *next* era: the Thorium Monetary Potential Index (TMPI), a
-composite of thorium reserve endowment, nuclear capacity, and institutional quality,
-multiplied by the governance sensitivity of the emerging regime. The transition
-probability p_t weights the two — at p_t=0 the equation reduces to a present-era
-regression; at p_t=1 it reduces to a forward ranking. Between 0 and 1 it maps every
-country's monetary power trajectory as the energy transition progresses.
-
-We test the framework across three temporal registers.
-
-The **backward leg** establishes the premise: energy governance regimes are politically
-contested, not geologically determined. We test this on the EU Emissions Trading System
-(2005–2024) using the Zivot-Andrews structural break test on the allocation surplus
-series. The break falls in 2014 (stat=−6.248, p=0.0006), aligned with the Phase III
-structural reform — a political decision, not a commodity supply shock. We then compare
-price volatility across carbon markets: EU ETS Phase I exhibits a coefficient of
-variation of 0.815, nearly 17 times higher than the US Regional Greenhouse Gas
-Initiative (RGGI) in its first compliance period (CV=0.047). Both are synthetic carbon
-permits. RGGI was actually *more stable than the oil market* (oil CV=0.292). The
-difference is entirely attributable to the EU's politically constructed allocation
-rules. Energy governance is a policy variable, not an exogenous endowment. This has
-a further implication that links the backward leg to the forward: if carbon prices
-are politically constructed rather than market-cleared, the carbon governance regime
-cannot function as a credible anchor for sovereign energy policy. A monetary
-arrangement partly calibrated to the carbon era is therefore structurally unstable —
-not because of bad policy, but because the allocation regime is contested by design.
-The thorium transition does not arrive from outside the system. It is already latent
-in the carbon era's failure to produce an authoritative, de-politicised allocation
-mechanism.
-
-The **present leg** tests whether the mechanism operates: does NEP predict reserve
-currency share with a generational lag? The cleanest identification comes from Japan.
-Japan has the world's third-largest economy, deep financial markets, and every GDP-
-level predictor that the standard literature (Eichengreen 2011; Cohen 2015) would use
-to forecast reserve currency status — yet the yen has held 5–6% of global reserves
-for three decades, far below its GDP weight. The mechanism explains this directly:
-Japan is a chronic net energy importer with near-zero NEP, and post-Fukushima the
-position worsened sharply — NEP dropped 67% in two years following the 2011 nuclear
-shutdown; yen reserve share has been stagnant since. Japan is not anomalous. It is
-the control case that isolates the energy variable's independent effect against the
-GDP null hypothesis.
-
-We estimate entity-specific ARDL bounds tests, error correction models, and DOLS
-regressions for six reserve currency entities (1995–2024). Two structured cases
-corroborate the mechanism in opposite directions. In the United States, where NEP rose
-through the shale revolution, the ARDL bounds test confirms cointegration; USD reserve
-share has stabilised since 2021, approximately λ=10 years after peak shale output —
-consistent with the mechanism operating on schedule. In the eurozone, where NEP
-declined from 0.010 (1999) to 0.005 (2024) as North Sea reserves depleted and import
-dependence rose, EUR reserve share tracked the decline with a 10-year lag (r=0.864,
-n=16). The LOO jackknife — dropping USA flips β from +84 to −3 — is not a weakness:
-it is evidence of opposite-sign slopes that pooled OLS cannot distinguish. Switzerland
-holds 13–22% of global central bank reserves with near-zero NEP — institutional
-quality and financial entrepôt status can substitute for energy position, a boundary
-condition the framework anticipates.
-
-The **forward leg** asks where the mechanism points next. If energy transitions
-determine monetary trajectories, and if thorium-based nuclear power becomes the
-dominant energy input of the mid-21st century, which states hold the structural
-position to convert that endowment into monetary leverage? We construct the TMPI as
-a multiplicative index of thorium reserve share, nuclear energy share, and
-institutional quality. The top-three ranking — USA (100), Canada (20.8), India (15.8)
-— is scenario-invariant across Low/Base/High transition assumptions (3%/10%/20%
-nuclear share by 2040). More importantly, the full MPI framework reveals the trajectory
-that static rankings obscure: India's current NEP is negative (net energy importer),
-suppressing its present-era monetary power. But as p_t rises with the transition,
-India's MPI rises discontinuously — driven by the world's largest thorium reserves
-and an active three-stage nuclear programme. No present-era regression produces this
-prediction. The two-state MPI does.
+*Working Paper | 2026*
 
 ---
 
-**What this paper contributes and what it does not claim.**
+**Abstract**
 
-Hegemonic Stability Theory (HST) — Kindleberger (1973), Gilpin (1981) — provides the
-closest prior framework: reserve currency status follows from the structural power of
-the hegemonic state. Our argument is a specification of HST's production dimension,
-not a rejection of it. HST describes the correlation (structural power → monetary
-dominance) but does not specify what structural power is made of at the production
-level. MPI provides that specification: energy governance, contested and lagged, is
-the causal mechanism beneath the correlation HST tracks. This is why HST cannot predict
-transitions — it treats structural power as given rather than derived from the energy
-base that produces it. When the energy base shifts, HST observes the outcome after the
-fact. MPI observes the preconditions before it.
+Why do reserve currencies rise and fall? The standard account points to GDP, financial depth, and network effects. This paper argues that energy sovereignty is the missing mechanism — and that its absence from existing frameworks is not an oversight but a structural blind spot that will cause every major account to mispredict the next monetary transition, as every standard account has mispredicted every major transition of the past two centuries.
 
-Strange (1988) identified finance and energy as two of the four structures of structural
-power but never formalised their interaction across eras. The Japan case illustrates
-why this matters: Japan commands Strange's finance and knowledge structures but lacks
-production autonomy — and its reserve share reflects exactly that deficit. Strange's
-framework predicts this outcome; MPI specifies the mechanism that produces it. We
-extend Strange's synchronic account into a dynamic one by formalising how the
-finance-energy interaction *reproduces across* energy transitions.
+We develop the Monetary Power Index (MPI), a framework that formalises the relationship between energy sovereignty and monetary power across energy eras. Three empirical registers test it. The backward register establishes that energy governance is politically constructed, not geologically determined: the EU Emissions Trading System's carbon price collapsed not because of a supply shock but because of a political accounting revelation, exhibiting price volatility seventeen times higher than an equivalent American carbon market. The present register documents the mechanism through structured case comparison: the United States and the eurozone move in opposite directions on both energy position and reserve share, and Japan's post-Fukushima nuclear shutdown provides a rare natural experiment that isolates the energy variable from GDP and institutional quality. The forward register constructs a Thorium Monetary Potential Index that maps which states hold the structural position to convert thorium-era energy endowments into monetary leverage — and finds that India's position rises discontinuously as the energy transition progresses, a prediction no present-era framework produces. The India prediction is framed as a conditional scenario: INR FX turnover share reaches 3–5% by BIS 2031 conditional on nuclear capacity additions being measurable by 2028 AND some capital account easing observable in the same period; if the 2028 gate conditions are not met, the 2031 prediction is withdrawn, not postponed. The MPI is a measurement instrument for identifying structural candidates; the causal theory operates through three transmission channels — trade invoicing, asset recycling, and credibility — that activate under specific institutional sequencing conditions.
 
-The title names two successive attempts to construct an energy-backed monetary
-architecture, and the subtitle names their shared failure mode.
+Ten falsifiable predictions are registered at dated checkpoints through 2037. The paper stakes its empirical reputation on specific, time-bound outcomes.
 
-The *carbon standard* is the implicit monetary architecture of the current era: an
-allocation system in which carbon permits, not gold or dollars, are meant to coordinate
-sovereign energy policy and price the externalities of fossil fuel use. It failed as a
-monetary architecture for the precise reason the backward leg identifies: GS > 1. The
-EU ETS Phase I allocation surplus was nearly three times more volatile than the
-underlying commodity. Carbon permit prices cannot anchor monetary expectations when
-permit allocations are renegotiated by political decision every time they impose
-material costs. A monetary standard that can be repriced when inconvenient is not a
-standard. It is a managed price with extra steps. This is why carbon market revenues
-have not generated reserve currency positions. The carbon governance regime is too
-politically contestable to function as a credible allocative anchor.
+**Keywords:** reserve currencies, energy sovereignty, geoeconomics, structural power, thorium, monetary power index, governance sensitivity, de-dollarisation
 
-The *thorium standard* is the forward attempt. States with high TMPI are pre-positioning
-to construct governance over thorium fuel cycles that gives their currencies energy
-backing in the next era. Whether this attempt also fails depends on whether those
-states build allocation mechanisms that resist political capture — that is, whether GS
-in the thorium era approaches 1 rather than amplifying toward 3. The TMPI ranking is
-therefore not merely a prediction about which states hold structural position. It is a
-prediction about which states will face the governance design challenge of making an
-energy-backed monetary arrangement credible, and who will be excluded from that attempt
-when they fail.
-
-Helleiner (2014) showed why the 2008 crisis did not dislodge dollar primacy: the absence
-of a credible alternative and the inertia of network effects preserved the existing
-architecture. Our claim is different: the next dislodging force is not a financial
-crisis but an energy transition, and the transition is already detectable in the data.
-
-We make three targeted claims, not a general theory of monetary hegemony: energy
-governance regimes are politically constructed (GS > 1 estimable); NEP predicts reserve
-share with a generational lag in the two structured cases where the mechanism is
-identified; TMPI maps the forward distribution of monetary potential with falsifiable
-predictions at dateable checkpoints. We do not claim causal identification in the
-treatment-effects sense — the correct framing is historical political economy with
-falsifiable forward predictions. Any framework that omits the energy-governance nexus
-will systematically mispredict reserve currency transitions, as every standard account
-has for every major transition of the past two centuries.
+**JEL codes:** F31, F33, Q43, Q48
 
 ---
 
-**Structure of the paper.**
+# §1 — Introduction: Money Has Always Been an Energy Instrument
 
-Section 2 reviews the literature on reserve currency determinants, structural power,
-and carbon market political economy, identifying the gap this paper fills. Section 3
-presents the MPI framework formally and derives the causal chain connecting its three
-components. Section 4 describes the data construction and variable definitions.
-Sections 5, 6, and 7 present the backward, present, and forward empirical legs
-respectively. Section 8 assembles the MPI trajectories as p_t varies, with Russia
-as the hinge case that threads all three legs. Section 9 concludes with the unified
-falsification registry and a statement of the framework's limits.
+In 1944, the United States dollar became the anchor of the postwar monetary order at Bretton Woods. The standard explanation emphasises American economic size, the depth of its financial markets, and the institutional architecture that American negotiators imposed on a war-exhausted world. These explanations are not wrong. They are incomplete.
+
+The dollar did not simply follow American GDP. It followed American energy. The United States was the world's dominant oil producer from the 1860s through the 1970s — a position that underwrote the industrial capacity, trade surpluses, and geopolitical leverage from which monetary hegemony was constructed. But the dollar's elevation to reserve currency status was not a passive consequence of energy abundance. It required a governance decision that converted energy position into monetary architecture.
+
+That decision occurred in 1974. The US-Saudi agreement — negotiated in the aftermath of the oil shock — established that Saudi Arabia would price oil in US dollars and commit OPEC surplus revenues to US Treasury securities. In exchange, the United States offered military protection and security guarantees. Spiro (1999) reconstructed this arrangement in detail: it was a political transaction, not a market outcome. The consequence was structural. Every oil-importing country now needed dollars to purchase energy. Every OPEC surplus was recycled into demand for dollar-denominated assets. The petrodollar system did not emerge from network effects or GDP mass. It was constructed, through a specific bilateral deal, at a specific historical moment.
+
+The sterling-dollar transition of the twentieth century was simultaneously a coal-oil transition — and the mechanism is visible in the data. UK coal production peaked in 1913 at approximately 292 million tonnes (BP Statistical Review of World Energy; Our World in Data). Sterling's reserve share began its long decline in the 1920s, a generational lag after the coal peak. But sterling did not simply evaporate when British industrial primacy faded. Schenk (2010) documented a more specific mechanism: oil royalty payments from Kuwait, Nigeria, and Saudi Arabia — denominated in sterling under colonial-era contracts — sustained demand for the pound well into the 1960s and 1970s, thirty years after Britain had ceased to be a credible economic hegemon. Gulf producers held sterling balances because their energy revenues arrived in sterling. When oil invoicing shifted to dollars after 1974, that structural demand evaporated. Sterling's reserve share fell from roughly 35% in 1950 to under 5% by 1980 (Eichengreen and Flandreau 2009) — not because Britain became less creditworthy in some abstract sense, but because the currency of energy trade changed and the institutional infrastructure of sterling demand was severed at its root.
+
+No existing framework in international political economy makes this connection formally. This paper proposes one.
+
+We develop the Monetary Power Index (MPI), a two-state framework that formalises the relationship between energy sovereignty and monetary power across energy eras. The MPI has three components, each corresponding to a temporal register of evidence:
+
+The **backward register** establishes that energy governance is politically constructed — that energy positions are not geological fate but strategic outcomes of contested allocation decisions. The test case is the EU Emissions Trading System, whose carbon price collapsed from €30 to near-zero in 2007 not because of a supply shock but because of a political accounting revelation. Energy sovereignty, the MPI's input variable, is itself produced by governance choices.
+
+The **present register** tests whether energy position predicts reserve currency status with a generational lag. The United States case — rising energy position through the shale revolution, stabilising reserve share — and the eurozone case — declining energy position, declining reserve share — move in opposite directions as the mechanism predicts. Japan's post-Fukushima nuclear shutdown provides a natural experiment that isolates the energy variable from the standard predictors of GDP, financial depth, and institutional quality.
+
+The **forward register** asks where the mechanism points next. If energy transitions determine monetary trajectories, which states hold the structural position to convert the next-era energy endowment into monetary leverage? The Thorium Monetary Potential Index maps this distribution and makes a specific empirical bet: India's monetary position rises discontinuously as the energy transition progresses, driven by the world's largest thorium reserves and an active three-stage nuclear programme.
+
+The paper registers ten falsifiable predictions at specific future dates. If the India prediction — INR FX turnover share rising to 3–5% by BIS Triennial 2031 — is confirmed, the energy-monetary mechanism is supported for the transition era. If it fails, the forward leg is falsified. We welcome the test.
+
+---
+
+**A note on the title: why "standard"?** The carbon governance architecture represents the current era's attempt to construct a rule-based energy allocation mechanism — just as the gold standard anchored monetary expectations through a commodity peg. Both claim to constrain sovereign discretion. The carbon regime failed that claim for a precise reason the backward register identifies: its prices are renegotiated whenever they impose material costs on powerful incumbents (Polanyi 1944). The thorium standard is the forward attempt; whether it succeeds depends on whether physical scarcity and nuclear construction lead times impose constraints durable enough to resist the same capture.
+
+---

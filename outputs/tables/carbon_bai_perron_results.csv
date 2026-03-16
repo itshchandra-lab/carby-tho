@@ -1,0 +1,4 @@
+test,break_years,stat,note
+ZA single break,2014,-6.248,Corroborates documented political event; formal significance not claimed at T=20
+Bai-Perron 1st break,2021,122.38,Dominant break at 2021
+Bai-Perron 2nd break F(2|1),2018+2021,5.47,Second break; low F suggests 2014 is dominant

@@ -1,0 +1,13 @@
+country,score_equal,rank_equal,score_reserves_heavy,rank_reserves_heavy,score_capacity_heavy,rank_capacity_heavy,score_institutions_heavy,rank_institutions_heavy
+USA,100.0,1,100.0,1,100.0,1,100.0,1
+CAN,72.9,2,63.0,5,72.3,2,82.9,2
+IND,68.8,3,85.7,2,53.6,6,68.6,6
+AUS,68.7,4,78.8,3,49.1,7,79.6,3
+GBR,61.6,5,48.6,6,63.3,3,72.2,5
+JPN,60.3,6,47.6,8,59.4,5,73.4,4
+BRA,58.5,7,72.4,4,45.5,8,59.0,8
+RUS,54.3,8,47.7,7,60.7,4,53.8,9
+NOR,45.1,9,39.7,9,32.2,10,63.7,7
+CHN,41.4,10,36.8,10,38.1,9,49.3,10
+ZAF,35.5,11,32.7,12,30.7,11,43.3,11
+TUR,32.3,12,36.5,11,23.1,12,38.1,12

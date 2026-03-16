@@ -1,214 +1,63 @@
-# §2 — Literature Review: Three Traditions, One Gap
+# §2 — The Gap: What Five Literatures Miss
+
+Five bodies of scholarship approach the finance-energy nexus from different angles. None crosses the full distance.
 
 ## 2.1 Reserve Currency Determinants
 
-The empirical literature on reserve currency status has converged on a standard set of
-determinants: the size of the issuing economy's GDP and trade share, the depth and
-liquidity of its financial markets, the stability of its monetary institutions, and
-network effects that make the dominant currency self-reinforcing (Chinn and Frankel
-2007; Eichengreen 2011; Cohen 2015; Maggiori, Neiman, and Schreger 2020). The
-theoretical underpinning draws on the inertia of network goods: switching costs are
-high, incumbents benefit from incumbency, and structural change requires a sufficiently
-large shock to displace an equilibrium. Helleiner (2014) showed why the 2008 financial
-crisis — the most severe in a century — failed to displace dollar primacy: no credible
-alternative existed and the institutional infrastructure of dollar settlement was too
-embedded to dislodge in crisis conditions.
+The empirical literature on reserve currency status has converged on a standard set of determinants: the issuing economy's GDP and trade share, the depth and liquidity of its financial markets, monetary institution stability, and network effects that make the dominant currency self-reinforcing (Chinn and Frankel 2007; Eichengreen 2011; Cohen 2015). The theoretical underpinning draws on the inertia of network goods: switching costs are high, incumbents benefit from incumbency, and structural change requires a sufficiently large shock to displace an equilibrium.
 
-This literature has produced several important findings. First, reserve currency shares
-change slowly but not irreversibly — sterling's decline from ~60% in 1899 to ~5% by
-1976 took three generations but was not arrested by incumbency alone (Eichengreen and
-Flandreau 2009). Second, the relationship between GDP share and reserve share is
-positive but non-deterministic — Japan has maintained a substantially smaller reserve
-share than its GDP would predict for three decades, while Switzerland commands a share
-far above its GDP weight. Third, institutions matter: Chinn-Ito openness, rule of law,
-and credibility of the monetary authority all enter reserve share regressions with
-positive and significant coefficients. Fourth, Arslanalp, Eichengreen, and Simpson-Bell
-(2022) document a "stealth erosion" of dollar dominance since 2000 driven not by euro
-or yen gains — the traditional hegemons-in-waiting — but by a set of non-traditional
-reserve currencies including AUD and CAD. Their finding is directly relevant to this
-paper's forward leg: the diversification is already happening, but into currencies that
-are positioned by commodity endowment and institutional openness, not by GDP mass.
+Two findings matter particularly for this paper. First, reserve currency shares change slowly but not irreversibly. Sterling's decline from roughly 60% of global reserves in 1899 to roughly 5% by 1976 took three generations — but it happened, and Eichengreen and Flandreau (2009) show it began far earlier than conventional accounts suggest, in the mid-1920s. Second, Arslanalp, Eichengreen, and Simpson-Bell (2022) document a quiet erosion of dollar dominance since 2000 driven not by the euro or yen gaining ground but by non-traditional reserve currencies — the Australian and Canadian dollars — currencies positioned by commodity endowment and institutional openness rather than GDP mass. That finding connects directly to this paper's forward register: the diversification is already happening into precisely the currencies the MPI framework predicts should gain share.
 
-Gopinath et al. (2020) propose the dominant currency paradigm (DCP): dollar primacy persists because international trade is invoiced predominantly in dollars, creating a self-reinforcing equilibrium independent of US productive capacity. The DCP explains stickiness *within* an era — why the dollar remains dominant even as US GDP share falls. It does not explain *transitions between* eras: the DCP has no mechanism for predicting when the invoicing equilibrium breaks or which currency displaces it. The sterling-dollar transition involved a complete re-invoicing of commodity trade from pounds to dollars over 1914–1945 — precisely the kind of era-level shift the DCP treats as exogenous. MPI addresses the preconditions for that shift; the DCP addresses the equilibrium that follows. They are complements, not competitors: MPI explains which currency has the energy foundation to become the new invoicing anchor; DCP explains why the transition is slow and requires a large shock to complete.
+Ilzetzki, Reinhardt, and Rogoff (2019) document that monetary power in the post-Bretton Woods era appears increasingly decoupled from energy endowment: the euro's reserve share peaked in 2009 despite the eurozone's structural energy dependence, and dollar dominance has proven resilient across periods of shifting US energy position. This paper argues the decoupling is era-specific. In the consolidation phase — when reserve currency status is already established — the mechanism operates through maintaining monetary credibility rather than acquiring it. Standard specifications miss the mechanism not because it is absent but because they treat the consolidation era as the only era.
 
-**A methodological note on network effects.** Reserve currency shares are
-system-level properties: they sum to approximately 100% by construction, and the
-dollar's share is high partly because the yuan's share is low. Farrell and Newman's
-(2019) weaponised interdependence framework and Kirshner's (1995) monetary coercion
-analysis both show that monetary power is a relational, hub-and-spoke property, not a
-country-level endowment. Entity-specific error correction models — the paper's primary
-specification — reduce but do not eliminate the compositional dependence. The
-system-level topology of monetary networks is beyond the scope of this paper and
-constitutes the primary methodological extension for future work. The entity-specific
-results reported here should be interpreted as capturing the bilateral energy-monetary
-relationship for each entity, not as independent draws from a cross-sectional sample.
+The gap: energy position does not appear in any standard specification. This is not an oversight that a new control variable can correct. It reflects a deeper assumption — that energy is an exogenous endowment, priced by world markets, whose implications for monetary power are already captured by trade shares and GDP. This paper argues that assumption is wrong on both counts.
 
-**The gap:** energy position does not appear in any standard specification. This is
-not an oversight that can be corrected by adding a control variable to an existing
-regression. It reflects a deeper assumption: that energy is an exogenous endowment,
-priced by world markets, whose implications for monetary power are fully captured by
-trade shares and GDP. This paper argues the assumption is wrong in two ways. First,
-energy governance regimes are politically constructed — allocation rules are negotiated,
-not market-cleared, and their construction creates the conditions for monetary leverage.
-Second, energy positions shift across transition eras, and the transition itself is
-politically contested. A framework that treats energy as exogenous cannot predict
-transition dynamics.
+## 2.2 Hegemonic Stability Theory and Structural Power
 
-## 2.2 Hegemonic Stability Theory and the Production Mechanism
+Hegemonic Stability Theory (Kindleberger 1973; Gilpin 1981) provides the dominant realist framework: the international monetary system requires a hegemon willing and able to provide the public goods of monetary stability, and reserve currency status follows from that hegemonic position. HST correctly describes the correlation between dominant powers and dominant currencies but leaves the production mechanism underspecified. What makes a state structurally powerful in the first place?
 
-Hegemonic Stability Theory (Kindleberger 1973; Gilpin 1981) provides the dominant
-realist framework for reserve currency analysis: the international monetary system
-requires a hegemon willing and able to provide the public goods of monetary stability,
-and reserve currency status follows from that hegemonic position. HST correctly
-describes the correlation — dominant powers issue the dominant currency — but leaves
-the production mechanism underspecified. What makes a state structurally powerful in
-the first place?
+Susan Strange (1988) offered the most precise answer. She identified four structures of structural power — security, production, finance, and knowledge — and argued that the United States' postwar dominance rested on simultaneous command of all four. She understood the finance-energy linkage but treated it as contingent on the specific institutional arrangements of dollar-denominated oil trade rather than as a general mechanism that reproduces across energy transitions.
 
-The standard HST answer is aggregate capability: GDP, military power, technological
-lead. Our argument is that at the *production dimension* of structural power, energy
-sovereignty is the operative variable. The sterling-dollar transition tracks the
-coal-oil transition more precisely than it tracks the GDP transition or the military
-balance (the UK remained the world's pre-eminent naval power until the 1920s; its
-GDP lead over the US had already reversed before 1900). If HST is the map, the energy
-mechanism is the terrain beneath it.
+Strange's fourth structure — knowledge — is the dimension this paper treats as conditioning the speed of thorium-era leverage accumulation rather than its direction. Control over reactor design, fuel-cycle intellectual property, and nuclear engineering networks determines whether a thorium-endowed state can convert geological wealth into operational energy sovereignty or whether it remains dependent on imported technology from the current hegemon's knowledge infrastructure. States developing indigenous reactor capacity — India's AHWR programme, China's TMSR-LF1 — build knowledge structure advantages that compound endowment into genuine strategic autonomy. States that remain technology importers, even thorium-rich ones, remain partially dependent on the exporter's knowledge infrastructure. This activation constraint is addressed through the "deployment pathway" component of TMPI but deserves explicit theorisation in Strange's own terms: energy endowment without knowledge structure command is latent leverage, not exercised leverage.
 
-This is a specification of HST, not a rejection of it. HST predicts that reserve
-currency status follows from hegemonic structural power; MPI specifies that hegemonic
-structural power at the production dimension follows from energy sovereignty, filtered
-through governance contestability and lagged by a generation. The distinction matters
-for prediction: HST can identify incumbents but cannot identify challengers before
-they emerge, because it observes structural power as constituted rather than as
-constituting. MPI observes the energy base before it produces the monetary outcome —
-which is why the forward leg can make predictions about India in 2031 and Australia
-in 2035 that HST, by design, cannot make.
+Gilpin (1987) extends the structural power argument to the political economy of international relations specifically: rising powers challenge hegemonic orders by exploiting the material base from which power is constructed. Energy transition eras create exactly this structural window — they are periods when the material base of hegemony is contested and the governance arrangements that reproduce it are most vulnerable to renegotiation. Cox (1981; 1983) provides the critical foundation for understanding why production relations condition interstate relations and ultimately world monetary orders. A historical structure is not merely an arrangement of material capabilities; it includes institutions and ideas, and its transformation requires changes in all three simultaneously. The thorium transition is, on this reading, a potential historical-structural transformation: the material base (energy endowment), the institutions (governance regimes), and the ideas (which currencies anchor monetary expectations) may all shift together if the transition is politically managed by states with independent monetary ambitions. Modelski (1987) provides an independent periodisation framework: long political cycles alternate between hegemonic orders at approximately century intervals, with each transition driven by the state that masters the new leading sector. The coal→oil→thorium sequence maps directly onto Modelski's leading-sector logic — the state that commands thorium-era energy governance occupies the structural position from which monetary leadership is exercised in the subsequent cycle.
 
-## 2.3 Structural Power and the Finance-Energy Nexus
+What Strange left underdeveloped is how the security structure conditions which energy positions translate into monetary leverage. Spiro (1999) demonstrated that the recycling of OPEC surpluses into US Treasury securities was politically orchestrated: the United States offered Saudi Arabia military protection in exchange for dollar-denominated oil sales and reinvestment. Norrlof (2010, 2020) formalises this as a security premium: allies within the US security orbit hold more dollar reserves, peg to the dollar, and finance US deficits. Security dependence drives monetary bandwagoning; energy self-sufficiency enables monetary autonomy. Kirshner (1995; 2014) documents the coercive dimension: monetary power is not merely a passive attribute of economic size but an active instrument through which states discipline dependencies and manage challengers — a dynamic the MPI's Governance Sensitivity term captures at the regime level.
 
-Strange (1988) identified four structures of structural power: security (the capacity
-to provide or threaten violence), production (control over how goods are made and
-distributed), finance (control over the creation and allocation of credit), and
-knowledge (control over information and ideas). She argued that the United States'
-postwar dominance rested on simultaneous command of all four — and that the most
-durable source of that command was the finance-production nexus, in which dollar
-issuance underwrote American productive capacity while American productive capacity
-underwrote dollar credibility.
+The historical cases make this vivid. West Germany held dollars and refrained from converting to gold during Bretton Woods because of military dependence on the United States. France under de Gaulle pursued monetary autonomy precisely because its nuclear deterrent provided symbolic military independence. Japan imports 97% of its energy and depends on the US security guarantee in the Pacific; its monetary subordination — the yen holding only 5–6% of global reserves despite the world's third-largest GDP — is inseparable from this energy-security dependence. The MPI framework captures the energy dimension of this triad; the Katzenstein filter (§7) captures the security dimension.
 
-Energy sits in the production structure but, Strange argued, is not reducible to it.
-The 1973 oil shock demonstrated that control over energy supply could function as
-structural power in its own right — OPEC's embargo was not merely a trade disruption
-but a rearrangement of the structural hierarchy. Strange was cautious about the
-monetary implications of this: her analysis of the petrodollar recycling system
-suggests she understood the finance-energy linkage but treated it as contingent on
-the specific institutional arrangements of dollar-denominated oil trade rather than
-as a general mechanism.
+The gap: HST can identify incumbents but cannot identify challengers before they emerge, because it observes structural power as already constituted rather than in the process of constituting through the governance of energy transitions.
 
-The international political economy literature has not formalised the finance-energy
-nexus she described. Kirshner's (1995, 2014) work on monetary power focuses on
-financial statecraft — the use of monetary relationships as instruments of coercion —
-without deriving the underlying distribution of monetary power from structural energy
-positions. Cohen's (2015) geography of money addresses the spatial dimension of
-currency internationalisation but does not model the energy determinants of that
-geography. McNally (2019) and Norrlof (2010) address dollar primacy but without an
-energy mechanism.
+## 2.3 Institutional Persistence and the Speed of Transitions
 
-**The gap:** the finance-energy interaction Strange identified has never been
-formalised across energy transitions. This paper does so, extending Strange's
-synchronic account into a dynamic one by specifying how the mechanism reproduces
-across eras.
+The strongest challenge to any materialist account of reserve currency transitions comes from liberal institutionalism. Keohane (1984) argued that international regimes persist because they reduce transaction costs, provide information, and create focal points for cooperation. Institutions are stickier than the material base that created them. Ikenberry (2001; 2011) extends this to the rules-based liberal order: institutional frameworks built under American hegemony persist because rising powers internalise their rules and benefit from the provision of public goods. Helleiner (2008; 2014) applies the institutionalist frame to monetary governance specifically, documenting how financial regulatory architectures outlast the power configurations that produced them. Applied to monetary order, this argument correctly explains why the dollar remained dominant after 2008 despite a severe financial crisis: no credible alternative existed and the institutional infrastructure of dollar settlement was too embedded to dislodge under pressure.
+
+The MPI framework does not deny institutional inertia. It makes a more precise claim: MPI captures the *direction* of reserve currency transitions while institutional persistence determines their *speed*. The generational lag λ≈10 between energy position and reserve share is, in part, a measure of institutional stickiness. Transitions happen in the direction the energy base dictates; they happen slowly because institutions resist.
+
+A second dynamic cuts against institutional persistence. McDowell (2023) demonstrates empirically that US financial sanctions trigger anti-dollar policies: reserve diversification, alternative payment systems, and gold accumulation. Farrell and Newman (2023) argue that chokepoint weapons are coercive but brittle — the more the US uses them, the faster it erodes its own infrastructural advantage. The institutional stickiness that explains dollar persistence is being actively degraded by the hegemon itself. The energy-governance mechanism the MPI tracks operates in this widening gap.
 
 ## 2.4 Carbon Market Political Economy
 
-The EU ETS is the world's largest carbon market and has attracted substantial
-political economy scholarship. Ellerman and Buchner (2008) documented systematic
-over-allocation in Phase I, showing that member states lobbied successfully for
-excess permit allocations that they then sold, generating revenue while emissions
-continued. Koch, Fuss, Grosjean, and Edenhofer (2014) analysed the 2013 price
-collapse, attributing it to the interaction of the economic crisis (reducing verified
-emissions) and political resistance to cap tightening. Bayer and Aklin (2020) showed
-that despite low prices, the ETS reduced CO2 emissions — suggesting the allocation
-politics, while distortive, did not fully neutralise the price signal.
+A substantial literature has established that EU ETS carbon prices are shaped by allocation rules, banking provisions, regulatory interventions, and national lobbying — not by physical supply-demand fundamentals alone (Ellerman and Buchner 2008; Koch et al. 2014; Bayer and Aklin 2020). Baldwin (1985) provided the conceptual foundation for reading these dynamics strategically: economic instruments — including governance regimes — are tools of statecraft whose leverage properties derive from dependency relationships. Mattli and Woods (2009) provide the most systematic framework for the regulatory dimension: in international regulatory institutions, capture by incumbents is the normal equilibrium, not an aberration.
 
-This literature has established that carbon market prices are not determined by physical
-supply-demand fundamentals alone. Allocation rules, banking provisions, Market
-Stability Reserve interventions, and national lobbying all shape the price series.
-Mattli and Woods (2009) provide the most systematic framework for this phenomenon:
-in international regulatory institutions, capture by incumbents is the normal
-equilibrium, not an aberration. The EU ETS Phase I — where member states lobbied
-successfully for excess allocations that were then sold at public expense — is a
-textbook Mattli-Woods regulatory capture at the supranational level. Paterson and
-Stripple (2010) show that carbon markets are not merely sites of price formation but
-arenas of political contestation in which the boundaries of the market are themselves
-subject to negotiation. Their insight is our backward leg's theoretical foundation.
+What this literature has not done is formalise the degree of political construction relative to a baseline or connect that construction to monetary outcomes. Governance Sensitivity (GS), defined as the ratio of energy governance volatility to commodity benchmark volatility, provides this measurement. GS greater than 1 is the empirical signature of a politically constructed regime — a regime more volatile than the physical commodity it nominally governs. McNally (2017) documents how boom-bust cycles in oil markets emerge not from physical scarcity but from governance failures in production coordination; the GS measure formalises this insight for the carbon case, extending it from commodity pricing to the monetary consequences of governance-constructed volatility. This capacity for strategic exclusion echoes Hirschman's (1945) foundational insight that foreign trade relationships produce leverage precisely through dependency — the carbon governance case formalises that insight as a measurable ratio.
 
-What the literature has not done is formalise the *degree* of political construction
-relative to a baseline — Stigler's (1971) capture framework provides the vocabulary
-but not a measurement. Governance Sensitivity (GS), defined as the ratio of energy
-governance volatility to commodity benchmark volatility, provides this measurement:
-GS > 1 is the empirical signature of a politically constructed regime. The RGGI
-comparison in Section 4 provides the most direct test: EU ETS Phase I CV = 0.815;
-RGGI Phase 1 CV = 0.047 — both synthetic permits, both first compliance periods,
-difference of 17×. The difference is not the permit design. It is the political
-economy of the allocation regime.
+## 2.5 Energy Transitions, Geopolitics, and the Multipolarity Problem
 
-**The gap:** the carbon market political economy literature has not connected
-governance contestability to monetary outcomes, nor derived the implication that a
-politically constructed allocation regime is inherently unstable as a monetary anchor.
-This paper provides both connections.
+A growing literature on energy transitions and international order (Dannreuther 2017; Scholten et al. 2020; Overland 2019) examines how the shift away from fossil fuels will redistribute geopolitical power. This literature has not addressed monetary consequences.
 
-## 2.5 Energy Transitions and Geopolitics
+The multipolarity debate matters for the paper's forward claims. Farhi and Maggiori (2018) produce a formal result that should unsettle any thesis predicting a smooth multipolar monetary order: the benefits of multiple reserve currencies are non-linear, and a system with two or three competing reserve currencies may produce worse outcomes than a single dominant one, because of speculative flows between competing reserve assets. Acharya (2017) offers a more productive framing: not multiple currencies competing head-to-head but a layered system where global currencies coexist with regional financial arrangements. Pforr, Pape, and Petry (2025) call this a financial interregnum — rising powers seeking autonomy without assuming hegemonic responsibility, producing fragmentation rather than replacement. The INR prediction does not require India to displace the dollar. It requires India to occupy a layer of the monetary architecture that the energy mechanism creates. F-M's competitive devaluation equilibrium is triggered by meaningful substitutability between reserve assets of comparable scale — the Nurkse mechanism operates when investors can credibly shift between near-comparable currencies. At 3–5% INR share versus 44% dollar share, that substitutability is structurally absent: the INR serves regional corridor and energy settlement functions rather than contesting the global reserve role, placing it in a distinct functional layer where F-M's Cournot quantity dynamics do not apply.
 
-A growing literature on energy transitions and international order (Dannreuther 2017;
-Scholten 2018; Scholten et al. 2020; Overland 2019) examines how the shift away from
-fossil fuels will redistribute geopolitical power. The standard finding is that
-transitions favour renewable-endowed importers over fossil-fuel exporters: Norway,
-Saudi Arabia, and Russia lose structural leverage; Germany, Japan, and South Korea
-gain. The mechanisms identified are trade balance shifts, technological competitiveness,
-and the end of fossil fuel rents.
+## 2.6 What the Five Literatures Miss Together
 
-This literature has not addressed monetary consequences. The geopolitical transition
-literature asks who gains *economic* leverage from new energy positions; it does not ask
-who gains *monetary* leverage — the ability to have one's currency held as a reserve,
-to price international trade, or to run external deficits without financing constraints.
-These are related but distinct questions. A country can gain productive capacity from
-a transition without gaining monetary power if its institutional quality is low, its
-financial markets are shallow, or its governance of the new energy regime is captured
-by incumbents.
+| Literature | What it explains | What it misses |
+|------------|-----------------|----------------|
+| Reserve currency determinants | Present-era reserve share; network effects; institutional quality | Energy mechanism; transition dynamics; political construction of energy positions |
+| Structural power / institutionalism (HST, Strange, Norrlof, Keohane, Ikenberry) | Finance-energy linkage; security-monetary conditioning; institutional persistence; why transitions are slow | Formalisation across eras; direction of transitions; weaponisation eroding the institutional base |
+| Carbon market political economy | Allocation regime politics; degree of political construction | Monetary consequences of politically constructed energy prices |
+| Energy transition geopolitics | Power shifts under transitions; renewable rebalancing | Monetary mechanism; activation conditions distinguishing energy wealth from monetary power |
+| Multipolarity literature | Instability of competing reserve currencies; fragmentation dynamics | Energy governance as the layering mechanism that structures fragmentation |
 
-Katzenstein's (1985) work on small states in world markets provides an important
-corrective to naive transition optimism. Small states — including Australia and Canada,
-both TMPI-endowed — do not independently leverage resource positions into structural
-monetary power. Their monetary behaviour is conditioned by their position within
-alliance structures, specifically the US-centred security and economic order. For Five
-Eyes states, thorium endowment does not imply monetary independence; it implies a
-niche reinforcement within the existing dollar order. This paper incorporates this
-insight as a falsifiable prediction: AUD and CAD will not gain reserve share
-disproportionate to their current positions through independent energy leverage,
-because their geopolitical alignment channels thorium potential into the dollar system.
-India's case is structurally different — sovereign fuel cycle, non-alignment tradition,
-capital account under domestic policy control — and the framework predicts activation
-rather than niche reinforcement.
+The MPI framework fills the intersection: it operationalises Strange's finance-energy pillars as estimable quantities, incorporates Norrlof's security conditioning through the Katzenstein filter, treats institutional inertia as the speed parameter (λ) rather than a refutation, measures the political construction of governance regimes (GS), and extends the transition geopolitics literature to monetary outcomes.
 
-**The gap:** the transition geopolitics literature has no monetary mechanism and no
-specification of the *activation conditions* that distinguish which energy positions
-translate into reserve currency candidacy. The TMPI provides the structural ranking;
-the Katzenstein framework provides the activation filter.
-
-## 2.6 Synthesis: The Gap This Paper Fills
-
-The four literatures reviewed above approach the finance-energy nexus from different
-angles but none crosses the full distance:
-
-| Literature | What it explains | What it omits |
-|------------|-----------------|---------------|
-| Reserve currency determinants | Present-era reserve share | Energy mechanism; transition dynamics |
-| Strange's structural power | Finance-energy linkage | Formalisation; temporal evolution |
-| Carbon market political economy | Allocation regime politics | Monetary consequences; GS measurement |
-| Energy transition geopolitics | Power shifts under transitions | Monetary mechanism; reserve currency implications |
-
-The MPI framework fills the intersection of all four. It operationalises Strange's
-finance-energy pillars (reserve share as outcome, NEP as energy mechanism), measures
-the political construction of governance regimes (GS from the carbon literature),
-and extends the transition geopolitics literature to monetary outcomes (TMPI as
-forward leg). The three temporal legs — backward, present, forward — are not
-independent analyses. They are one causal mechanism tested across three registers of
-evidence.
+---
