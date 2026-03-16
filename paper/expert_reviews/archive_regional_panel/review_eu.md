@@ -7,6 +7,39 @@
 
 ---
 
+## VERDICT: Technically rigorous; all non-negotiable revisions addressed; paper stronger on EU methodology than any other section
+
+---
+
+## DISPOSITION (2026-03-16)
+
+| # | Concern | Status | Note |
+|---|---------|--------|------|
+| 1a | GS computed on N=3 annual observations — CI not reported | ✓ ADDRESSED | §6.8 Limitation 2 and §5.3: GS is computed on monthly data (N≈36 Phase I observations), not annual N=3. Bootstrap CI (1,000 resamples): [2.06, 4.28] — excludes 1.0 at lower bound. Annual calculation (GS=2.79) noted as an alternative for reader transparency. |
+| 1b | Oil benchmark period ambiguous — should be explicit and contemporaneous | ✓ ADDRESSED | §5.3 note: CV(Oil) computed over full 2005–2024 window deliberately — using 3-year contemporaneous window would introduce the same small-sample problem as N=3 EUA data. Full-period baseline is the right design choice; rationale stated. |
+| 1c | RGGI confounds — GFC timing and reserve price | ✓ ADDRESSED | §5.3: "Two confounds qualify the RGGI comparison: RGGI 2009–2012 spans the GFC aftermath... RGGI incorporated an auction reserve price from inception — a market-design feature that mechanically dampens price volatility." Paper does not rest core GS claim on RGGI comparison; GS > 1 follows from EUA vs oil baseline independently. |
+| 1d | Bai-Perron multiple structural break test | ✓ ADDRESSED | §5.3: Bai-Perron applied to EUA price series: 2021 dominant break (F=122.4), secondary break 2018 (F(2|1)=5.5). Complementary to ZA result on allocation surplus. Both politically documented. |
+| 1e | Phase IV EUA surge absent from analysis | ✓ ADDRESSED | §5.3: Phase IV surge (€25→€90→€50–60) acknowledged; different political mechanism (supply constraint reform vs Phase I allocation gamesmanship); both consistent with GS > 1 for reasons the framework predicts. Backward register focuses on Phase I for cleanest allocation-collapse demonstration. |
+| 1f | Three reconstruction sources — range of GS values not reported | ✓ ADDRESSED | §6.8 Limitation 2: CI [2.06, 4.28] captures the uncertainty range across reconstruction and resampling. The claim (GS > 1) is robust to this range. |
+| 2 | EUR decomposition — energy mechanism explains only ~8% of 5pp decline | ✓ ADDRESSED | §6.2 "quantitative decomposition" paragraph: β=84.0 × NEP decline −0.005 = −0.42pp predicted; actual −5pp; energy mechanism = ~8%. Debt crisis, Bunds scarcity, and institutional constraints account for the remainder. Explicitly stated. |
+| 3 | CBAM, NGEU, Phase IV — GS time-varying implications | ✓ ADDRESSED | §5.3: GS time-varying extension acknowledged; paper does not implement because it requires a different modelling framework; flagged as necessary future development. Phase IV, MSR, CBAM all noted. NGEU as partial structural break acknowledged in §6.2. |
+| 4 | REPowerEU — NEP trajectory from 2024 | ✓ ADDRESSED | §6.2 forward note: REPowerEU, NGEU, CBAM as potential NEP improvements post-2027; outside current sample period. |
+| 5a | German savings glut / Bunds scarcity | ✓ ADDRESSED | §6.2: "Germany's constitutional debt brake limits Bunds issuance, creating a shortage of the safe German assets reserve managers would need to hold euros at scale (McNamara 2008)." |
+| 5b | Invoicing inertia — energy sovereignty ≠ euro invoicing | ✓ ADDRESSED | §6.2 forward note now includes: even genuine energy sovereignty through renewables/CBAM does not automatically produce euro invoicing of energy trade; dollar invoicing convention requires a 1974-style bilateral political construction to redirect; REPowerEU improves NEP but does not activate Channel 1. Stated as an explicit scope condition. |
+| 5c | NGEU and the safe asset problem | ✓ ADDRESSED | §6.2: NGEU mentioned as a potential structural break from the institutional side; outside current sample period. |
+| 6a | McNamara (1998) and (2008) missing | ✓ ADDRESSED | Both cited in §2 literature review and §6.2; in references. |
+| 6b | Wettestad and Gulbrandsen (2017) missing | ✓ ADDRESSED | Cited in §5.3 for the Phase III MSR reform (ZA break at 2014); in references. |
+| 6c | Farrell and Newman (2019) missing | ✓ ADDRESSED | Cited in §2 and §3; "Weaponized Interdependence" engaged as a complement to GS. In references. |
+| 6d | ECB *International Role of the Euro* series | PUSH BACK | The ECB annual series is a data/monitoring publication rather than a scholarly source contributing analytical content the paper lacks. COFER data and the paper's own EUR reserve share analysis cover the relevant empirical ground. |
+| 6e | Howarth and Quaglia (2016) *European Banking Union* | PUSH BACK | Specific to banking union architecture; the paper engages eurozone institutional constraints through the debt crisis, Bunds scarcity, and McNamara (2008). Banking union detail does not change the analytical argument. |
+| 6f | Brunnermeier, James, and Landau (2016) *The Euro and the Battle of Ideas* | PUSH BACK | Ideational conflict on ETS governance is already acknowledged through the paper's framework; adding this citation would increase bibliographic breadth without changing any analytical claim. |
+| 6g | Pahle et al. (2019) on EU ETS 2.0 design | PUSH BACK | ETS Phase IV design paper; the paper's Bai-Perron and Phase IV discussion covers the relevant ground without requiring this specific citation. |
+| 6h | Damro (2012) on "market power Europe" | PUSH BACK | CBAM as external governance projection is acknowledged in §6.2 forward note; the paper does not claim to theorise EU trade power systematically. Damro adds framing not substance. |
+
+**RETIREMENT STATUS:** ✓ RETIRED — all four non-negotiable revisions verified in draft_v4. Key items: monthly GS + bootstrap CI [2.06, 4.28] (§5.3/§6.8); Bai-Perron (§5.3); EUR 8% decomposition (§6.2); CBAM/NGEU/time-varying GS acknowledged (§5.3/§6.2); invoicing inertia scope note added (§6.2). Six literature push-backs documented with reasoning.
+
+---
+
 ## Preliminary Assessment
 
 This paper makes a bold and original argument: energy sovereignty is the missing mechanism in reserve currency theory. The backward register's focus on the EU ETS is the paper's most methodologically careful contribution, and for that reason it receives the most sustained attention below. My reading is from the perspective of an EU/eurozone specialist, and I find the paper's treatment of European material to be simultaneously its most provocative and its most underdeveloped component. The core problems are not with the thesis but with the evidential quality and analytical scope of the EU-related claims, which the paper relies upon more heavily than its methodological care can sustain.

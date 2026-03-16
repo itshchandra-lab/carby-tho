@@ -177,3 +177,41 @@ The paper's core contribution is robust enough to survive these revisions. Indee
 ---
 
 *Review completed. Submitted in accordance with the journal's double-blind review process.*
+
+---
+
+## Author Response — draft_v4.md revisions (2026-03-16)
+
+**Accept/Pushback disposition per reviewer section:**
+
+| Reviewer §§ | Disposition | Change made in draft_v4.md |
+|-------------|-------------|---------------------------|
+| §1 NPT / India INFCIRC/754 / 123 Agreement | **Accept — qualified** | Added qualification paragraph to §7.6: 123 Agreement US consent rights acknowledged as binding on US-origin material; scope clarified as not covering indigenous thorium Stage 3 AHWR operations. |
+| §1.2 NSG dual-use controls on reprocessing | **Accept — folded into §7.6 qualification** | NSG Annex 2 (INFCIRC/254/Part 2) dual-use controls on ENR technology noted; India's non-membership acknowledged; domestic reprocessing constraint stated. |
+| §1.3 123 Agreement non-alignment | **Accept — qualification, not retraction** | Katzenstein filter argument preserved. Qualification specifies that the filter identifies absence of *monetary* architecture constraints; nuclear governance constraints (123 Agreement) acknowledged as distinct and real. |
+| §2.1 AUKUS IAEA Article III(2) incomplete | **Accept** | Added one sentence to §7.4 AUKUS paragraph noting IAEA Board of Governors had not concluded the Article III(2) "appropriate arrangement" as of the paper's writing horizon (2026). |
+| §2.2 AUKUS Australia in US nuclear orbit | **Already addressed — no change** | §7.4 extensively covers HEU fuel cycle dependence and filter reinforcement. |
+| §3.1 SWIFT EU legal basis | **Accept** | Added to §6.5 Mechanism B: EU Council Regulation (EU) 2022/345 named as the operative legal instrument (CFSP, Articles 29 TEU / 215 TFEU); SWIFT's Belgian cooperative status noted; Russia's continued IMF membership confirmed. Precision strengthens political-weaponry characterisation. |
+| §3.2 Frozen reserves / sovereign immunity | **Accept** | Added to §6.5 Mechanism B: G7 confiscation debate, UN Convention on Jurisdictional Immunities (2004), ILC Articles on State Responsibility Arts. 49–54 countermeasures doctrine, and the live legal controversy all engaged. Characterised as the most direct empirical demonstration of the paper's core thesis. |
+| §4.1 ETS Directive / Phase I trial | **Pushback — no change** | The legal design (Phase I as anticipated experiment) does not alter the GS argument. Over-allocation was real and politically driven; GS captures the governance construction regardless of whether it was an "intended" trial. |
+| §4.2 CBAM WTO compliance | **Pushback — out of scope** | Paper makes no claims about CBAM's WTO validity. No change. |
+| §5 CUSMA Annex number | **Accept** | Corrected "Annex 32-D" → "Annex 32-C" in §7.4 Canada paragraph. Reviewer (treaty law specialist) is correct on the annex citation. |
+| §6 Petrodollar / IMF Article VIII | **Pushback — no change** | IMF Article VIII non-challenge of petrodollar is interesting context but does not change the paper's argument. No content change required. |
+| §7 IMF SDR "freely usable" criterion | **Accept** | Added SDR Article XXX(f) paragraph to §7.6 near capital account constraint discussion. RMB 2016 precedent cited as establishing that capital account restrictions are not a legal prerequisite for "freely usable" determination. This *supports* the India BIS turnover pathway. |
+| §8 Ruble-rupee Article VIII(3) | **Pushback — already addressed** | §6.5 extensively covers the rupee holdback problem and corridor fragility. Legal framing (Article VIII(3) multiple currency practice) adds nothing to the empirical discussion already present. No change. |
+| §9.1–9.2 U-233 weapons-usable / proliferation incentive | **Accept** | Added transparency note to §7.1 following the thorium satisfies-all-four paragraph. U-233 direct-use material status (INFCIRC/153, same category as Pu-239, ~5–6 kg critical mass) acknowledged. Co-production of monetary sovereignty and proliferation risk stated explicitly. Non-proliferation framework (IAEA safeguards, NPT, 123 Agreements) identified as the governance layer within which predictions operate. |
+
+**What was NOT changed (explicit pushbacks):**
+- GS definition, NEP formula, TMPI formula — unchanged
+- India non-alignment Katzenstein argument — defended; qualification additive, core claim preserved
+- ETS Directive Phase I trial legal design — does not negate political construction
+- CBAM WTO compliance — out of scope
+- IMF Article VIII petrodollar — no content change
+- Ruble-rupee Article VIII(3) — already addressed in §6.5
+- All β=84.0, falsification conditions — unchanged
+
+**New citations added to draft_v4.md:**
+- EU Council Regulation (EU) 2022/345 — §6.5
+- ILC Articles on State Responsibility, Arts. 49–54 — §6.5
+- Krepon, Michael, and George Perkovich. 2008. "The Nuances of the Hyde Act." *Arms Control Today*. — §7.6
+- IMF Articles of Agreement, Article XXX(f) — §7.6 (referenced without full bibliographic entry; standard IMF primary source)

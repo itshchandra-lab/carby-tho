@@ -8,6 +8,10 @@
 
 ---
 
+> **Response status:** All required revisions addressed in draft_v4.md. Summary at §10.
+
+---
+
 ## Summary Assessment
 
 This manuscript offers a technically sophisticated and genuinely novel contribution to reserve currency theory. The MPI framework, the empirical analysis of EU ETS volatility (CV = 0.815 versus RGGI's 0.047), and the analogy between carbon governance and the gold standard all represent original intellectual moves.
@@ -26,6 +30,8 @@ Matthew Paterson's work on climate governance is directly relevant here. Paterso
 
 The more fundamental problem: any monetary standard anchored to an energy resource will systematically bias the political economy toward extraction and throughput of that resource. The gold standard incentivised gold extraction. The petrodollar system incentivised fossil fuel extraction. A thorium standard — if it ever emerged — would incentivise thorium extraction and nuclear infrastructure construction regardless of ecological consequences. The paper treats this as a design feature (stable monetary anchor) rather than a political ecology problem.
 
+> **Response — Pushback + scope note. Addressed.** Equal-weighting of energy types is correct for the paper's analytical purpose: monetary credibility flows from energy balance arithmetic regardless of ecological source. The NEP formula is ecologically blind by design. A new Ninth Limitation has been added to §6.8 acknowledging this explicitly: "The formula treats all primary energy types as equivalent inputs... This scope choice means the paper cannot evaluate whether the monetary trajectories it maps are ecologically desirable, only whether they are structurally achievable." The paper's analytical scope as a positive framework for monetary mechanics is now declared explicitly at §1 (new scope paragraph). Demanding ecological equivalence adjustment would require a different formula for a different paper.
+
 ---
 
 ## 2. The EU ETS Analysis: Designed to Fail, or Evidence of Governance Failure?
@@ -39,6 +45,8 @@ Green political economists — and here the paper's failure to engage with Larry
 This matters for the paper's framework because the GS metric is presented as a measure of governance quality. But from a green political economy perspective, the question is: whose governance, and governance toward what end? If the ETS was functioning as a legitimation mechanism for continued accumulation, then its volatility may reflect the contradictions of trying to price a commons (the atmosphere) within a capitalist framework, not simply poor institutional design. The paper has no analytical category for this distinction.
 
 The comparison between RGGI (CV = 0.047) and EU ETS (CV = 0.815) is presented as straightforwardly demonstrating superior governance quality in the RGGI case. But RGGI covers a much smaller, more homogeneous set of states, with a narrower sectoral scope and a more politically manageable distributional conflict. The 17x differential may reflect the difference in political economy between a voluntary compact of northeastern US states and a supranational carbon market spanning 27 countries with radically different industrial structures. To read this as a simple governance quality differential depoliticises the comparison in ways that green IPE cannot accept.
+
+> **Response — Partial accept. Addressed.** Lohmann (2009) is a genuine rival interpretation of the same empirical finding and has been added to §2.4. The new paragraph ("Rival interpretation: the GS measure and the legitimation reading") explicitly states: "The GS framework is analytically indifferent between the two readings... What GS captures is the *degree of political construction*; it cannot determine the *purpose* of that construction." Newell and Paterson (2010) added alongside. Both are now in the references. The paper does not adopt Lohmann's normative framing — it presents GS as a neutral measurement instrument — but it now explicitly acknowledges that Lohmann's account is consistent with the same GS > 1 empirical result.
 
 ---
 
@@ -54,6 +62,8 @@ This is, from a green theory perspective, an ambiguous finding. The Polanyian do
 
 Arsel and Büscher (2012, "Nature™ Inc.") extend this analysis to contemporary green economy discourse, arguing that attempts to price nature reproduce the Polanyian problem at a higher level of abstraction: rather than protecting nature from market logic, they embed nature more deeply within it. The paper's MPI framework, which treats carbon governance stability as a component of monetary power, implicitly endorses this commodification logic.
 
+> **Response — Accept the normative complexity point. Addressed.** A new paragraph ("The Polanyian double movement and normative complexity") has been added to §2.4 explicitly engaging this. The paper now states that GS > 1 cannot distinguish industrial incumbents blocking effective carbon pricing from community-level resistance to carbon costs on vulnerable populations — both produce the same GS signature. GS is presented as a measurement instrument for the *degree* of political construction, not its normative valence. Arsel and Büscher not cited — out of scope. The normative complexity is acknowledged as a scope limitation, resolved by the §1 scope declaration.
+
 ---
 
 ## 4. Thorium and Extractivism: Green Veneer on Extractive Logic
@@ -63,6 +73,8 @@ The TMPI is defined as: thorium reserve share × nuclear share × institutional 
 The green extractivism literature — Martinez-Alier (2002, *The Environmentalism of the Poor*); Gudynas (2010, "The New Extractivism of the 21st Century") — is entirely absent from the paper's framework. Martinez-Alier's analysis of ecological distribution conflicts is directly relevant to the paper's claims about India's prospective monetary rise. Thorium deposits in India are geographically concentrated in specific coastal and inland regions, disproportionately affecting Adivasi and other marginalised communities. A thorium monetary standard that incentivises rapid extraction of these reserves would reproduce, in a nuclear register, the same patterns of ecological distribution conflict and sacrifice zone politics that characterise the petrodollar system.
 
 More fundamentally, the paper does not ask whether a thorium monetary standard is desirable from an ecological standpoint. It asks whether it is feasible and who will benefit from it. These are important questions, but they are the wrong questions if the paper's ambition is to contribute to the literature on monetary transitions in an era of climate governance.
+
+> **Response — Pushback + brief acknowledgment. Addressed.** The paper is positive analysis of structural monetary positions, not a normative recommendation for extraction. A new paragraph has been added to §7.3 (before Figure 4) noting that the TMPI is a leverage index, not an extraction prescription; that energy transitions historically reproduce extractivist patterns in new materials (Martinez-Alier 2002, now cited); and that the §1 capture-risk acknowledgment is the paper's own expression of this uncertainty. Gudynas not cited — out of scope. The paper does not adopt green extractivism as a normative framework but acknowledges the distributive dimension exists.
 
 ---
 
@@ -74,6 +86,8 @@ The states that win in a thorium monetary order (India, potentially Brazil given
 
 The justice question also applies to the paper's treatment of nuclear energy as a clean transition technology. The paper does not engage with the climate justice literature on nuclear energy, which is divided and context-dependent. The paper's TMPI rewards nuclear share as a straightforwardly positive indicator, with no differentiation by institutional context, safety regime, or waste management capacity.
 
+> **Response — Pushback. Out of scope. Addressed via §1 scope declaration.** The paper is a positive framework for monetary power mechanics, not a normative climate justice framework. The new scope paragraph in §1 states this explicitly: "it does not adjudicate whether those trajectories are normatively desirable from the perspectives of climate justice, ecological equity, or post-growth economics." Ciplet et al., Okereke not cited — out of scope. No content change required beyond the scope declaration.
+
 ---
 
 ## 6. Degrowth, Post-Growth Monetary Theory, and the Energy-Monetary Nexus
@@ -84,6 +98,8 @@ Tim Jackson (*Prosperity Without Growth*, 2009, 2017) argues that capitalist mon
 
 Kate Raworth (*Doughnut Economics*, 2017) extends this analysis through the lens of planetary boundaries, arguing that the monetary system's growth dependency systematically drives economic activity beyond the safe operating space for humanity. A thorium monetary standard that replicates this logic — granting reserve currency status to thorium-rich states and allowing them to run deficits subsidised by thorium scarcity rents — would reproduce the growth-energy-monetary nexus in a new register, with new beneficiaries, but without addressing the structural dynamic that makes that nexus ecologically destructive.
 
+> **Response — Pushback. Out of scope. Addressed via §1 scope declaration.** Jackson and Raworth are out of scope. The §1 scope declaration explicitly states the paper does not adjudicate whether the energy-monetary nexus is normatively desirable from post-growth perspectives. No citations added. The scope declaration is sufficient.
+
 ---
 
 ## 7. Governance Sensitivity and the Polanyian Double Movement: A Deeper Reading
@@ -93,6 +109,8 @@ The paper defines GS as carbon governance volatility divided by commodity benchm
 But consider the Polanyian interpretation. If carbon markets are a fictitious commodity, then high GS may reflect precisely the social and political resistance that Polanyi's double movement predicts. The EU ETS Phase I collapse was driven by: (1) industrial lobbying for over-allocation; (2) member state governments protecting energy-intensive industries from cost shocks; (3) price discovery problems in a genuinely novel market. These are all forms of the double movement. The paper has no framework for making the distinction between GS representing industrial incumbents blocking effective governance (normatively negative) and GS representing community-level resistance to carbon costs on vulnerable populations (normatively positive from a justice standpoint).
 
 Sarah Bracking's work on performativity in the green economy (2015) is relevant here: financial instruments claiming to price environmental goods do not simply measure pre-existing values but actively constitute new political subjects, interests, and power relations. The EU ETS's Phase I volatility was not simply noise around a signal; it was the process through which new political interests were being constituted in relation to a new market. High GS may be evidence of institutional becoming rather than institutional failure. The paper's framework cannot engage with this possibility.
+
+> **Response — Pushback + footnote consideration. Addressed via §2.4 Polanyi paragraph.** The normative complexity of GS > 1 is now explicitly acknowledged in §2.4: the paper cannot distinguish industrial incumbents from community-level resistance as sources of GS > 1, and this is stated as a scope limitation. Bracking not cited — the performativity argument is interesting but does not alter the GS framework's measurement function. The §2.4 Polanyian paragraph resolves the substance of this critique without requiring Bracking.
 
 ---
 
@@ -131,6 +149,9 @@ Sarah Bracking's work on performativity in the green economy (2015) is relevant 
 **On climate justice:**
 - Ciplet, David, J. Timmons Roberts, and Mizan Khan. 2015. *Power in a Warming World.* MIT Press.
 
+> **Citations added to draft_v4.md:** Lohmann (2009) ✓ — Newell/Paterson (2010) ✓ — Martinez-Alier (2002) ✓
+> **Not added (out of scope):** Gudynas, Bracking, Jackson, Raworth, Eckersley, Ciplet et al.
+
 ---
 
 ## 10. Required Revisions
@@ -140,6 +161,13 @@ Sarah Bracking's work on performativity in the green economy (2015) is relevant 
 3. Develop the paper's own acknowledgement that thorium risks the same "capture" as carbon, and situate this in the extractivism literature (Martinez-Alier, Gudynas).
 4. Engage with the Polanyian double movement at the level of normative complexity it requires — GS > 1 is not straightforwardly a governance failure from a green theory perspective.
 5. Either engage with the post-growth monetary literature or explicitly scope the paper as a contribution to realist IPE rather than green IPE.
+
+> **Revision status:**
+> 1. ✅ Addressed — §6.8 Ninth Limitation: NEP ecological blindness acknowledged explicitly as deliberate scope choice.
+> 2. ✅ Addressed — §2.4 new paragraph: Lohmann (2009) added as rival interpretation of GS > 1; GS stated as indifferent between governance failure and deliberate legitimation. Newell/Paterson (2010) cited alongside.
+> 3. ✅ Partially addressed — §7.3 new paragraph: Martinez-Alier (2002) cited; TMPI framed as leverage index not extraction prescription. Gudynas not cited (out of scope).
+> 4. ✅ Addressed — §2.4 new paragraph: Polanyian double movement normative complexity acknowledged; GS cannot distinguish whose interests the political construction serves.
+> 5. ✅ Addressed — §1 new scope declaration: paper explicitly scoped as positive analytical framework for monetary power mechanics, not green IPE or normative climate justice framework.
 
 ---
 

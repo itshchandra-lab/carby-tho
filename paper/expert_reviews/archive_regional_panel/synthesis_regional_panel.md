@@ -227,3 +227,37 @@ China is the world's largest energy importer, the most aggressive de-dollarisati
 
 *Synthesis prepared: March 2026*
 *Panel convened under double-blind conditions*
+
+---
+
+## VI. DISPOSITION TABLE — draft_v4 Response to Cross-Cutting Critiques
+
+*Updated 2026-03-16 following completion of all nine individual review dispositions.*
+
+### Cross-Cutting Critiques
+
+| # | Critique | Status | Where Addressed |
+|---|----------|--------|-----------------|
+| 1 | Single-country study wearing general theory's clothes; β transfer to India undefended | ✓ ADDRESSED | §6.8 Limitation 1 (USA-driven result explicitly owned); §7.6 cross-country transfer assumption paragraph; India predictions framed as "order-of-magnitude directional signals" |
+| 2 | US 2021 causal identification: four simultaneous confounds uncontrolled | ✓ ADDRESSED | §6.2 "US 2021 causal identification caveat": Fed tightening, flight-to-safety, REER, petrodollar stress all enumerated; "consistent with" not "confirmed by" framing adopted |
+| 3 | Katzenstein filter asserted not argued — no institutional pathway per country | ✓ ADDRESSED | §7.4: Japan (Yoshida Doctrine + MOF); Canada (CUSMA Chapter 32 proportionality + Five Eyes FINTRAC); Australia (AUKUS HEU fuel cycle dependence); UK (City of London–based reasoning) |
+| 4 | WGI is wrong institutional quality proxy — liberal-democratic bias | PARTIAL | §6.8 Limitation 7 explicitly discloses WGI bias, notes ICRG as future robustness check; no actual ICRG sensitivity analysis run (data availability constraint acknowledged) |
+| 5 | AUKUS technical error: HEU propulsion ≠ civil nuclear; AUKUS prevents sovereign fuel cycle | ✓ ADDRESSED | §7.4 Australia: AUKUS explicitly corrected — HEU naval propulsion supplied by US/UK, IAEA negotiation specifically prevented Australian enrichment, fuel cycle dependency ≠ platform ownership |
+| 6 | GS = 2.79 methodologically fragile: N=3 annual obs, wrong benchmark period, post-2021 ignored | ✓ ADDRESSED | §5.3/§6.8: bootstrap CI on GS [2.06, 4.28] from monthly data (N≈32); annual GS=2.79 vs monthly GS=2.87 reported; core claim (GS > 1) robust across all resamples |
+| 7 | China receives 4 sentences for most important contemporary case | ✓ ADDRESSED | §7.5 dedicated China section: negative NEP, five de-dollarisation tracks, TMSR-LF1, COFER trajectory, §8.3 China falsification condition |
+
+### Tier 1 Priority Items
+
+| # | Item | Status |
+|---|------|--------|
+| 1 | China dedicated section + falsification condition | ✓ §7.5 + §8.3 |
+| 2 | Correct AUKUS technical error | ✓ §7.4 Australia |
+| 3 | GS monthly data with bootstrap CI | ✓ §5.3/§6.8 |
+| 4 | Katzenstein filter mechanism per country | ✓ §7.4 |
+| 5 | US 2021 confounds | ✓ §6.2 |
+| 6 | WGI sensitivity analysis (ICRG) | PARTIAL — disclosed as limitation, not implemented |
+| 7 | Coefficient transfer defence β=84.0 US→India | ✓ §7.6 |
+
+### Synthesis Verdict
+
+All Tier 1 items addressed except WGI/ICRG sensitivity analysis, which is disclosed as a limitation and direction for future work. All nine individual review required revisions have been processed and archived. The paper is in substantially improved shape to proceed to submission. The outstanding PUSH BACK items across all nine reviews (Civil Nuclear/NSG for India; Brazil/developing country treatment for USA; GS chokepoint formalism limitation; ICRG sensitivity) are appropriately handled as either scope acknowledgements or future work directions rather than revisions required for the central argument.

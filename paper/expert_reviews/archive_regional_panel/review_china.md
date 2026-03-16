@@ -8,6 +8,42 @@
 
 ---
 
+## VERDICT: Strong structural critique; all non-negotiable revisions addressed; China now the paper's most developed boundary case
+
+---
+
+## DISPOSITION (2026-03-16)
+
+| # | Concern | Status | Note |
+|---|---------|--------|------|
+| 1 | China's active de-dollarisation strategy absent | ✓ ADDRESSED | §7.5 "What China is doing instead" enumerates all five tracks: INE crude futures, CIPS, e-CNY, PBOC swap lines (~40 central banks), yuan-ruble corridors. Framed as natural experiment in whether political construction substitutes for energy mechanism. |
+| 2a | China nuclear undercount — trajectory vs current share | ✓ ADDRESSED | §7.5 TMSR-LF1 paragraph: precise PFBR vs TMSR-LF1 technical comparison — different technologies, different scales, different stages of commercialisation. China more advanced in thorium-specific chemistry; India more advanced in commercial-scale deployment. If China achieves commercial-scale TMSR before India reaches Stage 3, China's TMPI trajectory changes qualitatively. |
+| 2b | China thorium reserves likely understated (rare earth co-location) | ✓ ADDRESSED | §7.5 now notes: Chinese geological survey data understated in Western databases due to rare earth co-location sensitivity; 2.1% should be read as a lower bound, not a point estimate. |
+| 3 | WGI wrong proxy for China's monetary capacity | ✓ ADDRESSED | §6.8 seventh limitation: "China's WGI = 0.56 coexists with CIPS, e-CNY, and the world's most extensive bilateral swap line network." ICRG alternative identified. §4 data note also flags this explicitly. Disclosed as known bias, not systematic error for core cases. |
+| 4 | NEP misspecification — coal/oil fungibility | ✓ ADDRESSED | §3 NEP formula note explicitly defends equal-weighting: captures current account effects correctly; Channel 1 invoicing mechanism (oil-specific) is a disclosed scope limitation. §7.5 now also notes Malacca Dilemma: 75% of China's oil imports seaborne through Malacca, creating extreme chokepoint vulnerability on the monetarily relevant energy type — NEP ≈ 0 masks this structural exposure. |
+| 5a | China strategy avoids full capital account opening deliberately | ✓ ADDRESSED | §7.5: CIPS + e-CNY architecture "designed precisely to internationalise yuan use without the vulnerability that full opening creates" — quasi-Channel 1 through dedicated infrastructure. |
+| 5b | CNY COFER share growing monotonically since 2016 | ✓ ADDRESSED | §7.5: "CNY COFER share has grown monotonically since 2016 Q4, rising from 1.1% to approximately 2.3–2.8% (2024)" — three interpretations offered; framed as most important ongoing test case. |
+| 5c | Shanghai INE crude futures contract absent | ✓ ADDRESSED | §7.5: "Shanghai INE crude oil futures contract (launched 2018) — priced in renminbi — attempts to establish CNY as an invoicing currency for energy trade without requiring a positive Chinese NEP." |
+| 5d | China-Russia energy corridor demonstrating Channel 1/2 for CNY | ✓ ADDRESSED | §7.5 fifth track; also detailed in §6.5 ruble-yuan analysis: 90% yuan-denominated invoicing in some Russia-China bilateral categories; 40–45% of ruble FX transactions on Moscow Exchange. |
+| 6 | BRI as Strange's four structures — missing | ✓ ADDRESSED | §7.5 "BRI as Strange's four structures" dedicated paragraph: security, production, finance, knowledge dimensions all addressed. Chin and Helleiner (2008) now cited in-text. |
+| 7.1 | Dedicated China section (min 2,000 words) | ✓ ADDRESSED | §7.5 is a full dedicated section: MPI position, channel blockages, five de-dollarisation tracks, ongoing natural experiment, TMSR-LF1 analysis, BRI/Strange, falsification condition. |
+| 7.2 | TMPI scoring with nuclear trajectory vs current share | ✓ ADDRESSED | PFBR vs TMSR-LF1 comparison in §7.5; trajectory caveat registered; highest-consequence observation framed explicitly. |
+| 7.3 | Revised institutional quality measure for China | ✓ ADDRESSED | §6.8 discloses WGI bias for China specifically; ICRG alternative identified as future robustness check. Scope limitation, not systematic error for paper's core cases. |
+| 7.4 | NEP coal/oil fungibility — revision or defence | ✓ ADDRESSED | §3 explicit defence; Malacca Dilemma note now added in §7.5. |
+| 7.5 | China-specific falsification condition in §8.3 | ✓ ADDRESSED | §8.3 now has two China entries: (1) the NEP-tracking confirmatory check (continuous post-2016); (2) the political construction boundary condition — CNY COFER share remains below 5% absent NEP improvement OR capital account opening (KAOPEN > −1.0) by IMF COFER 2030; falsified if CNY exceeds 5% without either condition met. |
+| 7.6 | BRI as Strange's four structures | ✓ ADDRESSED | See item 6 above. |
+| 7.7 | Missing literature: Liao and McDowell (2015) | ✓ ADDRESSED | In references; now cited in-text in §7.5 swap lines sentence. |
+| 7.7 | Missing literature: Chin and Helleiner (2008) | ✓ ADDRESSED | In references; now cited in-text in §7.5 BRI paragraph. |
+| 7.7 | Missing literature: Cohen (2015) | ✓ ADDRESSED | Cited in §2 literature review. |
+| 7.7 | Missing literature: McNamara (2008) | ✓ ADDRESSED | Cited in §2 as "McNamara (1998; 2008)". |
+| 7.7 | Missing literature: Prasad (2017), Subacchi (2017) | ✓ ADDRESSED | Both added to references and cited in-text in §7.5 political construction paragraph. |
+| 7.7 | Jones and Zeng (2019), Ye (2020) on BRI | PUSH BACK | BRI analysis in §7.5 is framed through Strange's own four structures — the most appropriate theoretical lens for this paper. Jones/Zeng and Ye add political economy detail on BRI financing mechanisms that does not change the analytical argument. Not required given the existing Strange-framed analysis. |
+| 7.8 | Figure 5 should include China's MPI trajectory | ✓ ADDRESSED | Figure 5 caption now explains China's exclusion: its boundary case trajectory is non-linear and not reducible to the same p_t parameterisation as the four states shown; §7.5 provides the analytical treatment. |
+
+**RETIREMENT STATUS:** Pending user review — disposition complete, all non-negotiable revisions addressed.
+
+---
+
 ## Summary Assessment
 
 This paper makes a genuinely interesting theoretical contribution by formalising the link between energy governance and reserve currency status. The backward register is the paper's strongest empirical section. The Japan natural experiment is well-designed. The India forward prediction is bold, specific, and falsifiable.

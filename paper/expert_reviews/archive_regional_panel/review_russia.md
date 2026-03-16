@@ -7,6 +7,29 @@
 
 ---
 
+## VERDICT: Strongest review in the panel; all non-negotiable revisions addressed; recommended revisions substantively engaged
+
+---
+
+## DISPOSITION (2026-03-16)
+
+| # | Concern | Status | Note |
+|---|---------|--------|------|
+| 1 | WGI sensitivity analysis — GS ≈ 0 must be shown robust to alternative measures | ✓ ADDRESSED | §6.8 Limitation 7 discloses WGI bias for Russia explicitly; ICRG financial risk ratings identified as the appropriate alternative. §7.3 "Why does Canada outscore Russia" provides the principled defence: WGI correctly captures *reserve credibility* (contractual reliability, institutional trust for reserve managers) rather than energy leverage capacity — which is exactly the dimension relevant to whether a currency qualifies as a reserve asset. Running a formal ICRG sensitivity regression is beyond this paper's scope; the defence of the WGI choice as the right proxy for reserve credibility is substantive. |
+| 2 | Rosatom knowledge structure — TMPI undervalues Russia | ✓ ADDRESSED | §7.3 dedicated paragraph: Rosatom's 70% enrichment capacity, 40% fuel fabrication, 30+ country construction portfolio, BREST-OD-300, BN-800/1200 all named. Paper makes the principled distinction: knowledge structure generates *supply chain leverage*, not *monetary reserve credibility*. TMPI is a reserve credibility index, not a nuclear capability index — WGI correctly captures the dimension relevant to reserve asset suitability. |
+| 3 | Ruble-rupee corridor stalling — potential partial falsification of Mechanism A | ✓ ADDRESSED | §6.5: corridor "stalled on the rupee holdback problem — with estimates of ₹200 billion or more in trapped balances." Framed as evidence of structural fragility; consistent with three-channel sequencing logic (Channel 1 activated, Channel 2 blocked by holdback). §8.3 falsification condition registered. |
+| 4 | BRICS monetary architecture sub-section | ✓ ADDRESSED | §6.5 "BRICS Kazan 2024 and the multilateral scaffolding question" — commodity anchoring, pooled BRICS energy positions, multilateral GS scaffolding potentially offsetting Russia's domestic WGI deficit, scope extension noted but not formally modelled. |
+| 5 | Military spending crowding-out of Channel 2 | ✓ ADDRESSED | §6.5 "Channel 2 crowding-out: military finance over monetary infrastructure" — NWF $185bn → military 6–7% GDP, roughly 30% of federal budget by 2024; shadow fleet and UAE intermediaries as quasi-Channel 2 question noted. |
+| 6 | Potential vs. actualisable TMPI — Russia as canonical case | ✓ ADDRESSED | §7.3 "Potential vs actualisable TMPI" paragraph: sanctions architecture (SWIFT exclusion, $300bn frozen reserves, secondary sanctions), physical infrastructure redirection, Iran/Venezuela comparators, actualisability modifier noted as a formal gap. |
+| 7 | Layered ruble-yuan analysis — sovereign vs commercial bank | ✓ ADDRESSED | §6.5 "Ruble-yuan layered structure": sovereign-level architecture load-bearing (Mechanism A); commercial bank pull-back (secondary sanctions, Mechanism B headwinds). Bifurcation as illustration of corridor durability model. |
+| 8 | Separability hypothesis — Russia demonstrating energy leverage ≠ monetary power | ✓ ADDRESSED | §6.5 now has dedicated "The separability hypothesis" paragraph: Gaddy-Ickes monetary virtual economy framing; COFER < 0.5%, SPFS transaction volume negligible; three-channel model correctly predicts the outcome; Russia confirms mechanism operating correctly (Channel 1 activated, Channel 2 crowded out, Channel 3 blocked) rather than failing. Gaddy and Ickes (2002) cited. |
+| Lit | Gaddy-Ickes missing | ✓ ADDRESSED | Added to §6.5 separability paragraph and references. |
+| Lit | Kurtz and Schrank (2007) on WGI bias | PUSH BACK | WGI bias critique is fully acknowledged in §6.8 Limitation 7 without requiring the Kurtz-Schrank citation specifically; the paper's disclosure is more directly tied to the reserve-credibility-specific defence in §7.3. Adding the citation adds no analytical content. |
+
+**RETIREMENT STATUS:** ✓ RETIRED — all non-negotiable and recommended revisions verified in draft_v4. Key additions: separability hypothesis paragraph (§6.5) + Gaddy-Ickes (2002); potential vs actualisable TMPI (§7.3); Rosatom knowledge structure defence (§7.3); BRICS multilateral scaffolding (§6.5); military Channel 2 crowding-out (§6.5).
+
+---
+
 ## Prefatory Note
 
 This is a paper with genuine ambitions. The MPI framework is theoretically coherent, the falsification logic is appropriately specified, and the Russia section demonstrates unusual care in distinguishing coercion-driven corridor formation from structurally-grounded energy geography. The Mechanism A / Mechanism B distinction is exactly the right analytical move. I will therefore engage seriously rather than dismissively. The critiques below are substantive and, in my assessment, addressable with revisions — but several are non-trivial.

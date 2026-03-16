@@ -7,6 +7,32 @@
 
 ---
 
+## VERDICT: Strong methodological critique; most concerns addressed or adjudicated
+
+---
+
+## DISPOSITION (2026-03-16)
+
+| # | Concern | Status | Note |
+|---|---------|--------|------|
+| 1 | CANDU technology compatibility gap in TMPI formula | ✓ ADDRESSED | §7.3 adds explicit note: TMPI's nuclear_share_energy term captures conversion capacity quantity not quality; CANDU's thorium compatibility acknowledged as underestimated; flagged as future TMPI refinement. Full modifier rejected — reopens scoring model; note is the right scope. |
+| 2a | Katzenstein filter applied to G7 without justification | ✓ ADDRESSED | §7.4 now explicitly defends extension: filter applies when security integration embeds energy sovereignty within the dollar orbit, not as a small-state-only condition; Canada's institutional embedding (NORAD, CUSMA, Five Eyes financial integration) is qualitatively distinct from Katzenstein's small-state corporatism but activates the same channelling mechanism. |
+| 2b | CUSMA proportionality clause — missing mechanism | ✓ ADDRESSED | §7.4 Canada paragraph now names CUSMA Chapter 32, Annex 32-D as the precise treaty-level constraint on Canadian energy sovereignty; FinCEN/FINTRAC integration noted as financial-intelligence layer of the filter. |
+| 2c | 2026 bilateral stress context ignored | ✓ ADDRESSED | §7.4 notes the 2026 bilateral stress as precisely the kind of exogenous shock the paper's filter predicts would not produce structural break absent treaty renegotiation; filter is conditional on institutional architecture, not bilateral temperature. |
+| 2d | Arslanalp et al. counter-evidence — CAD counter-cyclical signal | ✓ ADDRESSED | §7.4 now includes methodological honesty paragraph: if CAD rises counter-cyclically to USD, that signals independent reserve demand, not dollar-relay — the paper acknowledges this as the key falsification signal for the filter. Helleiner *Forgotten Foundations* (2014) cited on Canada's historically assertive monetary posture. |
+| 3 | Canada absent from present register without explanation | ✓ ADDRESSED | §6.4 now has an explicit "Canada boundary note" explaining the exclusion: Canada's high NEP + niche-bound CAD is the Katzenstein filter operating, not an absence of the mechanism; including Canada without modelling the filter as an independent variable would misspecify the comparison. |
+| 4 | Uranium vs. thorium robustness check | ✓ ADDRESSED | §7.1 defends the thorium-specific choice: uranium is a transition-era fuel already modelled in the present register via NEP; the forward register specifically concerns the post-carbon transition where thorium's advantage is its non-combustible nature and waste profile, not just energy density. Canada and Kazakhstan would rank higher on a pure uranium metric — the paper does not deny this; it claims thorium is the relevant forward variable for the 2030–2050 window. |
+| 5 | Institutional quality / filter coherence — which dominates? | ✓ ADDRESSED | §7.4 now contains an explicit channel-sequencing resolution: the three transmission channels are *sequential*, not parallel. The Katzenstein filter operates at the Channel 1/2 activation gate; WGI operates within Channel 3 downstream. Canada exemplifies the resolution: world-class inflation targeting (WGI=0.86) but limited reserve demand (2.2–2.5% COFER) because CUSMA denies WGI the Channel 1/2 feedstock Channel 3 requires to scale. Credibility without channel activation is necessary but insufficient. |
+| 6 | Missing Canada falsification condition in §8.3 | ✓ ADDRESSED | §8.3 now includes: "IMF COFER 2028 — CAD should not exceed 3.0% reserve share despite second-highest TMPI; falsified if CAD rises above 3% independently (would refute Katzenstein filter for Canada)." |
+| 7a | Helleiner *Forgotten Foundations* (2014) missing | ✓ ADDRESSED | Added to §7.4 and references. |
+| 7b | Clarkson *Uncle Sam and Us* (2002) missing | ✓ ADDRESSED | Added to §7.4 and references. |
+| 7c | Doern-Toner *Politics of Energy* (1985) missing | ✓ ADDRESSED | §7.4 now cites Doern and Toner (1985) as historical evidence of the Katzenstein filter operating in real time: Canada's 1980 NEP was a documented Mechanism A attempt (energy sovereignty → monetary leverage) suppressed by US retaliation during FTA negotiations. CUSMA Chapter 32 is the 1985 filter institutionalised as a 2020 treaty obligation. Doern-Toner is direct empirical evidence FOR the paper's filter mechanism, not a naming coincidence. Also added to references. |
+| 7d | Nossal *Politics of Canadian Foreign Policy* missing | PUSH BACK | Standard Canadian foreign policy reference but does not bear directly on the monetary mechanism or the filter. Out of scope. |
+
+**RETIREMENT STATUS:** ✓ RETIRED — all material concerns addressed or adjudicated with documented reasoning. Note: §6.4 now quantifies a *filter discount* for Canada (~1.0pp, symmetric counterpart to GBP's +3.7pp institutional premium); §7.4 adds the 1980 NEP historical episode (Doern and Toner 1985) and an explicit channel-sequencing resolution to the WGI/filter coherence question.
+
+---
+
 ## Summary Assessment
 
 This is an ambitious and structurally innovative paper. The MPI framework is well-specified, the three-register architecture is genuinely novel, and the India prediction is the kind of falsifiable wager that distinguishes serious theoretical work. My concerns are concentrated in two areas. First, the treatment of Canada is simultaneously the paper's second-highest TMPI result and its most under-theorised case. The Katzenstein filter is applied to Canada in a single paragraph, doing enormous theoretical work without the scrutiny the paper lavishes on India, Russia, and the US. Second, the TMPI formula as applied to Canada contains a potentially material measurement gap — the omission of CANDU-thorium technological compatibility — that may cause the paper to understate Canada's forward position.

@@ -9,6 +9,31 @@
 
 ---
 
+## VERDICT: Strong substantive engagement; core mechanism concerns addressed or adjudicated
+
+---
+
+## DISPOSITION (2026-03-16)
+
+| # | Concern | Status | Note |
+|---|---------|--------|------|
+| 1 | CFA franc zone as the paper's missing test case | ✓ ADDRESSED | §6.4 now has a full dedicated paragraph: CFA zone as the most institutionalised Katzenstein filter, Operations Account recycling, fixed peg, monetary-constitutional constraint. Not a footnote — it is the paper's most explicit instantiation of filter suppression. |
+| 2 | Niger 2023 as natural experiment; India vs Niger strategic weight | ✓ ADDRESSED | §6.4 directly addresses the binary: Niger 2023 coup → IMF suspension → financial isolation as Mechanism B activation test. Strategic weight paragraph explains why India clears the threshold Niger does not: $3.5T GDP, indigenous nuclear capability, Quad membership, no IMF programme dependence. |
+| 3 | New Caledonia / transitional critical minerals era — two-era periodisation gap | ✓ ADDRESSED | §6.8 now contains an eighth limitation: the carbon/thorium two-era structure does not accommodate the concurrent battery-transition minerals era (nickel, cobalt, lithium). New Caledonia explicitly named as an example. Framed as a scope limitation and future-work avenue, not a falsification. |
+| 4 | ECO/ECOWAS failure should temper CMIM/BRICS optimism | PUSH BACK | Out of scope for this version. The paper's CMIM and BRICS Bridge discussion is already hedged — both are described as partial scaffolding without operational monetary units. The West African ECO failure is an additional illustration, not a correction to anything the paper asserts. A different paper on regional monetary integration failure would be the right venue. |
+| 5 | WGI endogeneity for CFA zone states — causality running backwards | ✓ ADDRESSED | §6.8 seventh limitation contains an explicit paragraph: for CFA states, monetary-constitutional architecture (Operations Account, fixed peg, external board seats) actively suppresses institution-building that WGI measures. WGI is partly an *outcome* of monetary architecture for these states. Endogeneity disclosed and scoped to core cases. |
+| 6 | Russia's Mechanism B in the Sahel — not engaged in the paper | ✓ ADDRESSED | §6.5 contains a dedicated "Russia's Mechanism B in the Sahel" paragraph: Mali, Burkina Faso, Niger, Chad expulsions (2022–2024); AES monetary alternatives to CFA franc; bilateral ruble settlement discussion. Both Eurasian and Sahelian Mechanism B tracks described. |
+| 7 | ORANO-Niger corridor as colonial-extractivist form of the mechanism | ✓ ADDRESSED | §6.4 France-Niger dyad paragraph names the predatory form of Mechanism A: France's MPI enhanced by Niger's MPI suppression through the concession architecture. "Power determines who gets positive MPI" stated directly. Grégoire (2011) and Pigeaud and Sylla (2018) both cited. |
+| 8a | GS=2.79 applied as global constant — invalid for CFA states | PUSH BACK | GS is only applied operationally in the present register cases (US, EUR, Japan) — all non-CFA states. The CFA zone analysis in §6.4 is entirely qualitative and never applies the GS constant to CFA states. The criticism does not land against the actual paper; the GS term's scope is already restricted to present-register entities. |
+| 8b | Katzenstein filter should be operationalised quantitatively using CFA as model | PUSH BACK | A quantitative filter variable (Operations Account deposit ratio, peg duration, treaty obligation score) would require a new regression design with a filter interaction term — a different paper. The paper applies the filter qualitatively with institutional specificity for each case. The CFA zone is used as the theoretical extreme to anchor the qualitative scale, which is the appropriate scope for this version. |
+| 9a | Pigeaud and Sylla (2018) missing | ✓ ADDRESSED | Cited at §6.4 and in references. |
+| 9b | Grégoire (2011) — "Areva in Niger: The Françafrique Mining Model" | ✓ ADDRESSED | Added to §6.4 citation alongside Pigeaud and Sylla; added to references. |
+| 9c | Monga and Lin (2015), Agbohou (1999), Leymarie (2023) | PUSH BACK | Monga/Lin is a broad Africa economics handbook, not directly relevant to the monetary mechanism. Agbohou (1999) predates the paper's analytical period and its argument is captured by Pigeaud and Sylla (2018). Leymarie (2023) is journalism and does not add analytical content beyond what the paper already covers on the Sahel coup belt. None are required. |
+
+**RETIREMENT STATUS:** ✓ RETIRED — all material concerns addressed or adjudicated with documented reasoning. Note: §6.4 covers CFA zone, Niger 2023, and predatory Mechanism A; §6.5 covers Russia/Sahel Mechanism B; §6.8 adds critical minerals scope limitation (eighth) and WGI endogeneity disclosure (seventh). Grégoire (2011) added to §6.4 and references.
+
+---
+
 ## Preliminary Statement
 
 This review is filed from the perspective of France's monetary periphery — the CFA franc zone (UEMOA and CEMAC), France's DOM-TOM overseas territories, and the Francophone African states whose energy endowments and monetary subordination constitute the most directly relevant test cases for the paper's central argument. I do not represent the French Treasury, the Banque de France, or the ECB. I represent the fourteen states whose central banks are required to deposit their foreign exchange reserves with the French Treasury as a condition of guaranteed convertibility, the overseas territories whose independence movements turn in part on control of strategic mineral reserves, and the citizens of Niger who watched their uranium leave through Arlit for fifty years before a coup attempt to reclaim it ended in financial isolation.

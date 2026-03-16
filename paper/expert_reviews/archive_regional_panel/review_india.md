@@ -98,3 +98,23 @@ The paper does not engage with the Chinn-Ito financial openness literature on se
 ---
 
 *Reviewed under double-blind protocol. No conflicts of interest declared.*
+
+---
+
+## Disposition Table — draft_v4 Response
+
+| # | Reviewer Point | Status | Where Addressed |
+|---|---------------|--------|-----------------|
+| 1 | Quad-era transformation of strategic autonomy; non-alignment as assertion | ✓ ADDRESSED | §7.4 India paragraph: explicitly acknowledges Quad (2021), iCET, TEJAS Mk2 co-production. Argues India lacks *institutional treaty architecture* (no mutual defence treaty, no CUSMA-equivalent proportionality, no HEU supply dependence) distinguishing it from Five Eyes states. Whether deepening integration eventually creates filter conditions is registered as open empirical question. |
+| 1a | Civil Nuclear Agreement / NSG reprocessing constraint | PUSH BACK | §7.4 notes thorium-era prediction is conditional on indigenous Stage 2→3 deployment. Civil Nuclear Agreement constraint on reprocessing technology is real; the paper's §7.1 defence of thorium-specificity rests on indigenous fuel cycle capacity as a *requirement* (not an assumption) — if NSG/US constraints block Stage 2→3, the §8.3 falsification condition is triggered. The constraint is structurally embedded in the gate logic. |
+| 2 | Political economy mechanism for how energy credibility overcomes RBI coalition | ✓ ADDRESSED | §7.6 "The RBI coalition as a gate risk": explicitly named as durable coalition (export manufacturing, agriculture, state banking, RBI institutional interest); argues improved energy credibility is necessary but not sufficient; gate condition states that if capital account easing is *not* observable by 2028 despite nuclear additions, the 2031 prediction is withdrawn. Coalition risk is precisely why the gate exists. |
+| 3 | Update nuclear timeline inputs; flag 20% as aspirational | ✓ ADDRESSED | §7.6 uses NPCIL official 22,000 MW by 2031 projection (not the 20% DAE aspirational target); nuclear share computed as ~3.8% of 2024 primary energy at that capacity. The 20% target is not used as a modelling input. |
+| 4 | Integrate coal dynamics into NEP trajectory analysis | ✓ ADDRESSED | §7.6 "Coal lock-in as a structural NEP moderator" added: coal at ~55% of India's primary energy mix through 2035 (IEA 2025 India Energy Outlook), 24 GW added 2022–2024, 55 GW under construction. Mechanism is explicitly framed as marginal (oil import relief) not wholesale transformation. Coal self-sufficiency noted as not activating Channel 1 invoicing dynamics since coal is not dollar-invoiced globally. |
+| 5 | Stagnation paradox: INR flat 2019–2022 despite massive GDP growth | ✓ ADDRESSED | §7.6 "The dominant currency paradigm constraint": INR FX share responds to NEP and energy import relief, not GDP. Oil import costs were rising 2019–2022 as prices recovered, worsening current account. Mechanism predicts improvement only after nuclear capacity addition reduces oil exposure — which had not occurred by 2022. |
+| 6 | Engage Gopinath (2015) on dominant currency paradigm stickiness | ✓ ADDRESSED | §7.6 cites Gopinath (2015) directly: 86% of India's merchandise trade invoiced in USD/EUR; transmission runs through channels 2 and 3 (BOP improvement, credibility, reserve accumulation) rather than displacing dollar invoicing in merchandise trade. 3–5% target achievable through financial market transactions and NDF market depth, not general trade invoicing displacement. |
+
+**PUSH BACK items** (1 total):
+
+- **Item 1a (Civil Nuclear/NSG constraint)**: The constraint is real but the paper's treatment is appropriate. Stage 2→3 requiring indigenous reprocessing capability is a *binding condition* for the forward prediction, not an assumption the paper ignores. If US/NSG constraints block this, the §8.3 2031 falsification condition is triggered. The paper does not claim Stage 3 deployment is certain; it makes a conditional prediction. The reviewer's concern about structural incompatibility between thorium sovereignty and dollar departure is substantively valid — but the gate logic already handles this: failed Stage 2→3 = withdrawn prediction.
+
+**Retirement status: COMPLETE** — All 6 required revisions addressed or defended. Archived 2026-03-16.

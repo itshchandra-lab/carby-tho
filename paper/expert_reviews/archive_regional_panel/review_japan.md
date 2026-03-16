@@ -8,6 +8,35 @@
 
 ---
 
+## VERDICT: Strong methodological challenge; all non-negotiable revisions addressed
+
+---
+
+## DISPOSITION (2026-03-16)
+
+| # | Concern | Status | Note |
+|---|---------|--------|------|
+| 1a | "Cleanest identification" overstated — current account collapse confound | ✓ ADDRESSED | §6.3 explicitly acknowledges: "current account surplus collapsed from 3.7% of GDP (2010) to 0.5% (2013) as LNG substitution costs ran to ~$30–40 billion per year at peak — current account collapse is an independently plausible mechanism for reserve currency stagnation." |
+| 1b | BOJ QQE / Abenomics as rival identification confound | ✓ ADDRESSED | §6.3 explicitly acknowledges BOJ QQE from April 2013 "deliberately engineered yen depreciation" and that "standard predictors have not deteriorated" claim cannot be sustained given the yield channel. "Cleanest identification" characterisation withdrawn. |
+| 1c | MOF anti-internationalisation — most significant omission | ✓ ADDRESSED | §6.3 has a dedicated "Institutional rival: MOF anti-internationalisation policy" subsection: three-decade MOF stance documented, Grimes (2003) and Lipscy (2003) cited, described as "reinforcing rather than mutually exclusive" with the energy mechanism. Fukushima provides differential variation that partially addresses the identification problem. |
+| 1d | Plaza Accord legacy — yen underperformance predates Fukushima by two decades | ✓ ADDRESSED | §6.3 states: "The yen's reserve underperformance therefore predates the Fukushima shock by approximately two decades — the Plaza Accord (1985–1987) triggered the Bubble Economy and Lost Decade, producing a structural institutional determination." Fukushima framed as *change in trajectory*, not origin. |
+| 2 | Kishida Doctrine gap — security posture change not addressed | ✓ ADDRESSED | §7.4 Japan paragraph now includes a Kishida Doctrine note: December 2022 NSS (2% GDP defence, counterstrike capability) framed as a potential filter stress test; filter prediction remains conditional on institutional architecture (basing commitments, Article 9), not bilateral temperature; BIS 2031 data as the resolution window. |
+| 3 | Japan falsification condition missing / imprecise | ✓ ADDRESSED | §8.3 contains: "If Japan's nuclear share reaches ≥15% of primary energy by 2030, JPY FX turnover share should recover above 5% by BIS 2031; if nuclear restart proceeds on schedule but JPY share stagnates, MOF institutional suppression confirmed as dominant over energy mechanism." Matches India precision. |
+| 4 | GX Plan (hydrogen, ammonia, SMR) invisible to TMPI | ✓ ADDRESSED | §6.3 final paragraph explicitly acknowledges GX Basic Policy (February 2023, ¥150 trillion): hydrogen co-firing, ammonia co-firing, and SMR pathways "not captured by TMPI's thorium-specific scoring" — framed as a scope limitation on the forward register. |
+| 5 | BOJ/ZIRP apparent tension with credibility mechanism | ✓ ADDRESSED | §6.3 resolves the tension: sustained ZIRP is "consistent with and predicted by" the energy-dependence mechanism — energy import dependence constrains monetary policy autonomy; ZIRP is a manifestation of that constraint, not a falsification. |
+| 6 | Katzenstein filter — deliberate choice vs structural constraint | ✓ ADDRESSED | §6.3 MOF paragraph and §7.4 both address this. The paper does not claim Japan is incapable of internationalisation; it claims the energy mechanism and MOF institutional suppression are *reinforcing*. MOF made a choice conditioned on a structural energy-security situation the paper describes. |
+| 7a | Samuels (2013) *3.11* missing | ✓ ADDRESSED | In references. |
+| 7b | Grimes (2003) missing | ✓ ADDRESSED | Cited in §6.3 and §7.4; in references. |
+| 7c | Lipscy (2003) missing | ✓ ADDRESSED | Cited in §6.3 and §7.4; in references. |
+| 7d | Henning (1994) *Currencies and Politics* | PUSH BACK | Content covered by Grimes (2003) and Lipscy (2003), which are already cited. Henning (1994) adds historical breadth on currency politics across three countries but does not bear on the specific MOF anti-internationalisation mechanism. Not required. |
+| 7e | Samuels (1987) *Business of the Japanese State* | PUSH BACK | Relevant to the point that "exogenous" energy shocks in Japan are never purely exogenous — but §6.3 already directly acknowledges the non-neutral transmission environment and bounds the identification claim accordingly. The content concern is fully addressed without the citation. |
+| 7f | METI (2024) 6th Strategic Energy Plan | ✓ ADDRESSED | Referenced in §6.3 as the operative policy document for nuclear restart targets and 20–22% electricity share by 2030. |
+| 7g | METI (2023) GX Basic Policy | ✓ ADDRESSED | Referenced in §6.3 alongside the GX scope limitation note. |
+
+**RETIREMENT STATUS:** ✓ RETIRED — all non-negotiable revisions addressed; recommended revisions addressed; two literature push-backs documented with reasoning.
+
+---
+
 ## Prefatory Assessment
 
 This is an intellectually serious paper with a bold central claim. The Japan case is genuinely the most analytically interesting material in the present register — not because it provides the "cleanest" identification (a claim I dispute below), but because it forces the paper to confront the limits of a purely materialist account of reserve currency status. The Fukushima shock was real. The NEP decline was real. The yen's underperformance against GDP benchmarks is real. But the explanatory architecture the paper constructs is considerably thinner than the empirical density of the Japan case demands.

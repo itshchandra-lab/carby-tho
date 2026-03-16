@@ -7,6 +7,40 @@
 
 ---
 
+## VERDICT: Substantive historiographic and methodological challenge; all required revisions addressed
+
+---
+
+## DISPOSITION (2026-03-16)
+
+| # | Concern | Status | Note |
+|---|---------|--------|------|
+| 1a | Sterling narrative omits WWII debt accumulation | ✓ ADDRESSED | §6.7 multi-causal honesty note explicitly: "Britain emerged from WWII as the world's largest debtor, with blocked sterling balances exceeding £3.5 billion." Framed as a debt management constraint operating alongside the energy mechanism. |
+| 1b | Marshall Plan conditionality / 1947 convertibility crisis omitted | ✓ ADDRESSED | §6.7: "The 1947 convertibility crisis, forced by Anglo-American Financial Agreement conditionality, demonstrated sterling's contingent international role." |
+| 1c | Suez 1956 omitted — security coercion not energy economics displaced sterling | ✓ ADDRESSED | §6.7: Suez named explicitly — "Eisenhower administration withheld IMF support until Britain accepted a ceasefire, directly inducing the reserve drain." Integrated into multi-causal framework. |
+| 1d | 1967 devaluation primarily military overstretch, not energy | ✓ ADDRESSED | §6.7: "The 1967 devaluation resulted primarily from military overstretch east of Suez and chronic balance-of-payments deficits." |
+| 1e | Causal arrow — energy was prolonging sterling, not explaining its decline | ✓ ADDRESSED | §6.7 residual analysis: "energy position sets the floor; institutional architecture can sustain demand above it until the governance arrangement is severed." The over-prediction before 1974 and convergence after 1974 both explained within the framework. |
+| 2 | City of London never theorised — UK not named as institutional substitution case | ✓ ADDRESSED | §6.4 GBP premium paragraph: City of London named explicitly, 3.7pp premium quantified, 38% FX turnover cited, UK-Switzerland analogy drawn at scale. Strange (1986) *Casino Capitalism* cited. Strange (1998) *Mad Money* now added. London's platform role for RMB/GCC/INR also now noted. |
+| 3 | UK lag non-significance — pre-1995/post-1995 conflation | ✓ ADDRESSED | §6.6 explicit methodological clarification: "GBP reserve share in the COFER era (1995–2024) is relatively stable at ~3.5–5.0% — sterling was already near its post-decline floor when COFER reporting began. The mechanism produced its variation between 1913 and 1980, not between 1995 and 2024. These two evidentiary bases must not be conflated." |
+| 4 | Brexit / UK ETS as natural experiment ignored | ✓ ADDRESSED | §5 identifies the UK vs EU ETS comparison explicitly as "precisely what the backward register methodology calls for" — the paper does not run it but flags it as the most direct near-term test of Brexit-induced GS divergence. Acknowledged as future work, not omitted. |
+| 5a | Rolls-Royce SMR knowledge vector ignored | ✓ ADDRESSED | §7.4 UK filter mootness note now includes: Rolls-Royce SMR / PWR3 AUKUS contribution acknowledged as a knowledge-structure position not captured by TMPI's endowment-based formula. Explicitly scoped as a TMPI limitation for the UK case. |
+| 5b | AUKUS as UK knowledge-structure vector into TMPI rankings | ✓ ADDRESSED | Same note in §7.4 — UK's PWR3 AUKUS contribution explicitly named. |
+| 6 | London as platform for other currencies — theoretical gap | ✓ ADDRESSED | §6.4 GBP premium paragraph now notes: London RMB clearing hub, UK-GCC FTA, UK-India FTA as recreating the sterling-Gulf invoicing relationship in attenuated form. Identified as a scope extension the framework does not fully theorise but acknowledges. |
+| 7a | Kynaston *City of London* (4 vols.) missing | PUSH BACK | Content covered by Strange (1986/1998), both now cited. Kynaston is the definitive popular/institutional history but does not add analytical content beyond what Strange provides for the paper's theoretical purposes. |
+| 7b | Strange (1986) *Casino Capitalism* missing | ✓ ADDRESSED | Cited in §6.4 and references. |
+| 7c | Strange (1998) *Mad Money* missing | ✓ ADDRESSED | Added to §6.4 citation and references. |
+| 7d | Burnham (1990) *Political Economy of Postwar Reconstruction* | PUSH BACK | Sterling management as domestic political economy — content covered in §6.7 multi-causal note (WWII debt, convertibility crisis, overstretch). Not required for the paper's theoretical purposes. |
+| 7e | Gamble (1985/2014) *Britain in Decline* | PUSH BACK | UK relative decline framework — §3.1 and §6.7 treat UK decline as empirically established. Adding Gamble would cite the canonical narrative without changing the paper's analytical content. |
+| 7f | Helleiner and Kirshner (2009) *Future of the Dollar* | PUSH BACK | Sterling-as-comparator content is addressed through Eichengreen and Flandreau (2009) and Schenk (2010), which are the primary quantitative sources. The edited volume adds breadth, not correction. |
+| 8a | Eichengreen/Flandreau (2009) citation precision | ✓ ADDRESSED | §6.7 data source note explicitly states: "earlier observations (1899–1940s) from Eichengreen and Flandreau (2009)... which focuses primarily on the 1920s–1940s transition; later observations (1950–1980) supplemented from Schenk (2010) and Eichengreen (2011)." |
+| 8b | UK GS value not stated explicitly | ✓ ADDRESSED | §5 identifies UK ETS vs EU ETS as future GS comparison. The paper's present-register GS (2.79) is EU ETS-derived and not applied to UK specifically in the quantitative analysis — acknowledged as future work. |
+| 8c | Figure 5 "declining" label without explicit UK MPI calculation | PUSH BACK | UK MPI trajectory at p_t=0 is NEP·GS (declining North Sea, quantified in §6.4) and at p_t=1 is TMPI·GS = 0. The trajectory is structurally determined by the formula and the label is correct. The reviewer's concern is addressed by the §6.4 quantification of the GBP institutional premium, which shows the mechanism prediction separately from the institutional substitution effect. |
+| 8d | COFER shows GBP stable 1995–2024, paper says "declining" | ✓ ADDRESSED | §6.6 methodological clarification distinguishes pre-1995 narrative decline from post-1995 COFER stability. Both are now explicitly acknowledged and reconciled. |
+
+**RETIREMENT STATUS:** ✓ RETIRED — all required revisions addressed; four literature push-backs documented with reasoning; Strange (1998) added to §6.4 and references; London platform role and SMR knowledge vector added to paper.
+
+---
+
 ## Summary Judgement
 
 This is an ambitious and intellectually serious paper. The core intuition — that energy governance is politically constructed and that reserve currency trajectories track it with a generational lag — is genuinely productive. The falsification registry is a methodological virtue.
