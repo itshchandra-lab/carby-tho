@@ -166,3 +166,37 @@ CBAM (operational from 2026, the paper's publication date) creates a price linka
 
 *Reviewed by: Anonymous Reviewer, Senior Expert in Emissions Trading System Design and Carbon Market Governance*
 *Date of review: March 2026*
+
+---
+
+## Author Response Disposition — draft_v4 Revisions
+
+**Review date:** 2026-03-16
+**Draft revised:** draft_v4.md
+
+| Reviewer point | Decision | Disposition | Draft change |
+|----------------|----------|-------------|--------------|
+| (a) EUA data provenance | **Accept** | CV = 0.815 reconstructed from three secondary sources (Ellerman & Buchner, Koch et al., Bayer & Aklin); no primary ICE/ECX data directly cited. | §5.3 data provenance note added inline after volatility table: acknowledges secondary-source reconstruction; confirms bootstrapped CI [2.06, 4.28] as the error-bound substitute for primary-data error bars. |
+| (b) Phase I "near-zero within weeks" | **Accept — narrative corrected** | Genuine factual error conflating two distinct events and mechanisms. | §5.3 Phase I collapse paragraph rewritten: May 2006 = 60% decline to ~€10-12 (information shock from 15 May 2006 verified emissions release, ~44 Mt surplus revealed); near-zero = December 2007 Phase I expiry driven by no-banking design constraint. Mechanisms separated; governance claim rests on May 2006 information shock alone. |
+| (c) GS temporal mismatch | **Accept — both windows reported** | Real design issue; GS sensitive to oil CV window choice. | §5.3 "Temporal window sensitivity" note added after GS result: contemporaneous oil CV 2005-2007 ≈ 0.14-0.15 → GS_contemporaneous ≈ 5.4; GS = 2.87 retained as the long-run baseline (more conservative). Both reported; GS > 1 on both windows. |
+| (d) RGGI design confounds | **Accept** | Price floor ($1.86/tonne, September 2008 inaugural auction) and GFC timing confound acknowledged. | §5.3 RGGI paragraph updated: $1.86 reserve price explicit; GFC timing (post-GFC contraction vs pre-GFC expansion) explicit; directional comparison described as robust but magnitude as "upper bound on governance-attributable difference." |
+| (e) ZA "rejection" language | **Accept — minor fix** | ZA identifies minimum test statistic; does not "reject" alternatives. | §5.2 ZA sentence corrected: "The ZA procedure identifies the break year with the most extreme (minimum) test statistic; it does not formally 'reject' alternative dates. Candidate years 2008-2009 and 2019-2020 produce less extreme ZA statistics than 2014..." |
+| (f) Decompose CV / banking restriction | **Accept** | Banking restriction is a structural design feature, not ongoing governance failure; its contribution to CV must be acknowledged. | §5.3 Phase I collapse paragraph now explicitly attributes near-zero 2007 prices to no-banking design constraint ("worthless by design, not by governance failure in any ongoing sense"); governance claim limited to May 2006 information shock. Full CV decomposition not implemented (would require monthly data disaggregation beyond current scope) but the structural vs governance-attributable distinction is now explicit. |
+| (g) China ETS | **Accept — brief note added** | China ETS (2021, 4.5 Gt) is the world's largest ETS and directly relevant to GS framework; absence was a gap. | §5.4 "China ETS as forward natural experiment" paragraph added (~70 words): characteristics described (over-allocation, thin trading, compliance clustering, benchmark allocation); framed as live out-of-sample test of the backward register framework. |
+| (h) Phase IV + CBAM | **Partial — already partially addressed; CBAM prediction added** | Phase IV already in paper (§5.3 oil benchmark note). CBAM forward prediction was absent. | §5.4 cross-phase GS table note extended: CBAM (operational from 2026) predicted to reduce over-allocation incentives → Phase V GS converging toward RGGI-equivalent; GS < 1 in Phase V identified as forward falsification condition. |
+| (i) Cross-phase GS table | **Accept** | Phase-dependence of GS is important context; single GS figure overstates regime stability. | §5.4 indicative cross-phase GS table added (Phases I-IV with approximate CVs and indicative GS vs long-run oil baseline); Phase I as highest, Phase IV as approaching 1; framed as indicative given data limitations for other phases. |
+
+**Pre-archive check:**
+- [x] "near-zero within weeks" no longer present — replaced with ~€10-12 information shock + separate 2007 banking-restriction mechanism
+- [x] Banking restriction explicitly attributed as cause of 2007 near-zero prices (design constraint, not ongoing governance failure)
+- [x] GS_contemporaneous ≈ 5.4 reported alongside GS_long = 2.87
+- [x] RGGI price floor ($1.86/tonne, September 2008) and GFC timing confounds acknowledged; directional comparison described as upper bound
+- [x] ZA "rejection" language replaced with correct characterisation (minimum test statistic identification)
+- [x] Data provenance note present after volatility table
+- [x] China ETS forward natural experiment added to §5.4
+- [x] Cross-phase GS table (Phases I-IV) added to §5.4
+- [x] CBAM forward falsification condition explicit in §5.4
+- [x] GS_norm ≈ 0.85 in MPI assembly unchanged
+- [x] β = 84.0 unchanged
+- [x] All falsification conditions unchanged
+- [x] Central backward register claim preserved: GS > 1 on both temporal windows
