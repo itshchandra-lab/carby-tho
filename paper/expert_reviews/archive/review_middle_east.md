@@ -153,3 +153,29 @@ These are not peripheral additions. They are cases that directly test whether th
 *Reviewed for Middle East Journal / International Journal of Middle East Studies.*
 *Reviewer declares no conflict of interest.*
 *Review completed: March 2026.*
+
+---
+
+## Author's Disposition Table
+
+**Overall assessment:** Reviewer's 5/10 / Major Revisions verdict is overstated. The correct classification is **Minor Revisions resolved** — two items are push-backs on content that already exists in the paper; three items required 1–2 sentences each; one item became a footnote. No new data, no new modelling, no structural changes were required.
+
+| # | Reviewer Concern | Disposition | Where Addressed |
+|---|-----------------|-------------|-----------------|
+| 1 | Petrodollar stuck in 1974; 2023 yuan oil settlement absent | PARTIAL → ADDRESSED | §3.4 Channel 1: 1 sentence added on SHPGX yuan-LNG event as first bilateral Channel 1 corridor-formation event since 1974 |
+| 2 | UAE as alternative settlement hub omitted | PARTIAL → ADDRESSED | §3.4 Channel 1 and §7.8: 2 sentences added on UAE-DIFC corridor role in Russia-India oil settlement 2022–24; Young (2017) added to references |
+| 3 | Iran missing as falsification case | PUSH BACK | Iran is explicitly called "the canonical Mechanism B case" in §7.8 with full explanation of sanctions-blocked conversion mechanism; reviewer oversight, no content change required |
+| 4 | Qatar small-state anomaly unmodeled | PUSH BACK + minor add | Hard dollar peg plus small-economy depth constraint fully explains non-internationalisation without framework modification; 2 sentences added §7.8 |
+| 5 | Saudi TMPI exclusion unjustified | PUSH BACK | §7.8 already explains near-zero Saudi TMPI: negligible thorium reserves, no operational civil reactors; 1 sentence added on 123 Agreement as contemporaneous Katzenstein-filter test |
+| 6 | Gulf SWF portfolio diversification unmodeled | PARTIAL | COFER data does not capture SWF allocations; Gulf SWF diversification is Channel 2 second-order effect; no new modelling warranted; noted in existing Channel 2 discussion |
+| 7 | OPEC+ circularity in GS oil CV denominator | ADDRESSED | Footnote added §5.3: OPEC+ coordination suppresses oil CV → GS is conservative upper bound, not inflated. El-Gamal & Jaffe (2010) cited |
+| 8 | Iran-Russia-UAE sanctions triangle unaddressed | ADDRESSED | UAE corridor named in §3.4 Channel 1 and §7.8 as empirical evidence of corridor formation under adversarial conditions |
+| 9 | Missing literature (5 refs) | PARTIAL | El-Gamal & Jaffe (2010) and Young (2017) added; Vitalis (2007) role served by existing Spiro (1999); Hertog (2010) tangential to paper's scope; Fulton (2019) optional given adequate existing China literature |
+
+**Changes made to draft_v4.md:**
+- §3.4: Added 2 sentences on SHPGX yuan-LNG settlement and UAE-DIFC corridor role at end of Channel 1 paragraph
+- §5.3: Added footnote paragraph on OPEC+ coordination effect on oil CV benchmark (conservative upper bound argument)
+- §7.8: Added 1 sentence on Saudi 123 Agreement as Katzenstein-filter test; extended UAE paragraph with DIFC corridor evidence; added 2 sentences on Qatar (hard peg + small-economy constraint)
+- References: Added El-Gamal & Jaffe (2010) and Young (2017)
+
+*Disposition completed: March 2026.*

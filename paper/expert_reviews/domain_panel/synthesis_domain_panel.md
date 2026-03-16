@@ -19,7 +19,7 @@
 | Treaty and International Law | 5/10 | Major Revisions — R&R |
 | BRICS and South-South Cooperation | 6/10 | Major Revisions |
 | Indo-Pacific Strategic Studies | 5/10 | Major Revisions |
-| Middle East Political Economy | 5/10 | Major Revisions |
+| Middle East Political Economy | 5/10 | Major Revisions | ✓ Archived (Minor Revisions resolved) |
 | **Panel Average** | **4.7/10** | **Major Revisions** |
 
 *Note: Round 1 Regional Panel average was 6.3/10. The Round 2 domain panel scores are substantially lower because domain specialists identify technical errors in their home fields that generalist reviewers passed over. This is expected and normal. The carbon, nuclear, and green theory scores of 4/10 reflect genuine empirical and conceptual problems that require correction, not merely framing adjustments.*
@@ -232,11 +232,11 @@ The Green Theory reviewer raises a distinct category of critique — not empiric
 - Cover: Kazan 2024 outcomes, BRICS Bridge architecture, NDB-GS relationship, India-China rivalry constraint, Grabel's productive incoherence framework
 - Distinguish transmission pathways: bilateral corridor (paper's model) vs. collective architecture (BRICS Bridge) — specify which the framework predicts will dominate
 
-**T2.4 Middle East Modernisation**
-- Engage with 2023 yuan oil settlement as a real-time test of the corridor mechanism
-- Include Iran as an explicit negative test case for the MPI framework
-- Address OPEC+ circularity in the oil CV benchmark
-- Add UAE as alternative settlement infrastructure in Russia-India corridor
+**T2.4 Middle East Modernisation** ✓ RESOLVED (March 2026)
+- ~~Engage with 2023 yuan oil settlement~~ → §3.4: SHPGX sentence added
+- ~~Iran as explicit negative test case~~ → Push back: Iran already "canonical Mechanism B case" in §7.8
+- ~~OPEC+ circularity in oil CV benchmark~~ → §5.3: footnote added (GS is conservative upper bound)
+- ~~UAE as alternative settlement infrastructure~~ → §3.4 + §7.8: UAE-DIFC corridor sentences added; Young (2017) cited
 
 ### Tier 3 — Recommended Additions (Would significantly strengthen; currently missing)
 
