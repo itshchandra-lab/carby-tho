@@ -234,3 +234,34 @@ By Strange's knowledge structure framework, Russia's position in the nuclear kno
 ---
 
 *Submitted in confidence to the editor. The reviewer has no known conflict of interest with the authors or their institutions.*
+
+---
+
+## Author Response Disposition — draft_v4 Revisions
+
+**Review date:** 2026-03-16
+**Draft revised:** draft_v4.md
+
+| Reviewer point | Decision | Disposition | Draft change |
+|----------------|----------|-------------|--------------|
+| §2.1 PFBR thorium blanket claim | **Accept** | Genuine technical error. | §7.6 corrected: PFBR uses depleted uranium blanket (not thorium); future Stage 2 FBRs may add thorium blankets; Stage 3 AHWR uses Pu-239 + U-233. Monetary mechanism unaffected. |
+| §2.2 PFBR "core loading in 2024" = operational? | **Accept** | Valid precision concern. | §7.3 parenthetical added: "core loading is the pre-criticality phase; first criticality and grid connection are subsequent milestones not yet reached as of writing." |
+| §2.3 20% nuclear by 2035 | **Pushback — reviewer misread** | Paper does NOT predict 20% nuclear for India. §7.6 gives NPCIL target = ~3.8% primary energy by 2031. The §7.9 High (20%) is a global TMPI sensitivity scenario. | §7.9 clarification added: global scenarios ≠ India-specific predictions; 20% High scenario tests rank-order sensitivity to rapid global nuclear deployment. |
+| §4 AUKUS falsification incoherence | **Pushback — already addressed** | §7.4 and §8.3 both explicitly state AUKUS uses HEU submarine propulsion, not thorium; AUD stagnation is predicted regardless of AUKUS. Reviewer misread what was already there. | No change. |
+| §5.1 Reserve/resource conflation | **Accept** | Terminological precision warranted. | §7.1 terminological note added: USGS figures are "identified thorium resources" not "reserves" in strict economic sense; structural argument rests on geographic concentration of endowment, not market recoverability classification. |
+| §5.2 China endowment underreporting | **Partial accept** | Paper already notes 2.1% is a lower bound. Sensitivity now quantified. | §7.5 quantified sensitivity added: China at 15% world total → TMPI ≈ 29 (from 4.2), placing China second behind USA. India prediction unaffected (rests on three-stage programme + institutional quality, not solely reserve rank). India-China TMPI differential registered as contingent on endowment data resolution. |
+| §6 TMPI knowledge structure gap | **Pushback — already addressed** | §7.3 already provides principled defence: knowledge structure → supply chain leverage ≠ reserve credibility; WGI captures contractual reliability relevant to reserve managers. TMPI is a reserve credibility potential index, not a nuclear capability index. | No change. |
+| §7.1–7.3 Non-proliferation | **Accept** | Two substantive additions warranted. | §7.1 dual-use note extended: (a) IAEA safeguards gap — U-233 measurement maturity, Pa-233 accounting category, THOREX facility attachments; (b) proliferation incentive implication acknowledged directly. ~130 words added. |
+| §1.1 Pa-233 bottleneck / U-232 problem | **Accept** | Specific physics strengthens the sovereignty argument. | §7.1 physics precision added after non-commoditisability claim: Pa-233 27-day half-life + neutron absorption → intrinsic design constraints; U-232/Tl-208 2.6 MeV gamma → mandatory hot-cell fabrication. Both are permanent physics constraints, not transitional technology gaps. ~130 words added. |
+
+**Pre-archive check:**
+- [x] §7.6 no longer says "breeds U-233 from thorium" — uses DU blanket language
+- [x] §7.5 and §7.6 now consistent (both describe PFBR as Pu-239/U-238 Stage 2)
+- [x] §7.1 non-commoditisability claim supported by specific physics (Pa-233, U-232/Tl-208)
+- [x] "Identified thorium resources" terminological note present in §7.1
+- [x] China TMPI sensitivity at 15% reserves (~29, second ranked) present in §7.5
+- [x] IAEA safeguards gap acknowledged in §7.1 dual-use note
+- [x] Proliferation incentive implication acknowledged
+- [x] §7.9 explicitly distinguishes High=20% scenario from India policy target
+- [x] All falsification conditions unchanged
+- [x] AUKUS and TMPI knowledge structure pushbacks documented here; no draft changes needed

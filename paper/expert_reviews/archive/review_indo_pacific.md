@@ -152,3 +152,23 @@ However, the paper's Indo-Pacific geopolitical architecture is insufficiently de
 5. Incorporation of the critical minerals and clean energy supply chain dimension into the thorium fuel cycle sovereignty argument
 
 With these revisions, the paper could make a substantial contribution. Without them, the Indo-Pacific security predictions are not credible.
+
+---
+
+## Editorial Response — draft_v4 revisions (2026-03-16)
+
+**Disposition summary:** 5 accepts, 3 pushbacks, 1 selective accept.
+
+| §§ | Decision | Action taken |
+|----|----------|-------------|
+| §1 Quad / India non-alignment | **Accept** | §7.4 expanded with explicit security-monetary decoupling argument: Katzenstein filter operates through monetary architecture (base dependence, proportionality clauses, financial intelligence integration, fuel cycle supply chains), not security alignment per se. Quad is security alignment without monetary architecture embedding — analytically separable variables. Ganguly and Pardesi (2009) cited for strategic autonomy doctrine. Medcalf (2020) cited for Indo-Pacific strategic geography context. |
+| §7 AUKUS / India free-rider | **Accept** | §7.4 expanded with AUKUS free-rider observation: India extracts security benefits from AUKUS (reduced Chinese maritime pressure in Indian Ocean) without bearing sovereignty costs of formal membership — no HEU fuel cycle dependence, no dollar-denominated defence industrial entanglement. Illustrates why non-alignment has structural monetary value distinct from rhetorical posture. |
+| §2 Malacca Dilemma / China NEP | **Pushback — already addressed** | §7.5 already contains the Malacca chokepoint text verbatim ("Approximately 75% of China's oil imports are seaborne through the Malacca Strait..."). No content change required. Yoshihara and Holmes (2010) added as the canonical citation, which was the genuine gap. |
+| §2 BRI yuan internationalisation | **Pushback — already addressed** | §7.5 five-tracks paragraph already covers this directly (Shanghai INE crude futures, CIPS, e-CNY, bilateral swap lines, yuan-ruble corridors). |
+| §3 ASEAN / CMIM regional architecture | **Accept** | §7.7 expanded with ~130-word note: CMIM ($240 billion, 2010) and AMRO as pre-existing Indo-Pacific regional monetary architecture denominated in yen and yuan swap arrangements. INR entry is into this architecture, not against the dollar alone. RPM noted as primary empirical evidence for INR layering; registered as Channel 1 activation test, not confirmed reserve demand. Kausikan (2017) cited. |
+| §4 South China Sea energy resources | **Pushback — out of scope** | Contested sovereignty scenarios require framework extension to model hypothetical NEP changes from territorial control. The paper is a positive structural analysis, not a strategic scenario tool. No change. |
+| §5 India-China rivalry / critical minerals | **Accept** | §7.1 expanded with ~110-word note: zirconium, hafnium, and rare earth elements used in reactor components sourced from supply chains where China holds ~60–80% of global processing capacity. Ore-stage independence does not translate automatically to materials-stage independence. Acknowledged as a scope constraint on the sovereign fuel cycle claim, not a falsification. |
+| §6 Japan / Kishida doctrine | **Accept** | §6.3 expanded with ~110-word paragraph: Kishida doctrine (2022 NSS, defence budget doubling, counterstrike capability) creates downstream energy partnership leverage — AZEC initiative and Australia hydrogen/ammonia frameworks as concrete examples. Nuclear restart mechanism operates alongside, not instead of, these security-enabled energy diplomacy pathways. |
+| §8 Critical minerals supply chains | **Accept** | Folded into §5 change above (same §7.1 note covers both). |
+| §9 Missing literature | **Accept selectively** | Ganguly/Pardesi (2009): added to §7.4. Yoshihara/Holmes (2010): added to §7.5 as canonical Malacca citation. Medcalf (2020): added to §7.4. Kausikan (2017): added to §7.7/CMIM note. All four added to References. |
+| NEP formula revision request | **Pushback** | Reviewer requests revised NEP formula incorporating strategic chokepoint vulnerability. Declined: the formula measures energy position for the monetary mechanism; strategic route vulnerability is a separate variable the monetary mechanism does not require. Adding it would require new data architecture and would expand scope beyond the paper's claims. |
