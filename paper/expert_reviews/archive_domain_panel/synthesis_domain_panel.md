@@ -209,7 +209,7 @@ The Green Theory reviewer raises a distinct category of critique — not empiric
 - ~~Caveat AHWR timeline — no construction licence as of 2026~~ → §7.3 / India note: AHWR at detailed design stage, no construction licence, caveat added
 - ~~Correct AUKUS description — HEU naval propulsion is not a thorium pathway~~ → §7.4: AUKUS fully decoupled from civil thorium pathway; HEU supply chain dependence vs. platform ownership distinction added; IAEA Article III(2) arrangement incompleteness noted
 
-**T1.3 Legal Architecture Engagement** ✓ PARTIALLY RESOLVED (March 2026)
+**T1.3 Legal Architecture Engagement** ✓ RESOLVED (March 2026)
 - ~~India section: add NSG ENR controls, INFCIRC/754 separation plan, and 123 Agreement consent rights provisions~~ → **RESOLVED** this revision: new paragraph "A legal constraint on India's sovereign fuel cycle claim" added to India section (~§7.4); INFCIRC/754 designation, 2008 US-India 123 Agreement consent rights, Hyde Act, NSG Category 1 controls all cited; constraints characterised as bounding, not invalidating, the non-aligned fuel cycle argument
 - ~~Canada section: cite CUSMA Chapter 32/Annex 32-C as the specific treaty mechanism~~ → **Previously resolved** (§7.4 Canada section): CUSMA Chapter 32/Annex 32-C proportionality obligation cited as the precise legal mechanism
 - ~~Russia section: engage with the legal basis for SWIFT exclusion (EU CFSP regulation, not multilateral law) and the frozen Central Bank reserves legal controversy~~ → **Previously resolved** (§7.4 / Russia TMPI note): EU Council Regulation (EU) 2022/345 cited as legal basis; $300bn frozen sovereign reserves noted; ILC Articles 49-54 countermeasures vs. sovereign immunity framing added
